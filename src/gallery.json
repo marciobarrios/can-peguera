@@ -1,0 +1,242 @@
+[
+  {
+    "id": "street",
+    "title": {
+      "ca": "Carrers i cases",
+      "es": "Calles y casas"
+    },
+    "alt": {
+      "ca": "Cases d’una planta a banda i banda d’un carrer, amb cotxes aparcats.",
+      "es": "Casas de una planta a ambos lados de una calle, con coches aparcados."
+    },
+    "date": {
+      "ca": "2016",
+      "es": "2016"
+    },
+    "year": 2016,
+    "topic": "houses",
+    "author": "Pere López Brosa",
+    "holder": "Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:Barri_de_Can_Peguera_P1520552.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "pending": false,
+    "originalTitle": "Barri de Can Peguera P1520552",
+    "note": {
+      "ca": "",
+      "es": ""
+    },
+    "width": 3072,
+    "height": 2304
+  },
+  {
+    "id": "church",
+    "title": {
+      "ca": "Sant Francesc Xavier",
+      "es": "Sant Francesc Xavier"
+    },
+    "alt": {
+      "ca": "Façana de l’església de Sant Francesc Xavier.",
+      "es": "Fachada de la iglesia de Sant Francesc Xavier."
+    },
+    "date": {
+      "ca": "2016",
+      "es": "2016"
+    },
+    "year": 2016,
+    "topic": "places",
+    "author": "Pere López Brosa",
+    "holder": "Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:Esgl%C3%A9sia_de_Sant_Francesc_Xavier_al_barri_de_Can_Peguera_P1520553.jpg",
+    "license": "CC BY-SA 3.0 Unported",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "pending": false,
+    "originalTitle": "Església de Sant Francesc Xavier al barri de Can Peguera P1520553",
+    "note": {
+      "ca": "",
+      "es": ""
+    },
+    "width": 3072,
+    "height": 2304
+  },
+  {
+    "id": "sundial",
+    "title": {
+      "ca": "El rellotge de Vilalba dels Arcs",
+      "es": "El reloj de Vilalba dels Arcs"
+    },
+    "alt": {
+      "ca": "Rellotge de sol metàl·lic i circular sobre un pedestal, al carrer.",
+      "es": "Reloj de sol metálico y circular sobre un pedestal, en la calle."
+    },
+    "date": {
+      "ca": "2016",
+      "es": "2016"
+    },
+    "year": 2016,
+    "topic": "places",
+    "author": "Pere López Brosa",
+    "holder": "Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:Rellotge_de_sol_del_carrer_de_Vilalba_dels_Arcs_P1520538.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "pending": false,
+    "originalTitle": "Rellotge de sol del carrer de Vilalba dels Arcs P1520538",
+    "note": {
+      "ca": "",
+      "es": ""
+    },
+    "width": 3072,
+    "height": 2304
+  },
+  {
+    "id": "edge",
+    "title": {
+      "ca": "El barri i el seu entorn",
+      "es": "El barrio y su entorno"
+    },
+    "alt": {
+      "ca": "Parc Central i edifici del passeig d’Urrutia, al límit del barri.",
+      "es": "Parc Central y edificio del passeig d’Urrutia, en el límite del barrio."
+    },
+    "date": {
+      "ca": "2009",
+      "es": "2009"
+    },
+    "year": 2009,
+    "topic": "houses",
+    "author": "Jordi Cucurull",
+    "holder": "Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:Parc_i_edifici_de_passeig_d%27Urrutia_17.jpg",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "pending": false,
+    "originalTitle": "Parc i edifici de passeig d'Urrutia 17",
+    "note": {
+      "ca": "El parc és a la Guineueta; l’edifici del passeig d’Urrutia pertany a Can Peguera.",
+      "es": "El parque está en la Guineueta; el edificio del passeig d’Urrutia pertenece a Can Peguera."
+    },
+    "width": 2848,
+    "height": 4272
+  },
+  {
+    "id": "masia",
+    "title": {
+      "ca": "La masia, entre pins",
+      "es": "La masía, entre pinos"
+    },
+    "alt": {
+      "ca": "Un grup de persones entre pins; al fons, la masia de Can Peguera.",
+      "es": "Un grupo de personas entre pinos; al fondo, la masía de Can Peguera."
+    },
+    "date": {
+      "ca": "Cap al 1935",
+      "es": "Hacia 1935"
+    },
+    "year": 1935,
+    "topic": "houses",
+    "author": "Mut, J.",
+    "holder": "AMDHG · Fons Jaume Caminal Serret",
+    "source": "https://catalegarxiumunicipal.bcn.cat/detail/68453284",
+    "license": "",
+    "licenseUrl": "",
+    "pending": true,
+    "originalTitle": "Masia Can Peguera",
+    "note": {
+      "ca": "Còpia de consulta del catàleg municipal. La data és la descrita a la fitxa.",
+      "es": "Copia de consulta del catálogo municipal. La fecha es la descrita en la ficha."
+    },
+    "width": 1190,
+    "height": 841
+  },
+  {
+    "id": "school",
+    "title": {
+      "ca": "Un pati ple de vida",
+      "es": "Un patio lleno de vida"
+    },
+    "alt": {
+      "ca": "Alumnes i professors al pati del Grup Escolar Hermenegildo Giner de los Ríos.",
+      "es": "Alumnos y profesores en el patio del Grupo Escolar Hermenegildo Giner de los Ríos."
+    },
+    "date": {
+      "ca": "Març de 1932",
+      "es": "Marzo de 1932"
+    },
+    "year": 1932,
+    "topic": "life",
+    "author": "Josep Domínguez Martí",
+    "holder": "Arxiu Fotogràfic de Barcelona · Fons Ajuntament de Barcelona",
+    "source": "https://catalegarxiumunicipal.bcn.cat/detail/168373776",
+    "license": "",
+    "licenseUrl": "",
+    "pending": true,
+    "originalTitle": "Grup escolar Hermenegildo Giner de los Ríos. Alumnes i professors en un moment d'esbarjo al pati de l'escola",
+    "note": {
+      "ca": "Còpia de consulta del catàleg municipal. La data és la descrita a la fitxa.",
+      "es": "Copia de consulta del catálogo municipal. La fecha es la descrita en la ficha."
+    },
+    "width": 1171,
+    "height": 852
+  },
+  {
+    "id": "neighbors",
+    "title": {
+      "ca": "El veïnat pren la paraula",
+      "es": "El vecindario toma la palabra"
+    },
+    "alt": {
+      "ca": "Veïns amb pancartes durant la visita de l’alcalde Narcís Serra.",
+      "es": "Vecinos con pancartas durante la visita del alcalde Narcís Serra."
+    },
+    "date": {
+      "ca": "1981",
+      "es": "1981"
+    },
+    "year": 1981,
+    "topic": "life",
+    "author": "",
+    "holder": "Arxiu Fotogràfic de Barcelona · Fons Diario de Barcelona",
+    "source": "https://catalegarxiumunicipal.bcn.cat/detail/172680683",
+    "license": "",
+    "licenseUrl": "",
+    "pending": true,
+    "originalTitle": "Visita de l'alcalde de Barcelona Narcís Serra a les cases barates Ramon Albó al barri de Can Peguera",
+    "note": {
+      "ca": "Còpia de consulta del catàleg municipal. La data és la descrita a la fitxa.",
+      "es": "Copia de consulta del catálogo municipal. La fecha es la descrita en la ficha."
+    },
+    "width": 1142,
+    "height": 850
+  },
+  {
+    "id": "panorama",
+    "title": {
+      "ca": "Mirar el barri des de dalt",
+      "es": "Mirar el barrio desde arriba"
+    },
+    "alt": {
+      "ca": "Panoràmica de Can Peguera amb l’església a l’esquerra i Collserola al fons.",
+      "es": "Panorámica de Can Peguera con la iglesia a la izquierda y Collserola al fondo."
+    },
+    "date": {
+      "ca": "Cap al 1991",
+      "es": "Hacia 1991"
+    },
+    "year": 1991,
+    "topic": "houses",
+    "author": "",
+    "holder": "AMDHG · Fons Jaume Caminal Serret",
+    "source": "https://catalegarxiumunicipal.bcn.cat/detail/68453285",
+    "license": "",
+    "licenseUrl": "",
+    "pending": true,
+    "originalTitle": "Vistes del barri de Can Peguera",
+    "note": {
+      "ca": "Còpia de consulta del catàleg municipal. La data és la descrita a la fitxa.",
+      "es": "Copia de consulta del catálogo municipal. La fecha es la descrita en la ficha."
+    },
+    "width": 1190,
+    "height": 841
+  }
+]

@@ -1,0 +1,515 @@
+[
+  {
+    "id": "finca-rural",
+    "era": "origins",
+    "date": {
+      "ca": "Abans de 1928",
+      "es": "Antes de 1928"
+    },
+    "title": {
+      "ca": "La finca i la masia de Can Peguera",
+      "es": "La finca y la masía de Can Peguera"
+    },
+    "note": {
+      "ca": "No es data la fundació de la masia ni la producció de resina sense un document específic.",
+      "es": "No fechar fundación de la masía ni producción resinera sin documento específico."
+    },
+    "sources": ["S08", "S09"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "ley-casas-baratas",
+    "era": "origins",
+    "date": {
+      "ca": "12 de juny de 1911",
+      "es": "12 de junio de 1911"
+    },
+    "title": {
+      "ca": "Una llei per a les cases barates",
+      "es": "Una ley para las casas baratas"
+    },
+    "note": {
+      "ca": "És el marc legal general, no l’inici de les obres a Can Peguera.",
+      "es": "Marco general; no es comienzo de obras en Can Peguera."
+    },
+    "sources": ["S01"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "creacion-patronato",
+    "era": "origins",
+    "date": {
+      "ca": "3 de febrer de 1927",
+      "es": "3 de febrero de 1927"
+    },
+    "title": {
+      "ca": "Creació del Patronato de la Habitación",
+      "es": "Creación del Patronato de la Habitación"
+    },
+    "note": {
+      "ca": "El decret es publicà el 4 de febrer. La creació de la institució precedeix la construcció.",
+      "es": "Decreto publicado el 4 de febrero. No confundir creación institucional y construcción."
+    },
+    "sources": ["S45"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "compra-terrenos",
+    "era": "origins",
+    "date": {
+      "ca": "26 de març de 1928",
+      "es": "26 de marzo de 1928"
+    },
+    "title": {
+      "ca": "Compra dels terrenys per al grup Ramon Albó",
+      "es": "Compra de los terrenos para el grupo Ramon Albó"
+    },
+    "note": {
+      "ca": "La recerca coincideix en aquesta data, però no s’ha consultat l’escriptura. Superfície i preu pendents de contrast.",
+      "es": "Fecha convergente en investigación; escritura no consultada. Superficie y precio pendientes de conciliación."
+    },
+    "sources": ["S05", "S10", "S47"],
+    "scheduled": false,
+    "uncertain": true
+  },
+  {
+    "id": "construccion-inicial",
+    "era": "origins",
+    "date": {
+      "ca": "1929–1931/1932",
+      "es": "1929–1931/1932"
+    },
+    "title": {
+      "ca": "Construcció i ocupació per fases",
+      "es": "Construcción y ocupación por fases"
+    },
+    "note": {
+      "ca": "Obres, lliuraments i ocupació tenen dates diferents. No hi hagué una única inauguració el 1929.",
+      "es": "Las fechas varían según obras, entregas y finalización. No una inauguración única en 1929."
+    },
+    "sources": ["S04", "S05", "S10"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "huelga-alquileres",
+    "era": "republic",
+    "date": {
+      "ca": "1931",
+      "es": "1931"
+    },
+    "title": {
+      "ca": "Les cases barates a la vaga de lloguers",
+      "es": "Las casas baratas en la huelga de alquileres"
+    },
+    "note": {
+      "ca": "Les xifres de participació de Barcelona no es poden atribuir automàticament al barri.",
+      "es": "No asignar al barrio cifras de participación del conjunto de Barcelona."
+    },
+    "sources": ["S14", "S15", "S39"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "escuela-inauguracion",
+    "era": "republic",
+    "date": {
+      "ca": "28 de febrer de 1932",
+      "es": "28 de febrero de 1932"
+    },
+    "title": {
+      "ca": "Inauguració del Grup Escolar Hermenegildo Giner de los Ríos",
+      "es": "Inauguración del Grupo Escolar Hermenegildo Giner de los Ríos"
+    },
+    "note": {
+      "ca": "La cerimònia no equival al primer dia de classe. El nom és Hermenegildo, no Francisco.",
+      "es": "La apertura de clases puede tener fecha distinta de la ceremonia. Nombre Hermenegildo, no Francisco."
+    },
+    "sources": ["S43", "S44"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "conflicto-vivienda-1932",
+    "era": "republic",
+    "date": {
+      "ca": "1932",
+      "es": "1932"
+    },
+    "title": {
+      "ca": "Continuen els conflictes pel lloguer i els desnonaments",
+      "es": "Persisten los conflictos por alquiler y desahucios"
+    },
+    "note": {
+      "ca": "Aisa remet a Oyón, pàgina 426, per a Ramon Albó. La font original és pendent de consulta.",
+      "es": "Aisa remite a Oyón, p. 426, para Ramon Albó. Fuente original aún pendiente."
+    },
+    "sources": ["S39"],
+    "scheduled": false,
+    "uncertain": true
+  },
+  {
+    "id": "guerra-refugio",
+    "era": "republic",
+    "date": {
+      "ca": "1936–1939",
+      "es": "1936–1939"
+    },
+    "title": {
+      "ca": "Guerra i construcció del refugi antiaeri",
+      "es": "Guerra y construcción del refugio antiaéreo"
+    },
+    "note": {
+      "ca": "L’existència del refugi està documentada; la data exacta de construcció i el registre d’impactes són pendents.",
+      "es": "Fecha exacta de construcción y registro de impactos pendientes."
+    },
+    "sources": ["S21", "S22", "S23"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "represion-posguerra",
+    "era": "postwar",
+    "date": {
+      "ca": "Des de 1939",
+      "es": "Desde 1939"
+    },
+    "title": {
+      "ca": "Repressió, depuració i exili",
+      "es": "Represión, depuración y exilio"
+    },
+    "note": {
+      "ca": "Cal separar les acusacions dels fets provats i verificar les trajectòries individuals.",
+      "es": "Separar acusaciones de hechos probados y comprobar filiaciones individuales."
+    },
+    "sources": ["S16", "S21", "S37", "S38"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "josep-fort-hartheim",
+    "era": "postwar",
+    "date": {
+      "ca": "29 de setembre de 1941",
+      "es": "29 de septiembre de 1941"
+    },
+    "title": {
+      "ca": "Mort de Josep Fort Maluenda a Hartheim",
+      "es": "Muerte de Josep Fort Maluenda en Hartheim"
+    },
+    "note": {
+      "ca": "Les fitxes documentals concorden; l’equivalència del domicili històric encara s’ha de verificar.",
+      "es": "Ficha documental concordante. Equivalencias de domicilio histórico por verificar."
+    },
+    "sources": ["S34", "S35"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "tenencia-parroquial",
+    "era": "postwar",
+    "date": {
+      "ca": "9 d’octubre de 1946",
+      "es": "9 de octubre de 1946"
+    },
+    "title": {
+      "ca": "Creació de la tinença parroquial de Sant Francesc Xavier",
+      "es": "Creación de la tenencia parroquial de Sant Francesc Xavier"
+    },
+    "note": {
+      "ca": "És una data institucional eclesiàstica, no la data de construcció del temple.",
+      "es": "Fecha institucional eclesiástica, no fecha de construcción del templo."
+    },
+    "sources": ["S51", "S52"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "ampliacion-posguerra",
+    "era": "postwar",
+    "date": {
+      "ca": "Des de 1947",
+      "es": "Desde 1947"
+    },
+    "title": {
+      "ca": "Ampliació de les cases barates",
+      "es": "Ampliación de las casas baratas"
+    },
+    "note": {
+      "ca": "El nombre d’habitatges executats i el final de les fases de 1947–1949 requereixen contrast.",
+      "es": "Cotejar número ejecutado y final de las fases 1947–1949."
+    },
+    "sources": ["S11", "S12"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "sustitucion-masia",
+    "era": "postwar",
+    "date": {
+      "ca": "1949/1954, pendent de contrast",
+      "es": "1949/1954, pendiente de conciliación"
+    },
+    "title": {
+      "ca": "La masia deixa pas a un bloc d’habitatges",
+      "es": "La masía deja paso a un bloque de viviendas"
+    },
+    "note": {
+      "ca": "Les dates poden correspondre a fases diferents. La discrepància no està resolta.",
+      "es": "Las fechas pueden corresponder a fases distintas; no dar una por resuelta."
+    },
+    "sources": ["S25", "S26"],
+    "scheduled": false,
+    "uncertain": true
+  },
+  {
+    "id": "parroquia-autonoma",
+    "era": "postwar",
+    "date": {
+      "ca": "31 d’octubre de 1952",
+      "es": "31 de octubre de 1952"
+    },
+    "title": {
+      "ca": "Sant Francesc Xavier esdevé parròquia autònoma",
+      "es": "Sant Francesc Xavier se convierte en parroquia autónoma"
+    },
+    "note": {
+      "ca": "És la data del decret eclesiàstic; cal consultar l’original abans de publicar-ne el detall jurídic.",
+      "es": "Fecha de decreto eclesiástico; confirmar original si se publica detalle jurídico."
+    },
+    "sources": ["S51"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "plan-comarcal",
+    "era": "postwar",
+    "date": {
+      "ca": "1953",
+      "es": "1953"
+    },
+    "title": {
+      "ca": "El planejament comarcal, antecedent de l’amenaça de remodelació",
+      "es": "El planeamiento comarcal, antecedente de la amenaza de remodelación"
+    },
+    "note": {
+      "ca": "Referència bibliogràfica: el plànol i les afectacions concretes són pendents de consulta.",
+      "es": "Referencia bibliográfica; plano y afectaciones concretas aún por consultar."
+    },
+    "sources": ["S27"],
+    "scheduled": false,
+    "uncertain": true
+  },
+  {
+    "id": "organizacion-vecinal",
+    "era": "neighbors",
+    "date": {
+      "ca": "1973–1974",
+      "es": "1973–1974"
+    },
+    "title": {
+      "ca": "Noves formes d’organització veïnal",
+      "es": "Nuevas formas de organización vecinal"
+    },
+    "note": {
+      "ca": "Cal distingir l’associació d’àmbit ampli, el Centre Social i la seva constitució jurídica.",
+      "es": "Distinguir asociación de ámbito amplio, Centre Social y constitución jurídica."
+    },
+    "sources": ["S21", "S28", "S29", "S30"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "pgm-resistencia",
+    "era": "neighbors",
+    "date": {
+      "ca": "1976",
+      "es": "1976"
+    },
+    "title": {
+      "ca": "Resistència veïnal al Pla general metropolità",
+      "es": "Resistencia vecinal al Plan General Metropolitano"
+    },
+    "note": {
+      "ca": "La memòria també esmenta 1974, una fase prèvia de la tramitació.",
+      "es": "La memoria cita también 1974, fase previa de tramitación."
+    },
+    "sources": ["S05", "S28"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "referendum-nombre",
+    "era": "neighbors",
+    "date": {
+      "ca": "1998",
+      "es": "1998"
+    },
+    "title": {
+      "ca": "El veïnat tria el nom de Can Peguera",
+      "es": "El vecindario elige el nombre de Can Peguera"
+    },
+    "note": {
+      "ca": "Consulta i acord del districte el 1998; publicació municipal el 1999. Acta i resultats numèrics pendents de consulta.",
+      "es": "Consulta y acuerdo distrital en 1998; publicación municipal en 1999. Acta y resultados numéricos pendientes de consulta."
+    },
+    "sources": ["S30"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "mpgm-inicial",
+    "era": "present",
+    "date": {
+      "ca": "22 de gener de 2015",
+      "es": "22 de enero de 2015"
+    },
+    "title": {
+      "ca": "Aprovació inicial de la modificació del PGM",
+      "es": "Aprobación inicial de la modificación del PGM"
+    },
+    "note": {
+      "ca": "L’acta del 14 de gener recull l’agenda preparatòria, no l’aprovació aquell dia.",
+      "es": "El acta 14/01 recoge agenda preparatoria, no aprobación ese día."
+    },
+    "sources": ["S19", "S31"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "mpgm-provisional",
+    "era": "present",
+    "date": {
+      "ca": "27 de març de 2015",
+      "es": "27 de marzo de 2015"
+    },
+    "title": {
+      "ca": "Aprovació provisional de la modificació del PGM",
+      "es": "Aprobación provisional de la modificación del PGM"
+    },
+    "note": {
+      "ca": "La publicació a la Gaseta el 20 de juny no és la data de l’acord.",
+      "es": "Gaseta publicada 20/06 no equivale a fecha del acuerdo."
+    },
+    "sources": ["S18", "S31"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "mpgm-definitiva",
+    "era": "present",
+    "date": {
+      "ca": "10 de juliol de 2015",
+      "es": "10 de julio de 2015"
+    },
+    "title": {
+      "ca": "Modificació definitiva del planejament per preservar el barri",
+      "es": "Modificación definitiva del planeamiento para preservar el barrio"
+    },
+    "note": {
+      "ca": "La desafectació no inclou tots els habitatges ni garanteix que mai es modifiquin.",
+      "es": "No se desafectan todas las viviendas ni se garantiza inmutabilidad futura."
+    },
+    "sources": ["S18", "S31"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "refugio-accesos",
+    "era": "present",
+    "date": {
+      "ca": "2022",
+      "es": "2022"
+    },
+    "title": {
+      "ca": "Es localitzen accessos del refugi al costat de l’antiga escola",
+      "es": "Se localizan accesos del refugio junto a la antigua escuela"
+    },
+    "note": {
+      "ca": "La localització dels accessos no implica que el refugi es pugui visitar.",
+      "es": "No implica apertura pública para visitas."
+    },
+    "sources": ["S24"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "futuro-debate",
+    "era": "present",
+    "date": {
+      "ca": "2025",
+      "es": "2025"
+    },
+    "title": {
+      "ca": "Es torna a debatre l’habitabilitat i el futur de les cases",
+      "es": "Se vuelve a debatir la habitabilidad y el futuro de las casas"
+    },
+    "note": {
+      "ca": "El debat inclou propostes de reconstrucció; no acredita un projecte complet aprovat definitivament.",
+      "es": "Intervenciones y propuestas del proceso, no un proyecto completo aprobado."
+    },
+    "sources": ["S20", "S32"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "reclamaciones-mantenimiento",
+    "era": "present",
+    "date": {
+      "ca": "12 de març de 2026",
+      "es": "12 de marzo de 2026"
+    },
+    "title": {
+      "ca": "Un reportatge recull reclamacions veïnals de manteniment",
+      "es": "Un reportaje recoge reclamaciones vecinales de mantenimiento"
+    },
+    "note": {
+      "ca": "Les denúncies i els diagnòstics s’atribueixen a les persones entrevistades; no són dades municipals.",
+      "es": "Cifras y diagnósticos de personas entrevistadas; no equivalen a datos municipales."
+    },
+    "sources": ["S49"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "piloto-ocho-casas",
+    "era": "present",
+    "date": {
+      "ca": "28 de juliol de 2026",
+      "es": "28 de julio de 2026"
+    },
+    "title": {
+      "ca": "L’equip d’obra anuncia acabada la prova pilot de vuit cases",
+      "es": "El equipo de obra anuncia terminado el piloto de ocho casas"
+    },
+    "note": {
+      "ca": "Anunci de 23:45 Arquitectes. No equival a rehabilitar tot el barri ni acredita recepció d’obra o retorn de famílies.",
+      "es": "No significa rehabilitación del conjunto ni acredita recepción o retorno de familias."
+    },
+    "sources": ["S50"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "paisatges-perduts-actividad",
+    "era": "present",
+    "date": {
+      "ca": "25 d’octubre de 2026, 10.00 (previst)",
+      "es": "25 de octubre de 2026, 10:00 (previsto)"
+    },
+    "title": {
+      "ca": "Activitat programada: Paisatges perduts de Can Peguera",
+      "es": "Actividad programada: Paisatges perduts de Can Peguera"
+    },
+    "note": {
+      "ca": "Activitat prevista a la data de la recerca. No s’afirma que s’hagi celebrat ni s’inscriu ningú.",
+      "es": "A fecha de consulta aún no ha ocurrido. No afirmar celebración efectiva ni inscripción de usuarios."
+    },
+    "sources": ["S56"],
+    "scheduled": true,
+    "uncertain": false
+  }
+]

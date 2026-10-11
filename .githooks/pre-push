@@ -1,0 +1,3 @@
+#!/bin/sh
+# Mantener activo: solo web seleccionada; corpus y destino público bloqueados.
+exec node scripts/verify-push.mjs "$@"
