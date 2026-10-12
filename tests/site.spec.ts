@@ -49,21 +49,21 @@ test("bilingual navigation, metadata, no overflow and no runtime errors", async 
   expect(errors).toEqual([]);
 });
 
-test("27 events, meaningful era filters, all chapter reading and scheduled future", async ({
+test("31 events, meaningful era filters, all chapter reading and scheduled future", async ({
   page,
 }) => {
   await page.goto("/ca/#cronologia");
-  await expect(page.locator("#timeline-list>li")).toHaveCount(27);
+  await expect(page.locator("#timeline-list>li")).toHaveCount(31);
   await page.locator('[data-action="era"][data-era="postwar"]').click();
   await expect(page.locator("#timeline-list>li")).toHaveCount(7);
   await page.locator('[data-action="era"][data-era="present"]').click();
-  await expect(page.locator("#timeline-list>li")).toHaveCount(8);
+  await expect(page.locator("#timeline-list>li")).toHaveCount(10);
   const future = page.locator("#timeline-list details").last();
   await future.locator("summary").click();
   await expect(future).toContainText("Activitat prevista");
   await expect(future).toContainText(/no s’afirma/i);
   await page.locator('[data-action="era"][data-era="all"]').click();
-  await expect(page.locator("#timeline-list>li")).toHaveCount(27);
+  await expect(page.locator("#timeline-list>li")).toHaveCount(31);
   await page.locator('[data-action="all-chapters"]').click();
   await expect(page.locator(".chapter:visible")).toHaveCount(6);
   await page.locator('[data-action="chapter"][data-index="4"]').click();
@@ -75,7 +75,7 @@ test("combined gallery filters, translated empty states and repeated language ch
   page,
 }) => {
   await page.goto("/ca/#arxiu");
-  await expect(page.locator(".gallery-card")).toHaveCount(8);
+  await expect(page.locator(".gallery-card")).toHaveCount(20);
   await page.selectOption("#archive-topic", "life");
   await page.selectOption("#archive-period", "old");
   await page.selectOption("#archive-rights", "pending");
@@ -92,7 +92,12 @@ test("combined gallery filters, translated empty states and repeated language ch
   await expect(page.locator(".empty-state")).toContainText("No hay imágenes");
   await expect(page.locator("#archive-search")).toHaveValue("inexistent");
   await page.locator(".empty-state button").click();
-  await expect(page.locator(".gallery-card")).toHaveCount(8);
+  await expect(page.locator(".gallery-card")).toHaveCount(20);
+  await page.selectOption("#archive-period", "undated");
+  await expect(page.locator(".gallery-card")).toHaveCount(9);
+  await page.fill("#archive-search", "refugio");
+  await expect(page.locator(".gallery-card")).toHaveCount(6);
+  await page.locator('[data-action="reset-filters"]').click();
   await page.fill("#archive-search", "masia");
   await expect(page.locator(".gallery-card")).toHaveCount(1);
   await expect(page.locator(".gallery-card .rights-warning")).toContainText(
@@ -139,6 +144,20 @@ test("map/list parity, zoom, comparison values, flight dates and accessible alte
 }, info) => {
   await page.goto("/ca/#barri");
   await expect(page.locator(".map-pin")).toHaveCount(4);
+  await expect(page.locator(".poi-list button")).toHaveCount(10);
+  await page.locator('.poi-list [data-poi="refugi-647"]').click();
+  await expect(page.locator("#poi-detail")).toContainText("Cornudella, 40");
+  await expect(page.locator("#poi-detail")).toContainText("2023");
+  await expect(page.locator("#poi-detail .coordinates")).toHaveCount(0);
+  await expect(page.locator("#poi-detail .rights-warning")).toBeVisible();
+  await page.locator('.header-tools [data-lang="es"]').click();
+  await expect(page.locator("#poi-detail h3")).toHaveText(
+    "Refugio antiaéreo 647",
+  );
+  await expect(page.locator("#poi-detail")).toContainText(
+    "fuente del siglo XIX",
+  );
+  await page.locator('.header-tools [data-lang="ca"]').click();
   await page.locator('.poi-list [data-poi="cosa-nostra"]').click();
   await expect(page.locator("#poi-detail")).toContainText("Biure, 1");
   await expect(
@@ -221,7 +240,7 @@ test("keyboard, reduced motion, accessibility and valid local links", async ({
     );
   expect(bad).toEqual([]);
   await page.locator("#fonts .bibliography summary").click();
-  await expect(page.locator(".bibliography li")).toHaveCount(58);
+  await expect(page.locator(".bibliography li")).toHaveCount(76);
   await page
     .locator("#arxiu")
     .screenshot({ path: `test-results/${info.project.name}-gallery.png` });

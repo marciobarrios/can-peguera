@@ -215,31 +215,163 @@
   "points": [
     {
       "id": "plaza-sant-francesc",
-      "name": "Plaça de Sant Francesc Xavier",
+      "name": {
+        "ca": "Plaça de Sant Francesc Xavier",
+        "es": "Plaça de Sant Francesc Xavier"
+      },
       "xy": [292.269, 585.419],
       "coordinates": [2.16435, 41.43452],
-      "source": "https://mapcarta.com/W1013496853"
+      "source": "https://mapcarta.com/W1013496853",
+      "photo": "",
+      "location": {
+        "ca": "",
+        "es": ""
+      },
+      "sources": ["S25"]
     },
     {
       "id": "cosa-nostra",
-      "name": "Casal de Barri La Cosa Nostra",
+      "name": {
+        "ca": "Casal de Barri La Cosa Nostra",
+        "es": "Casal de Barri La Cosa Nostra"
+      },
       "xy": [655.466, 722.153],
       "coordinates": [2.16784, 41.43356],
-      "source": "https://mapcarta.com/es/W1182901058"
+      "source": "https://mapcarta.com/es/W1182901058",
+      "photo": "",
+      "location": {
+        "ca": "",
+        "es": ""
+      },
+      "sources": ["POI01"]
     },
     {
       "id": "gent-gran",
-      "name": "Casal de Gent Gran Can Peguera",
+      "name": {
+        "ca": "Casal de Gent Gran Can Peguera",
+        "es": "Casal de Gent Gran Can Peguera"
+      },
       "xy": [323.988, 653.73],
       "coordinates": [2.16466, 41.43403],
-      "source": "https://mapcarta.com/W713153255"
+      "source": "https://mapcarta.com/W713153255",
+      "photo": "",
+      "location": {
+        "ca": "",
+        "es": ""
+      },
+      "sources": ["POI02", "AMP03"]
     },
     {
       "id": "josep-fort",
-      "name": "Josep Fort Maluenda",
+      "name": {
+        "ca": "Josep Fort Maluenda",
+        "es": "Josep Fort Maluenda"
+      },
       "xy": [654.471, 608.338],
       "coordinates": [2.16782, 41.43438],
-      "source": "https://mapcarta.com/N13371419018"
+      "source": "https://mapcarta.com/N13371419018",
+      "photo": "",
+      "location": {
+        "ca": "",
+        "es": ""
+      },
+      "sources": ["S34", "S35"]
+    },
+    {
+      "id": "refugi-647",
+      "name": {
+        "ca": "Refugi antiaeri 647",
+        "es": "Refugio antiaéreo 647"
+      },
+      "xy": null,
+      "coordinates": null,
+      "source": "https://media-edg.barcelona.cat/wp-content/uploads/2015/01/descobreix-issu-7-15.pdf",
+      "location": {
+        "ca": "Cornudella, 40 · sota el Turó de la Peira",
+        "es": "Cornudella, 40 · bajo el Turó de la Peira"
+      },
+      "photo": "shelter-survey",
+      "sources": ["S23", "AMP14", "AMP15", "AMP16"]
+    },
+    {
+      "id": "escola-giner",
+      "name": {
+        "ca": "Antic grup escolar Giner de los Ríos",
+        "es": "Antiguo grupo escolar Giner de los Ríos"
+      },
+      "xy": null,
+      "coordinates": null,
+      "source": "https://noubarrisperlarepublica.org/cat/activitats-de-la-taula/repressio-franquista-grup-escolar-hermenegildo-giner-de-los-rios-nou-barris/",
+      "location": {
+        "ca": "Entorn de Cornudella i Biure · antic pati escolar",
+        "es": "Entorno de Cornudella y Biure · antiguo patio escolar"
+      },
+      "photo": "school-building",
+      "sources": ["S16", "S24", "S43"]
+    },
+    {
+      "id": "bodega-munich",
+      "name": {
+        "ca": "Antiga bodega Munich",
+        "es": "Antigua bodega Munich"
+      },
+      "xy": null,
+      "coordinates": null,
+      "source": "https://beteve.cat/la-familia-barris/antonio-banos-can-peguera-anarquisme-cnt-fai/",
+      "location": {
+        "ca": "Espinauga, 37 · emplaçament històric",
+        "es": "Espinauga, 37 · emplazamiento histórico"
+      },
+      "photo": "",
+      "sources": ["AMP09"]
+    },
+    {
+      "id": "balco-equipaments",
+      "name": {
+        "ca": "Balcó d’Equipaments",
+        "es": "Balcón de Equipamientos"
+      },
+      "xy": null,
+      "coordinates": null,
+      "source": "https://beteve.cat/societat/estrena-balco-equipaments-can-peguera/",
+      "location": {
+        "ca": "Franja entre les cases i el Turó de la Peira",
+        "es": "Franja entre las casas y el Turó de la Peira"
+      },
+      "photo": "balco",
+      "sources": ["AMP17", "S24"]
+    },
+    {
+      "id": "antiga-masia",
+      "name": {
+        "ca": "Emplaçament de l’antiga masia",
+        "es": "Emplazamiento de la antigua masía"
+      },
+      "xy": null,
+      "coordinates": null,
+      "source": "https://ajuntament.barcelona.cat/noubarris/es/el-distrito-y-sus-barrios/can-peguera/historia-de-can-peguera",
+      "location": {
+        "ca": "Entorn de Sant Francesc Xavier · edifici desaparegut",
+        "es": "Entorno de Sant Francesc Xavier · edificio desaparecido"
+      },
+      "photo": "masia",
+      "sources": ["AMP18", "AMP07"]
+    },
+    {
+      "id": "rellotge-sol",
+      "name": {
+        "ca": "Rellotge de sol de Vilalba dels Arcs",
+        "es": "Reloj de sol de Vilalba dels Arcs"
+      },
+      "xy": null,
+      "coordinates": null,
+      "source": "https://commons.wikimedia.org/wiki/File:Rellotge_de_sol_del_carrer_de_Vilalba_dels_Arcs_P1520538.jpg",
+      "location": {
+        "ca": "Carrer de Vilalba dels Arcs",
+        "es": "Calle Vilalba dels Arcs"
+      },
+      "photo": "sundial",
+      "sources": []
     }
   ],
   "aerial": [

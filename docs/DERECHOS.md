@@ -2,7 +2,7 @@
 
 Esta edición se entrega como preview local y código en un repositorio privado. La autorización de Marcio permite incluir piezas pendientes en esta revisión; no acredita permiso de los titulares ni autoriza un lanzamiento público. Los avisos están junto a cada aparición, también en el visor.
 
-## Cuatro imágenes pendientes
+## Cuatro imágenes municipales de la primera edición
 
 | ID web    | Autor                 | Depositario y fondo                                         | Fuente                                                 |
 | --------- | --------------------- | ----------------------------------------------------------- | ------------------------------------------------------ |
@@ -30,4 +30,20 @@ Avís CA: «Autorització de reproducció pendent. Abans de publicar aquesta ima
 
 ## Antes de un lanzamiento público
 
-Confirmar por escrito el permiso de las cuatro piezas pendientes o retirarlas de galería, historia y memoria. Revisar citas, traducciones, atribuciones, alcance de fuentes y accesibilidad con personas reales. No presentar la actividad prevista del 25 de octubre de 2026 como celebrada. El repositorio privado y el aviso de reproducción pendiente no sustituyen estas decisiones.
+Confirmar por escrito el permiso de las dieciséis piezas pendientes o retirarlas de galería, historia y memoria. Revisar citas, traducciones, atribuciones, alcance de fuentes y accesibilidad con personas reales. No presentar la actividad prevista del 25 de octubre de 2026 como celebrada. El repositorio privado y el aviso de reproducción pendiente no sustituyen estas decisiones.
+
+## Doce piezas añadidas el 12 de octubre de 2026
+
+Todas quedan pendientes de permiso, con aviso individual ca/es en galería, fichas de lugares y visor. `src/gallery.json` y `public/asset-rights.json` conservan fuentes y créditos por pieza. Las fechas de publicación no se convierten en fechas de captura.
+
+| ID web | Procedencia o depositario citado |
+| --- | --- |
+| construction | Memòria dels barris; crédito de procedencia a Ricard Cidoncha / Fotos de Can Peguera, sin atribuirle la toma histórica |
+| housing-plan, school-building, street-life | Memòria dels barris; autoría individual sin identificar |
+| casa-poble | Associació Veïnal de Can Peguera, según Memòria dels barris |
+| shelter-entrance, shelter-sealed | Arxiu Històric de Roquetes–Nou Barris, según Memòria dels barris |
+| shelter-vault, shelter-plan | Tot Barcelona; original y autoría por confirmar |
+| school-access, balco | betevé; autoría individual sin identificar |
+| shelter-survey | Servei d’Arqueologia de Barcelona; imagen facilitada a betevé |
+
+Los medios íntegros descargados, incluidas variantes y descartes, se conservan únicamente en `research/ampliacion-2026-10-12/`. La web enlaza los vídeos en sus páginas editoriales originales y no sirve archivos audiovisuales completos. El registro del archivo local no otorga una licencia de publicación.

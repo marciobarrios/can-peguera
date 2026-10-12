@@ -52,8 +52,8 @@ export const copy = {
     "Las fechas, con sus matices",
   ),
   timelineIntro: bi(
-    "27 fites documentades. Obre cada entrada per llegir-ne les fonts i els límits. També es poden llegir totes en ordre, sense moure cap línia de temps.",
-    "27 hitos documentados. Abre cada entrada para leer sus fuentes y límites. También se pueden leer todos en orden, sin mover ninguna línea de tiempo.",
+    "31 fites documentades. Obre cada entrada per llegir-ne les fonts i els límits. També es poden llegir totes en ordre, sense moure cap línia de temps.",
+    "31 hitos documentados. Abre cada entrada para leer sus fuentes y límites. También se pueden leer todos en orden, sin mover ninguna línea de tiempo.",
   ),
   all: bi("Totes", "Todas"),
   allEvents: bi("Totes les èpoques", "Todas las épocas"),
@@ -61,7 +61,7 @@ export const copy = {
     origins: bi("Abans de 1931", "Antes de 1931"),
     republic: bi("1931–1939", "1931–1939"),
     postwar: bi("1939–1972", "1939–1972"),
-    neighbors: bi("1973–1998", "1973–1998"),
+    neighbors: bi("1973–2014", "1973–2014"),
     present: bi("2015–2026", "2015–2026"),
   },
   events: bi("fites", "hitos"),
@@ -72,8 +72,8 @@ export const copy = {
   ),
   mapTitle: bi("El barri, a peu de mapa", "El barrio, a pie de mapa"),
   mapIntro: bi(
-    "El límit administratiu actual i quatre llocs de referència. La llista ofereix la mateixa informació que els punts del mapa.",
-    "El límite administrativo actual y cuatro lugares de referencia. La lista ofrece la misma información que los puntos del mapa.",
+    "Deu llocs per llegir el barri: cases, escola, refugi i espais de trobada. Quatre tenen una posició cartogràfica; els altres s’expliquen a la llista amb la seva localització documental.",
+    "Diez lugares para leer el barrio: casas, escuela, refugio y espacios de encuentro. Cuatro tienen una posición cartográfica; los demás se explican en la lista con su localización documental.",
   ),
   mapAlt: bi(
     "Ortofotografia de Can Peguera de la cobertura ICGC 2025, amb el límit del barri 47.",
@@ -136,8 +136,8 @@ export const copy = {
   ),
   archiveTitle: bi("Mirades que es queden", "Miradas que se quedan"),
   archiveIntro: bi(
-    "Vuit imatges per començar a mirar: la masia, l’escola, els carrers i el veïnat. Una selecció del material local; els enllaços localitzats en altres àlbums no es presenten com a originals descarregats.",
-    "Ocho imágenes para empezar a mirar: la masía, la escuela, las calles y el vecindario. Una selección del material local; los enlaces localizados en otros álbumes no se presentan como originales descargados.",
+    "Vint imatges per mirar el barri: construcció, escola, vida al carrer i refugi antiaeri. Fotografies i plànols amb procedència individual; quan només coneixem la data de publicació, la presa consta com a no datada.",
+    "Veinte imágenes para mirar el barrio: construcción, escuela, vida en la calle y refugio antiaéreo. Fotografías y planos con procedencia individual; cuando solo conocemos la fecha de publicación, la toma consta como no fechada.",
   ),
   search: bi("Cerca a l’arxiu", "Buscar en el archivo"),
   searchPlaceholder: bi(
@@ -205,8 +205,8 @@ export const copy = {
     "Escuchar las voces existentes",
   ),
   voicesBody: bi(
-    "Aquesta primera edició enllaça treballs publicats pels seus autors. No conté entrevistes pròpies ni testimonis reconstruïts.",
-    "Esta primera edición enlaza trabajos publicados por sus autores. No contiene entrevistas propias ni testimonios reconstruidos.",
+    "Aquesta edició enllaça treballs publicats pels seus autors. No conté entrevistes pròpies ni testimonis reconstruïts.",
+    "Esta edición enlaza trabajos publicados por sus autores. No contiene entrevistas propias ni testimonios reconstruidos.",
   ),
   methodsTitle: bi("D’on surt aquest relat", "De dónde sale este relato"),
   methodsIntro: bi(
@@ -220,8 +220,8 @@ export const copy = {
   ),
   method2Title: bi("Drets per peça", "Derechos por pieza"),
   method2: bi(
-    "L’accés a una imatge no és permís de reproducció. Aquesta preview privada inclou quatre peces municipals pendents, amb avís individual. Cal revisar-les abans d’obrir la web al públic. No hi ha una llicència global sobre les imatges.",
-    "El acceso a una imagen no es permiso de reproducción. Esta preview privada incluye cuatro piezas municipales pendientes, con aviso individual. Deben revisarse antes de abrir la web al público. No hay una licencia global sobre las imágenes.",
+    "L’accés a una imatge no és permís de reproducció. Aquesta preview privada inclou setze peces amb autorització pendent, amb avís individual. Cal revisar-les abans d’obrir la web al públic. No hi ha una llicència global sobre les imatges.",
+    "El acceso a una imagen no es permiso de reproducción. Esta preview privada incluye dieciséis piezas con autorización pendiente, con aviso individual. Deben revisarse antes de abrir la web al público. No hay una licencia global sobre las imágenes.",
   ),
   method3Title: bi("Una recerca oberta", "Una investigación abierta"),
   method3: bi(
@@ -245,8 +245,8 @@ export const copy = {
     "Impulsado por Marcio. Investigación documental asistida y selección editorial en revisión. Fotografías y cartografía acreditadas junto a cada pieza.",
   ),
   date: bi(
-    "Edició de l’11 d’octubre de 2026",
-    "Edición del 11 de octubre de 2026",
+    "Edició del 12 d’octubre de 2026",
+    "Edición del 12 de octubre de 2026",
   ),
   top: bi("Torna a l’inici", "Volver al inicio"),
   nojs: bi(
@@ -327,8 +327,8 @@ export const chapters = [
     ],
   },
   {
-    period: "1973–1999",
-    date: bi("1973–1999", "1973–1999"),
+    period: "1973–2014",
+    date: bi("1973–2014", "1973–2014"),
     title: bi("Organitzar-se per quedar-se", "Organizarse para quedarse"),
     sources: ["S21", "S28", "S29", "S30", "S05"],
     body: [
@@ -387,6 +387,43 @@ export const community = [
 ];
 export const voices = [
   {
+    title: "El refugi antiaeri de Can Peguera",
+    date: "2016",
+    text: bi(
+      "Nou Barris Televisió presenta el refugi dins de Relligant Nou Barris. Document de divulgació de 2016; l’estat de visita s’ha de llegir amb les actualitzacions de 2023.",
+      "Nou Barris Televisió presenta el refugio dentro de Relligant Nou Barris. Documento divulgativo de 2016; el estado de visita debe leerse con las actualizaciones de 2023.",
+    ),
+    sources: ["S22"],
+  },
+  {
+    title: "Can Peguera, el barri roig",
+    date: "2021",
+    text: bi(
+      "Josep Maria Clariana explica a Va passar aquí la memòria llibertària i els espais del barri. Relat atribuït a la persona entrevistada.",
+      "Josep Maria Clariana explica en Va passar aquí la memoria libertaria y los espacios del barrio. Relato atribuido a la persona entrevistada.",
+    ),
+    sources: ["AMP03"],
+  },
+  {
+    title: "Baños visita Can Peguera",
+    date: "2020",
+    text: bi(
+      "Joan Zambrana recorre amb Antonio Baños espais de la història obrera. La bodega Munich és una de les localitzacions identificades al reportatge.",
+      "Joan Zambrana recorre con Antonio Baños espacios de la historia obrera. La bodega Munich es una de las localizaciones identificadas en el reportaje.",
+    ),
+    sources: ["AMP09"],
+  },
+  {
+    title: "L’accés escolar del refugi",
+    date: "2022",
+    text: bi(
+      "Reportatge del descobriment durant les obres. La interpretació de les obertures es revisa amb els estudis de 2023.",
+      "Reportaje del descubrimiento durante las obras. La interpretación de las aberturas se revisa con los estudios de 2023.",
+    ),
+    sources: ["S24"],
+  },
+
+  {
     title: "Més veïnes",
     date: "2022",
     text: bi(
@@ -406,6 +443,31 @@ export const voices = [
   },
 ];
 export const poiText: Record<string, Bilingual> = {
+  "refugi-647": bi(
+    "Excavat sota el Turó, el refugi recorda la defensa veïnal durant la Guerra Civil. L’estudi de l’accés escolar va identificar una mina d’aigua anterior. El setembre de 2023, betevé documentava les obertures protegides amb planxes i problemes estructurals. Una tercera obertura pertanyia a una font del segle XIX. No hi ha una obertura al públic posterior confirmada.",
+    "Excavado bajo el Turó, el refugio recuerda la defensa vecinal durante la Guerra Civil. El estudio del acceso escolar identificó una mina de agua anterior. En septiembre de 2023, betevé documentaba las aberturas protegidas con planchas y problemas estructurales. Una tercera abertura pertenecía a una fuente del siglo XIX. No hay una apertura al público posterior confirmada.",
+  ),
+  "escola-giner": bi(
+    "El grup escolar Hermenegildo Giner de los Ríos, inaugurat el 1932, explica l’educació republicana al barri. Durant el franquisme es va anomenar Ramiro de Maeztu. Les obres de 2022 van descobrir obertures del refugi al seu antic pati.",
+    "El grupo escolar Hermenegildo Giner de los Ríos, inaugurado en 1932, explica la educación republicana en el barrio. Durante el franquismo pasó a llamarse Ramiro de Maeztu. Las obras de 2022 descubrieron aberturas del refugio en su antiguo patio.",
+  ),
+  "bodega-munich": bi(
+    "La bodega Munich era un lloc de trobada llibertària. A l’entrevista de betevé de 2020, Joan Zambrana hi vincula la preparació de premsa obrera. És un emplaçament de memòria: no se n’afirma la continuïtat com a negoci, museu o impremta.",
+    "La bodega Munich era un lugar de encuentro libertario. En la entrevista de betevé de 2020, Joan Zambrana la vincula con la preparación de prensa obrera. Es un emplazamiento de memoria: no se afirma su continuidad como negocio, museo o imprenta.",
+  ),
+  "balco-equipaments": bi(
+    "La primera fase es va estrenar el març de 2024. Les escales, ascensors i espais de relació milloren la connexió amb el Turó de la Peira. Aquesta fita no significa que totes les fases previstes estiguin acabades.",
+    "La primera fase se estrenó en marzo de 2024. Las escaleras, ascensores y espacios de encuentro mejoran la conexión con el Turó de la Peira. Este hito no significa que todas las fases previstas estén terminadas.",
+  ),
+  "antiga-masia": bi(
+    "La masia que va donar nom al barri formava part del paisatge rural anterior a les cases barates. Les fotografies ajuden a reconstruir aquest entorn. Les fonts discrepen sobre la data de l’enderroc; no s’assigna un portal exacte ni s’identifica la seva capella amb l’església actual.",
+    "La masía que dio nombre al barrio formaba parte del paisaje rural anterior a las casas baratas. Las fotografías ayudan a reconstruir ese entorno. Las fuentes discrepan sobre la fecha del derribo; no se asigna un portal exacto ni se identifica su capilla con la iglesia actual.",
+  ),
+  "rellotge-sol": bi(
+    "Un detall del paisatge quotidià: el rellotge de sol metàl·lic documentat al carrer de Vilalba dels Arcs per Pere López Brosa el 2016. La fotografia acredita el lloc; no s’atribueixen una data d’instal·lació ni una autoria de l’obra sense documentació.",
+    "Un detalle del paisaje cotidiano: el reloj de sol metálico documentado en la calle Vilalba dels Arcs por Pere López Brosa en 2016. La fotografía acredita el lugar; no se atribuyen una fecha de instalación ni una autoría de la obra sin documentación.",
+  ),
+
   "plaza-sant-francesc": bi(
     "Un espai de referència al voltant de Sant Francesc Xavier. El marcador assenyala la plaça, no la porta del temple.",
     "Un espacio de referencia alrededor de Sant Francesc Xavier. El marcador señala la plaza, no la puerta del templo.",
@@ -415,8 +477,8 @@ export const poiText: Record<string, Bilingual> = {
     "Casal de barrio comunitario, calle Biure, 1. Equipamiento confirmado en el directorio municipal; coordenada orientativa.",
   ),
   "gent-gran": bi(
-    "Casal de Gent Gran Can Peguera, carrer de Camós, 3. Adreça contrastada; el punt no garanteix l’entrada accessible.",
-    "Casal de Gent Gran Can Peguera, calle Camós, 3. Dirección contrastada; el punto no garantiza la entrada accesible.",
+    "A Camós, 3, l’antiga caserna de la Guàrdia Civil acull el Casal de Gent Gran. El testimoni de Josep Maria Clariana recollit per betevé hi situa episodis de repressió de postguerra. Avui és un espai de vida comunitària.",
+    "En Camós, 3, el antiguo cuartel de la Guardia Civil acoge el Casal de Gent Gran. El testimonio de Josep Maria Clariana recogido por betevé sitúa aquí episodios de represión de posguerra. Hoy es un espacio de vida comunitaria.",
   ),
   "josep-fort": bi(
     "Referència cartogràfica del memorial a Josep Fort Maluenda. La biografia s’acredita amb fonts pròpies, separades de la coordenada.",

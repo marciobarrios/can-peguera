@@ -361,6 +361,44 @@
     "uncertain": false
   },
   {
+    "id": "consulta-identitat",
+    "era": "neighbors",
+    "date": {
+      "ca": "2006",
+      "es": "2006"
+    },
+    "title": {
+      "ca": "El veïnat defensa un barri propi",
+      "es": "El vecindario defiende un barrio propio"
+    },
+    "note": {
+      "ca": "Segons el reportatge de betevé de 2026, una consulta veïnal rebutja l’annexió al Turó de la Peira en la revisió del mapa de barris.",
+      "es": "Según el reportaje de betevé de 2026, una consulta vecinal rechaza la anexión al Turó de la Peira en la revisión del mapa de barrios."
+    },
+    "sources": ["AMP01"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "consulta-preservacio",
+    "era": "neighbors",
+    "date": {
+      "ca": "Desembre de 2014",
+      "es": "Diciembre de 2014"
+    },
+    "title": {
+      "ca": "Una assemblea vota preservar les cases",
+      "es": "Una asamblea vota preservar las casas"
+    },
+    "note": {
+      "ca": "La consulta sobre la desafectació, recollida per betevé, precedeix els tràmits urbanístics de 2015. No s’equipara el vot veïnal amb l’aprovació administrativa.",
+      "es": "La consulta sobre la desafectación, recogida por betevé, precede a los trámites urbanísticos de 2015. No se equipara el voto vecinal con la aprobación administrativa."
+    },
+    "sources": ["AMP01"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
     "id": "mpgm-inicial",
     "era": "present",
     "date": {
@@ -429,10 +467,48 @@
       "es": "Se localizan accesos del refugio junto a la antigua escuela"
     },
     "note": {
-      "ca": "La localització dels accessos no implica que el refugi es pugui visitar.",
-      "es": "No implica apertura pública para visitas."
+      "ca": "Les obres al costat de l’antic pati escolar revelen diverses obertures. La interpretació inicial es matisa amb l’estudi de 2023; la descoberta no implica obertura al públic.",
+      "es": "Las obras junto al antiguo patio escolar revelan varias aberturas. La interpretación inicial se matiza con el estudio de 2023; el descubrimiento no implica apertura al público."
     },
     "sources": ["S24"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "refugi-estudi-tancament",
+    "era": "present",
+    "date": {
+      "ca": "Febrer–setembre de 2023",
+      "es": "Febrero–septiembre de 2023"
+    },
+    "title": {
+      "ca": "S’estudia i es protegeix l’accés escolar del refugi",
+      "es": "Se estudia y protege el acceso escolar del refugio"
+    },
+    "note": {
+      "ca": "La inspecció identifica una mina d’aigua anterior i problemes estructurals. El setembre es documenten planxes de protecció. Una de les tres obertures descobertes corresponia a una font del segle XIX.",
+      "es": "La inspección identifica una mina de agua anterior y problemas estructurales. En septiembre se documentan planchas de protección. Una de las tres aberturas descubiertas correspondía a una fuente del siglo XIX."
+    },
+    "sources": ["AMP14", "AMP15"],
+    "scheduled": false,
+    "uncertain": false
+  },
+  {
+    "id": "balco-primera-fase",
+    "era": "present",
+    "date": {
+      "ca": "Març de 2024",
+      "es": "Marzo de 2024"
+    },
+    "title": {
+      "ca": "S’estrena la primera fase del Balcó d’Equipaments",
+      "es": "Se estrena la primera fase del Balcón de Equipamientos"
+    },
+    "note": {
+      "ca": "La notícia del 2 de març recull millores de connexió amb el Turó. No acredita l’execució de totes les fases previstes.",
+      "es": "La noticia del 2 de marzo recoge mejoras de conexión con el Turó. No acredita la ejecución de todas las fases previstas."
+    },
+    "sources": ["AMP17"],
     "scheduled": false,
     "uncertain": false
   },
@@ -505,10 +581,10 @@
       "es": "Actividad programada: Paisatges perduts de Can Peguera"
     },
     "note": {
-      "ca": "Activitat prevista a la data de la recerca. No s’afirma que s’hagi celebrat ni s’inscriu ningú.",
-      "es": "A fecha de consulta aún no ha ocurrido. No afirmar celebración efectiva ni inscripción de usuarios."
+      "ca": "Programada el 25 d’octubre, de 10 a 13 h, amb inscripció gratuïta i trobada a Vila-seca, 1. Pep Ortiz i Lisa Marrani guien la ruta, amb projecció de Més veïnes a La Cosa Nostra. No s’afirma que s’hagi celebrat.",
+      "es": "Programada el 25 de octubre, de 10 a 13 h, con inscripción gratuita y encuentro en Vila-seca, 1. Pep Ortiz y Lisa Marrani guían la ruta, con proyección de Més veïnes en La Cosa Nostra. No se afirma que se haya celebrado."
     },
-    "sources": ["S56"],
+    "sources": ["S56", "AMP11"],
     "scheduled": true,
     "uncertain": false
   }
