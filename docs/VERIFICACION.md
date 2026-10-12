@@ -1,6 +1,6 @@
 # Verificación de la ampliación
 
-Fecha: 12 de octubre de 2026. Resultado local, sin publicación ni despliegue.
+Fecha: 12 de octubre de 2026. Comprobaciones locales de la ampliación; preview protegida de Vercel autorizada para revisión.
 
 - TypeScript, lint, comprobación de contenido y build correctos.
 - 14 pruebas de navegador aprobadas: siete en escritorio y siete en móvil emulado, ambos Chromium. Axe sin infracciones automáticas en ca/es.
@@ -15,7 +15,7 @@ Las capturas actuales sustituyen las capturas de pruebas de la edición inicial;
 
 ## Preparación de la PR
 
-La PR se prepara desde `origin/main` en un worktree independiente. El hook sigue activo y admite únicamente `main` y `codex/can-peguera-research-expansion`, con el mismo nombre de rama en ambos lados, sin borrados ni force-push. Conserva todos los controles de destino privado, rutas, corpus, tamaño y revisión del historial. La nueva configuración `vercel.json` desactiva los despliegues automáticos de Git para respetar el estado de revisión privada; no modifica ni elimina el despliegue existente.
+La PR se prepara desde `origin/main` en un worktree independiente. El hook sigue activo y admite únicamente `main` y `codex/can-peguera-research-expansion`, con el mismo nombre de rama en ambos lados, sin borrados ni force-push. Conserva todos los controles de destino privado, rutas, corpus, tamaño y revisión del historial. Se retira el bloqueo de despliegues automáticos para generar la preview de la PR. El proyecto Vercel `can-peguera` tiene autenticación activa (`all_except_custom_domains`), que protege las URLs de preview de `vercel.app`. No se fusiona la PR ni se despliega a producción. La lista de rutas del hook conserva `vercel.json` porque sigue presente en un commit anterior que también debe inspeccionarse.
 
 ## Registro de la primera edición (11 de octubre)
 

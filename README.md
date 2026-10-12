@@ -49,7 +49,7 @@ No se aplica una licencia global al corpus ni a las imágenes. `UNLICENSED` en p
 
 `research/` agrupa dossiers, originales, ZIP, catálogos masivos, notas y scripts de investigación. Su índice anterior está en `research/README.md`; la reubicación se explica en `research/REUBICACION_WEB.md`. Los originales se mantienen intactos. Git solo contiene código, contenido y datos seleccionados, derivados usados, atribuciones y documentación técnica.
 
-No hay despliegue automático ni workflow de CI en esta primera edición. El hook de subida debe comprobar exclusivamente la web y rechazar cualquier corpus o archivo masivo. Nunca usar `--no-verify`.
+El proyecto está conectado a Vercel para generar previews protegidas de las PR. No hay workflow de CI propio. El hook de subida debe comprobar exclusivamente la web y rechazar cualquier corpus o archivo masivo. Nunca usar `--no-verify`.
 
 ## Ampliación del 12 de octubre de 2026
 
@@ -57,4 +57,4 @@ Se revisaron las 13 referencias solicitadas y enlaces relacionados. El archivo l
 
 La revisión distingue las interpretaciones iniciales del refugio en 2022 de las inspecciones y cierres documentados en 2023. Los planos no se presentan como prueba de galerías completamente ejecutadas. Fechas de publicación sin captura identificada se filtran como «Toma sin fecha confirmada».
 
-La configuración `vercel.json` mantiene desactivados los despliegues automáticos de Git mientras esta edición permanece en revisión privada. El pre-push admite `main` y la rama de esta ampliación, manteniendo el bloqueo del corpus.
+Las previews de Vercel permiten revisar los cambios con autenticación. Esta PR no modifica producción. El pre-push admite `main` y la rama de esta ampliación, manteniendo el bloqueo del corpus.
