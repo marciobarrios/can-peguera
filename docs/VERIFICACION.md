@@ -1,4 +1,23 @@
-# Verificación de la primera edición
+# Verificación de la ampliación
+
+Fecha: 12 de octubre de 2026. Comprobaciones locales de la ampliación; preview protegida de Vercel autorizada para revisión.
+
+- TypeScript, lint, comprobación de contenido y build correctos.
+- 14 pruebas de navegador aprobadas: siete en escritorio y siete en móvil emulado, ambos Chromium. Axe sin infracciones automáticas en ca/es.
+- 31 hitos, 20 imágenes, 76 fuentes bibliográficas, diez fichas de lugares (cuatro marcadores y seis localizaciones documentales) y seis coberturas aéreas.
+- Se comprobó la selección y traducción del refugio, ausencia de coordenadas inventadas, aviso de derechos en su imagen, búsqueda por «refugio», nueve piezas sin fecha de captura y conservación de los filtros.
+- Recorridos de visor, foco, teclado, historial, comparador y carga de imágenes aprobados. No se detectaron solicitudes externas durante el recorrido.
+- 46 derivados WebP: 7.086.190 bytes. Cada archivo sigue por debajo de 600 kB. El presupuesto de derivados se ajusta a 7,5 MB; el control pre-push mantiene 8 MB y 80 archivos por árbol y añade únicamente doce nombres de derivados seleccionados a su lista exacta. Corpus y vídeos no son rutas autorizadas.
+- Control de subida probado en un repositorio temporal: admite el árbol candidato de 77 archivos, por debajo del límite de 8 MB y rechaza una incorporación de `research/corpus.txt`. Sin modificar el índice del repositorio de trabajo.
+- Revisión visual de imágenes, galería y fichas; preview local abierta en el navegador integrado. No se afirma cobertura Safari/iOS real ni Firefox.
+
+Las capturas actuales sustituyen las capturas de pruebas de la edición inicial; los informes de investigación permanecen en `research/`, ignorado por Git. Los 18 vídeos descargados tienen comprobación de contenedor/pistas y SHA-256; no se afirma su visionado íntegro. Dos reproductores antiguos de Blogger no pudieron extraerse y figuran como incidencias.
+
+## Preparación de la PR
+
+La PR se prepara desde `origin/main` en un worktree independiente. El hook sigue activo y admite únicamente `main` y `codex/can-peguera-research-expansion`, con el mismo nombre de rama en ambos lados, sin borrados ni force-push. Conserva todos los controles de destino privado, rutas, corpus, tamaño y revisión del historial. Se retira el bloqueo de despliegues automáticos para generar la preview de la PR. El proyecto Vercel `can-peguera` tiene autenticación activa (`all_except_custom_domains`), que protege las URLs de preview de `vercel.app`. No se fusiona la PR ni se despliega a producción. La lista de rutas del hook conserva `vercel.json` porque sigue presente en un commit anterior que también debe inspeccionarse.
+
+## Registro de la primera edición (11 de octubre)
 
 Fecha: 11 de octubre de 2026. Web estática de revisión privada; no se ha desplegado públicamente.
 

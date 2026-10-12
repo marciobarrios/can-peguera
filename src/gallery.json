@@ -27,7 +27,8 @@
       "es": ""
     },
     "width": 3072,
-    "height": 2304
+    "height": 2304,
+    "keywords": ""
   },
   {
     "id": "church",
@@ -57,7 +58,8 @@
       "es": ""
     },
     "width": 3072,
-    "height": 2304
+    "height": 2304,
+    "keywords": ""
   },
   {
     "id": "sundial",
@@ -87,7 +89,8 @@
       "es": ""
     },
     "width": 3072,
-    "height": 2304
+    "height": 2304,
+    "keywords": ""
   },
   {
     "id": "edge",
@@ -117,7 +120,8 @@
       "es": "El parque está en la Guineueta; el edificio del passeig d’Urrutia pertenece a Can Peguera."
     },
     "width": 2848,
-    "height": 4272
+    "height": 4272,
+    "keywords": ""
   },
   {
     "id": "masia",
@@ -147,7 +151,8 @@
       "es": "Copia de consulta del catálogo municipal. La fecha es la descrita en la ficha."
     },
     "width": 1190,
-    "height": 841
+    "height": 841,
+    "keywords": ""
   },
   {
     "id": "school",
@@ -177,7 +182,8 @@
       "es": "Copia de consulta del catálogo municipal. La fecha es la descrita en la ficha."
     },
     "width": 1171,
-    "height": 852
+    "height": 852,
+    "keywords": ""
   },
   {
     "id": "neighbors",
@@ -207,7 +213,8 @@
       "es": "Copia de consulta del catálogo municipal. La fecha es la descrita en la ficha."
     },
     "width": 1142,
-    "height": 850
+    "height": 850,
+    "keywords": ""
   },
   {
     "id": "panorama",
@@ -237,6 +244,379 @@
       "es": "Copia de consulta del catálogo municipal. La fecha es la descrita en la ficha."
     },
     "width": 1190,
-    "height": 841
+    "height": 841,
+    "keywords": ""
+  },
+  {
+    "id": "construction",
+    "title": {
+      "ca": "El barri en construcció",
+      "es": "El barrio en construcción"
+    },
+    "alt": {
+      "ca": "Panoràmica de les cases en construcció, amb el Turó de la Peira al fons.",
+      "es": "Panorámica de las casas en construcción, con el Turó de la Peira al fondo."
+    },
+    "date": {
+      "ca": "Anys trenta, segons el peu",
+      "es": "Años treinta, según el pie"
+    },
+    "year": 1930,
+    "topic": "houses",
+    "author": "",
+    "holder": "Memòria dels barris · procedència citada: Ricard Cidoncha / Fotos de Can Peguera",
+    "source": "https://memoriadelsbarris.blogspot.com/2011/11/historia-del-barri-de-can-peguera.html",
+    "license": "",
+    "licenseUrl": "",
+    "pending": true,
+    "originalTitle": "El barri en construcció",
+    "note": {
+      "ca": "La font acredita Ricard Cidoncha i el grup de Facebook; no es confirma que sigui l’autor de la presa.",
+      "es": "La fuente acredita a Ricard Cidoncha y al grupo de Facebook; no se confirma que sea el autor de la toma."
+    },
+    "width": 3204,
+    "height": 884,
+    "keywords": ""
+  },
+  {
+    "id": "housing-plan",
+    "title": {
+      "ca": "El traçat de les cases barates",
+      "es": "El trazado de las casas baratas"
+    },
+    "alt": {
+      "ca": "Plànol de les illes i carrers del grup de cases barates d’Horta.",
+      "es": "Plano de las manzanas y calles del grupo de casas baratas de Horta."
+    },
+    "date": {
+      "ca": "Sense data confirmada",
+      "es": "Sin fecha confirmada"
+    },
+    "year": null,
+    "topic": "houses",
+    "author": "",
+    "holder": "Memòria dels barris",
+    "source": "https://memoriadelsbarris.blogspot.com/2011/11/historia-del-barri-de-can-peguera.html",
+    "license": "",
+    "licenseUrl": "",
+    "pending": true,
+    "originalTitle": "El traçat de les cases barates",
+    "note": {
+      "ca": "Reproducció d’un plànol; manca la identificació de l’original i la seva data.",
+      "es": "Reproducción de un plano; falta identificar el original y su fecha."
+    },
+    "width": 588,
+    "height": 451,
+    "keywords": ""
+  },
+  {
+    "id": "school-building",
+    "title": {
+      "ca": "L’edifici de l’antiga escola",
+      "es": "El edificio de la antigua escuela"
+    },
+    "alt": {
+      "ca": "Edifici escolar de diverses plantes, amb fileres de finestres i teulada inclinada.",
+      "es": "Edificio escolar de varias plantas, con hileras de ventanas y tejado inclinado."
+    },
+    "date": {
+      "ca": "Inici dels anys quaranta, segons el peu",
+      "es": "Principios de los años cuarenta, según el pie"
+    },
+    "year": 1940,
+    "topic": "places",
+    "author": "",
+    "holder": "Memòria dels barris",
+    "source": "https://memoriadelsbarris.blogspot.com/2011/11/historia-del-barri-de-can-peguera.html",
+    "license": "",
+    "licenseUrl": "",
+    "pending": true,
+    "originalTitle": "L’edifici de l’antiga escola",
+    "note": {
+      "ca": "El peu de la font situa aquesta vista a l’inici dels anys quaranta. El grup escolar republicà es deia Hermenegildo Giner de los Ríos.",
+      "es": "El pie de la fuente sitúa esta vista a principios de los años cuarenta. El grupo escolar republicano se llamaba Hermenegildo Giner de los Ríos."
+    },
+    "width": 447,
+    "height": 226,
+    "keywords": ""
+  },
+  {
+    "id": "casa-poble",
+    "title": {
+      "ca": "La Casa del Poble",
+      "es": "La Casa del Pueblo"
+    },
+    "alt": {
+      "ca": "Gent davant la façana amb el rètol Casa del Pueblo CNT-FAI.",
+      "es": "Personas ante la fachada con el rótulo Casa del Pueblo CNT-FAI."
+    },
+    "date": {
+      "ca": "Guerra Civil, segons la font",
+      "es": "Guerra Civil, según la fuente"
+    },
+    "year": 1936,
+    "topic": "places",
+    "author": "",
+    "holder": "Associació Veïnal de Can Peguera, segons Memòria dels barris",
+    "source": "https://memoriadelsbarris.blogspot.com/2011/11/historia-del-barri-de-can-peguera.html",
+    "license": "",
+    "licenseUrl": "",
+    "pending": true,
+    "originalTitle": "La Casa del Poble",
+    "note": {
+      "ca": "La pàgina identifica l’edifici amb l’església durant la guerra i acredita la fotografia a l’associació veïnal.",
+      "es": "La página identifica el edificio con la iglesia durante la guerra y acredita la fotografía a la asociación vecinal."
+    },
+    "width": 736,
+    "height": 570,
+    "keywords": ""
+  },
+  {
+    "id": "shelter-entrance",
+    "title": {
+      "ca": "Una entrada al carrer de Cornudella",
+      "es": "Una entrada en la calle Cornudella"
+    },
+    "alt": {
+      "ca": "Obertura estreta en un mur de maons, amb un cartell al costat.",
+      "es": "Abertura estrecha en un muro de ladrillos, con un cartel al lado."
+    },
+    "date": {
+      "ca": "Sense data confirmada",
+      "es": "Sin fecha confirmada"
+    },
+    "year": null,
+    "topic": "places",
+    "author": "",
+    "holder": "Arxiu Històric de Roquetes–Nou Barris, segons Memòria dels barris",
+    "source": "https://memoriadelsbarris.blogspot.com/2011/11/historia-del-barri-de-can-peguera.html",
+    "license": "",
+    "licenseUrl": "",
+    "pending": true,
+    "originalTitle": "Una entrada al carrer de Cornudella",
+    "note": {
+      "ca": "La font atribueix les fotografies del refugi a l’arxiu. Aquesta imatge no acredita l’estat actual de l’accés.",
+      "es": "La fuente atribuye las fotografías del refugio al archivo. Esta imagen no acredita el estado actual del acceso."
+    },
+    "width": 562,
+    "height": 380,
+    "keywords": "refugi refugio Cornudella Guerra Civil"
+  },
+  {
+    "id": "shelter-sealed",
+    "title": {
+      "ca": "La galeria i el tapiat",
+      "es": "La galería y el tapiado"
+    },
+    "alt": {
+      "ca": "Interior de maons amb un arc i un tancament al fons.",
+      "es": "Interior de ladrillos con un arco y un cerramiento al fondo."
+    },
+    "date": {
+      "ca": "Sense data confirmada",
+      "es": "Sin fecha confirmada"
+    },
+    "year": null,
+    "topic": "places",
+    "author": "",
+    "holder": "Arxiu Històric de Roquetes–Nou Barris, segons Memòria dels barris",
+    "source": "https://memoriadelsbarris.blogspot.com/2011/11/historia-del-barri-de-can-peguera.html",
+    "license": "",
+    "licenseUrl": "",
+    "pending": true,
+    "originalTitle": "La galeria i el tapiat",
+    "note": {
+      "ca": "Vista publicada a la història del barri; la data de la presa no està identificada.",
+      "es": "Vista publicada en la historia del barrio; la fecha de la toma no está identificada."
+    },
+    "width": 290,
+    "height": 449,
+    "keywords": "refugi refugio Cornudella Guerra Civil"
+  },
+  {
+    "id": "street-life",
+    "title": {
+      "ca": "La vida davant de casa",
+      "es": "La vida ante la casa"
+    },
+    "alt": {
+      "ca": "Persones assegudes i dretes al carrer davant d’una casa baixa.",
+      "es": "Personas sentadas y de pie en la calle ante una casa baja."
+    },
+    "date": {
+      "ca": "Sense data confirmada",
+      "es": "Sin fecha confirmada"
+    },
+    "year": null,
+    "topic": "life",
+    "author": "",
+    "holder": "Memòria dels barris",
+    "source": "https://memoriadelsbarris.blogspot.com/2011/11/historia-del-barri-de-can-peguera.html",
+    "license": "",
+    "licenseUrl": "",
+    "pending": true,
+    "originalTitle": "La vida davant de casa",
+    "note": {
+      "ca": "Fotografia de vida quotidiana; no s’identifiquen les persones ni es data l’escena per aparença.",
+      "es": "Fotografía de vida cotidiana; no se identifica a las personas ni se fecha la escena por su apariencia."
+    },
+    "width": 462,
+    "height": 374,
+    "keywords": ""
+  },
+  {
+    "id": "shelter-vault",
+    "title": {
+      "ca": "La volta del refugi",
+      "es": "La bóveda del refugio"
+    },
+    "alt": {
+      "ca": "Galeria estreta amb volta de maons, arcs i runa al terra.",
+      "es": "Galería estrecha con bóveda de ladrillos, arcos y escombros en el suelo."
+    },
+    "date": {
+      "ca": "Publicada el 2017 · presa sense data",
+      "es": "Publicada en 2017 · toma sin fecha"
+    },
+    "year": null,
+    "topic": "places",
+    "author": "",
+    "holder": "Tot Barcelona",
+    "source": "https://totbarcelona.blogspot.com/2017/07/refugios-antiaereos-de-can-peguera.html",
+    "license": "",
+    "licenseUrl": "",
+    "pending": true,
+    "originalTitle": "La volta del refugi",
+    "note": {
+      "ca": "Fotografia publicada el 3 de juliol de 2017; no es presenta com a prova d’una visita actual.",
+      "es": "Fotografía publicada el 3 de julio de 2017; no se presenta como prueba de una visita actual."
+    },
+    "width": 2048,
+    "height": 1384,
+    "keywords": "refugi refugio Cornudella Guerra Civil"
+  },
+  {
+    "id": "shelter-plan",
+    "title": {
+      "ca": "Un plànol del refugi",
+      "es": "Un plano del refugio"
+    },
+    "alt": {
+      "ca": "Reproducció d’un plànol amb galeries, ramals i anotacions.",
+      "es": "Reproducción de un plano con galerías, ramales y anotaciones."
+    },
+    "date": {
+      "ca": "Sense data confirmada",
+      "es": "Sin fecha confirmada"
+    },
+    "year": null,
+    "topic": "places",
+    "author": "",
+    "holder": "Tot Barcelona",
+    "source": "https://totbarcelona.blogspot.com/2017/07/refugios-antiaereos-de-can-peguera.html",
+    "license": "",
+    "licenseUrl": "",
+    "pending": true,
+    "originalTitle": "Un plànol del refugi",
+    "note": {
+      "ca": "La font el presenta com a plànol del refugi. No s’ha comprovat quins trams es van arribar a construir.",
+      "es": "La fuente lo presenta como plano del refugio. No se ha comprobado qué tramos llegaron a construirse."
+    },
+    "width": 2551,
+    "height": 1233,
+    "keywords": "refugi refugio Cornudella Guerra Civil"
+  },
+  {
+    "id": "school-access",
+    "title": {
+      "ca": "Les obertures de l’antic pati escolar",
+      "es": "Las aberturas del antiguo patio escolar"
+    },
+    "alt": {
+      "ca": "Tres obertures de formes diferents en un mur de terres durant les obres.",
+      "es": "Tres aberturas de formas distintas en un muro de tierras durante las obras."
+    },
+    "date": {
+      "ca": "Publicada el setembre de 2022",
+      "es": "Publicada en septiembre de 2022"
+    },
+    "year": null,
+    "topic": "places",
+    "author": "",
+    "holder": "betevé",
+    "source": "https://beteve.cat/societat/descobert-acces-refugi-antiaeri-antiga-escola-can-peguera/",
+    "license": "",
+    "licenseUrl": "",
+    "pending": true,
+    "originalTitle": "Les obertures de l’antic pati escolar",
+    "note": {
+      "ca": "La notícia inicial les vinculava al refugi. El seguiment de 2023 identifica una de les obertures com a part d’una font del segle XIX.",
+      "es": "La noticia inicial las vinculaba al refugio. El seguimiento de 2023 identifica una de las aberturas como parte de una fuente del siglo XIX."
+    },
+    "width": 1920,
+    "height": 1080,
+    "keywords": "refugi refugio Cornudella Guerra Civil"
+  },
+  {
+    "id": "balco",
+    "title": {
+      "ca": "El Balcó d’Equipaments",
+      "es": "El Balcón de Equipamientos"
+    },
+    "alt": {
+      "ca": "Escales, baranes i espais esportius entre edificis i el peu del turó.",
+      "es": "Escaleras, barandillas y espacios deportivos entre edificios y el pie de la colina."
+    },
+    "date": {
+      "ca": "Publicada el març de 2024",
+      "es": "Publicada en marzo de 2024"
+    },
+    "year": null,
+    "topic": "places",
+    "author": "",
+    "holder": "betevé",
+    "source": "https://beteve.cat/societat/estrena-balco-equipaments-can-peguera/",
+    "license": "",
+    "licenseUrl": "",
+    "pending": true,
+    "originalTitle": "El Balcó d’Equipaments",
+    "note": {
+      "ca": "Vista de la notícia d’estrena de la primera fase. No implica la finalització de totes les fases del projecte.",
+      "es": "Vista de la noticia del estreno de la primera fase. No implica la finalización de todas las fases del proyecto."
+    },
+    "width": 1920,
+    "height": 1080,
+    "keywords": ""
+  },
+  {
+    "id": "shelter-survey",
+    "title": {
+      "ca": "L’interior, documentat el 2023",
+      "es": "El interior, documentado en 2023"
+    },
+    "alt": {
+      "ca": "Arc de maons i galeria fosca amb material caigut al terra.",
+      "es": "Arco de ladrillos y galería oscura con material caído en el suelo."
+    },
+    "date": {
+      "ca": "Publicada el febrer de 2023",
+      "es": "Publicada en febrero de 2023"
+    },
+    "year": null,
+    "topic": "places",
+    "author": "",
+    "holder": "Servei d’Arqueologia de Barcelona · imatge facilitada a betevé",
+    "source": "https://beteve.cat/societat/refugi-can-peguera-cas-singular-mina-aigua/",
+    "license": "",
+    "licenseUrl": "",
+    "pending": true,
+    "originalTitle": "REFUGI CAN PEGUERA DINS 5",
+    "note": {
+      "ca": "La notícia de la inspecció municipal explica filtracions i problemes estructurals. No hi ha visites interiors confirmades.",
+      "es": "La noticia de la inspección municipal explica filtraciones y problemas estructurales. No hay visitas interiores confirmadas."
+    },
+    "width": 1920,
+    "height": 1080,
+    "keywords": "refugi refugio Cornudella Guerra Civil"
   }
 ]

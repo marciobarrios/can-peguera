@@ -3,12 +3,17 @@ import { readFileSync } from "node:fs";
 
 // Fail closed. This control permits only the selected website, never the archive.
 const repository = "marciobarrios/can-peguera";
+const allowedRefs = new Set([
+  "refs/heads/main",
+  "refs/heads/codex/can-peguera-research-expansion",
+]);
 const allowedRoots = new Set([
   ".gitignore",
   "AGENTS.md",
   "README.md",
   "LLEGEIX-ME.md",
   "index.html",
+  "vercel.json",
   "package.json",
   "package-lock.json",
   "tsconfig.json",
@@ -37,7 +42,7 @@ const allowedRoots = new Set([
   "public/robots.txt",
 ]);
 const asset =
-  /^public\/assets\/(?:(?:street|church|sundial|edge|masia|school|neighbors|panorama)-(?:small|large)|aerial-[0-5])\.webp$/;
+  /^public\/assets\/(?:(?:street|church|sundial|edge|masia|school|neighbors|panorama|construction|housing-plan|school-building|casa-poble|shelter-entrance|shelter-sealed|street-life|shelter-vault|shelter-plan|school-access|balco|shelter-survey)-(?:small|large)|aerial-[0-5])\.webp$/;
 const git = (...args) =>
   execFileSync("git", args, {
     encoding: "utf8",
@@ -100,11 +105,11 @@ try {
     for (const update of updates) {
       const [localRef, localSha, remoteRef, remoteSha] = update.split(" ");
       if (
-        localRef !== "refs/heads/main" ||
-        remoteRef !== "refs/heads/main" ||
+        !allowedRefs.has(localRef) ||
+        remoteRef !== localRef ||
         /^0+$/.test(localSha)
       )
-        fail("Solo se permite actualizar main sin borrarla.");
+        fail("Solo se permiten main y la rama de investigación autorizada, sin borrados ni cambios de destino.");
       if (!/^0+$/.test(remoteSha))
         git("merge-base", "--is-ancestor", remoteSha, localSha);
       for (const revision of git("rev-list", localSha).split("\n")) {

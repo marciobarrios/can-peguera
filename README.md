@@ -31,17 +31,17 @@ Playwright usa un navegador aislado, con proyectos de escritorio y móvil. Los r
 
 ## Contenido
 
-- Relato original seleccionado en seis etapas; 27 hitos con fuentes y cautelas.
-- Mapa local con el límite municipal del barrio 47 y cuatro puntos representativos; no son puertas de acceso verificadas. No se inventa una ubicación del refugio.
+- Relato original seleccionado en seis etapas; 31 hitos con fuentes y cautelas.
+- Mapa local con el límite municipal del barrio 47 y diez fichas de lugares. Cuatro tienen puntos representativos; seis ofrecen localización documental sin inventar coordenadas, incluido el refugio 647.
 - Seis coberturas ICGC comparables. Se conserva la diferencia entre rango de cobertura y fecha de vuelo del punto mostreado.
-- Ocho fotografías seleccionadas, búsqueda y filtros, visor accesible y derechos por pieza.
+- Veinte fotografías y planos seleccionados, búsqueda y filtros, visor accesible y derechos por pieza.
 - Memoria comunitaria, barrio actual, bibliografía seleccionada, método y criterios de corrección.
 
 Las traducciones editoriales están en `src/content.ts` y en los campos ca/es de los JSON seleccionados. Los títulos bibliográficos y los nombres propios permanecen en su idioma original. No se importa ni se sirve el corpus completo.
 
 ## Derechos y lanzamiento público
 
-Cuatro imágenes municipales requieren confirmación de reproducción. Marcio ha autorizado su uso en esta preview privada y su inclusión en la web dentro del repositorio privado, con aviso individual. El aviso **no** es un permiso del titular. No desplegar esta edición públicamente sin revisar y autorizar o retirar esas piezas. Consultar [DERECHOS.md](docs/DERECHOS.md) y `public/asset-rights.json`.
+Dieciséis imágenes requieren confirmación de reproducción: cuatro municipales de la primera edición y doce incorporaciones de esta ampliación. Marcio ha autorizado su uso en esta preview privada y su inclusión en la web dentro del repositorio privado, con aviso individual. El aviso **no** es un permiso del titular. No desplegar esta edición públicamente sin revisar y autorizar o retirar esas piezas. Consultar [DERECHOS.md](docs/DERECHOS.md) y `public/asset-rights.json`.
 
 No se aplica una licencia global al corpus ni a las imágenes. `UNLICENSED` en package.json solo declara que este proyecto no concede una licencia global del código. Las licencias CC, ODbL y OFL conservan sus propios términos.
 
@@ -49,4 +49,12 @@ No se aplica una licencia global al corpus ni a las imágenes. `UNLICENSED` en p
 
 `research/` agrupa dossiers, originales, ZIP, catálogos masivos, notas y scripts de investigación. Su índice anterior está en `research/README.md`; la reubicación se explica en `research/REUBICACION_WEB.md`. Los originales se mantienen intactos. Git solo contiene código, contenido y datos seleccionados, derivados usados, atribuciones y documentación técnica.
 
-No hay despliegue automático ni workflow de CI en esta primera edición. El hook de subida debe comprobar exclusivamente la web y rechazar cualquier corpus o archivo masivo. Nunca usar `--no-verify`.
+El proyecto está conectado a Vercel para generar previews protegidas de las PR. No hay workflow de CI propio. El hook de subida debe comprobar exclusivamente la web y rechazar cualquier corpus o archivo masivo. Nunca usar `--no-verify`.
+
+## Ampliación del 12 de octubre de 2026
+
+Se revisaron las 13 referencias solicitadas y enlaces relacionados. El archivo local `research/ampliacion-2026-10-12/index.html` permite explorar fotografías, planos y vídeos; los CSV/JSON conservan procedencia, descarga, comprobación de archivo y estado de derechos. El contraste editorial está en `research/09_entregas/ampliacion-2026-10-12-contraste.md`. Todo el corpus y los vídeos completos continúan fuera de Git. En la web solo hay selección editorial, 12 nuevos derivados gráficos y enlaces a los reportajes originales.
+
+La revisión distingue las interpretaciones iniciales del refugio en 2022 de las inspecciones y cierres documentados en 2023. Los planos no se presentan como prueba de galerías completamente ejecutadas. Fechas de publicación sin captura identificada se filtran como «Toma sin fecha confirmada».
+
+Las previews de Vercel permiten revisar los cambios con autenticación. Esta PR no modifica producción. El pre-push admite `main` y la rama de esta ampliación, manteniendo el bloqueo del corpus.
