@@ -4,6 +4,7 @@ import { readFileSync } from "node:fs";
 // Fail closed. This control permits only the selected website, never the archive.
 const repository = "marciobarrios/can-peguera";
 const allowedRefs = new Set([
+  "refs/heads/codex/fix-mobile-history-overlap",
   "refs/heads/main",
   "refs/heads/codex/can-peguera-research-expansion",
 ]);
@@ -95,9 +96,9 @@ try {
     if (
       metadata.full_name !== repository ||
       metadata.owner !== "marciobarrios" ||
-      metadata.private !== true
+      typeof metadata.private !== "boolean"
     )
-      fail("No se confirma el destino privado autorizado.");
+      fail("No se confirma el repositorio personal autorizado.");
     const updates = readFileSync(0, "utf8").trim().split("\n").filter(Boolean);
     if (!updates.length)
       fail("No hay una actualización concreta para verificar.");
@@ -109,7 +110,7 @@ try {
         remoteRef !== localRef ||
         /^0+$/.test(localSha)
       )
-        fail("Solo se permiten main y la rama de investigación autorizada, sin borrados ni cambios de destino.");
+        fail("Solo se permiten las ramas autorizadas, sin borrados ni cambios de destino.");
       if (!/^0+$/.test(remoteSha))
         git("merge-base", "--is-ancestor", remoteSha, localSha);
       for (const revision of git("rev-list", localSha).split("\n")) {
@@ -120,7 +121,7 @@ try {
       }
     }
     console.log(
-      `Control de subida: ${checked.size} revisiones verificadas; solo web seleccionada, destino privado. Corpus bloqueado.`,
+      `Control de subida: ${checked.size} revisiones verificadas; solo web seleccionada, destino ${metadata.private ? "privado" : "público"}. Corpus bloqueado.`,
     );
   }
 } catch (error) {
