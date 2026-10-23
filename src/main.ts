@@ -46,6 +46,7 @@ const state = {
   side: false,
 };
 let lastPhotoTrigger = "";
+let photoDescriptionOpen = false;
 let menuOpen = false;
 const t = (value: Bilingual) => value[lang];
 const esc = (value: string | number) =>
@@ -310,6 +311,7 @@ function changeLang(next: Lang) {
     ?.focus({ preventScroll: true });
 }
 function openPhoto(id: string, trigger?: string) {
+  photoDescriptionOpen = false;
   lastPhotoTrigger = trigger || lastPhotoTrigger;
   const u = new URL(location.href);
   u.searchParams.set("photo", id);
@@ -345,14 +347,83 @@ function syncPhoto() {
     return;
   }
   const i = gallery.indexOf(p);
-  dialog.innerHTML = `<div class="lightbox-top"><span>${i + 1} / ${gallery.length}</span><div class="lightbox-languages"><button data-action="language" data-lang="ca" lang="ca" aria-pressed="${lang === "ca"}">CA</button><button data-action="language" data-lang="es" lang="es" aria-pressed="${lang === "es"}">ES</button><button class="icon-button" data-action="close-photo" aria-label="${t(copy.close)}">${icon("close")}</button></div></div><div class="lightbox-body">${img(p, true)}<div class="lightbox-caption"><p>${esc(t(p.date))}</p><h2 id="lightbox-title">${esc(t(p.title))}</h2>${p.note[lang] ? `<p>${esc(t(p.note))}</p>` : ""}${rights(p)}<div class="lightbox-nav"><button data-action="previous-photo">← ${t(copy.previous)}</button><button data-action="next-photo">${t(copy.next)} →</button></div></div></div>`;
+  dialog.dataset.imageState = "loading";
+  dialog.style.removeProperty("--lightbox-image-width");
+  dialog.innerHTML = `<div class="lightbox-top"><span>${i + 1} / ${gallery.length}</span><div class="lightbox-controls"><button class="icon-button" data-action="previous-photo" aria-label="${t(copy.previous)}">←</button><button class="icon-button" data-action="next-photo" aria-label="${t(copy.next)}">→</button><div class="lightbox-languages"><button data-action="language" data-lang="ca" lang="ca" aria-pressed="${lang === "ca"}">CA</button><button data-action="language" data-lang="es" lang="es" aria-pressed="${lang === "es"}">ES</button><button class="icon-button" data-action="close-photo" aria-label="${t(copy.close)}">${icon("close")}</button></div></div></div><div class="lightbox-body"><div class="lightbox-stage"><img class="lightbox-image" src="/assets/${p.id}-large.webp" alt="${esc(t(p.alt))}" loading="eager" decoding="async" hidden><p class="lightbox-status" role="status">${t(copy.imageLoading)}</p></div><div class="lightbox-caption"><p>${esc(t(p.date))}</p><h2 id="lightbox-title">${esc(t(p.title))}</h2>${rights(p, false)}${p.note[lang] ? `<details class="lightbox-description" ${photoDescriptionOpen ? "open" : ""}><summary>${t(copy.description)}</summary><p>${esc(t(p.note))}</p></details>` : ""}</div></div>`;
+  const image = dialog.querySelector<HTMLImageElement>(".lightbox-image")!;
+  image.addEventListener("load", fitLightboxImage, { once: true });
+  image.addEventListener(
+    "error",
+    () => {
+      if (!image.isConnected) return;
+      dialog.dataset.imageState = "error";
+      dialog.querySelector(".lightbox-status")!.textContent = t(
+        copy.imageError,
+      );
+    },
+    { once: true },
+  );
+  const description = dialog.querySelector<HTMLDetailsElement>(
+    ".lightbox-description",
+  );
+  description?.addEventListener("toggle", () => {
+    if (description.isConnected) photoDescriptionOpen = description.open;
+  });
   if (!dialog.open) dialog.showModal();
+  dialog.scrollTop = 0;
   document.body.classList.add("modal-open");
+  fitLightboxImage();
   dialog
     .querySelector<HTMLElement>('[data-action="close-photo"]')!
     .focus({ preventScroll: true });
 }
+
+function fitLightboxImage() {
+  const dialog = document.querySelector<HTMLDialogElement>("#lightbox");
+  const image = dialog?.querySelector<HTMLImageElement>(".lightbox-image");
+  if (!dialog?.open || !image?.complete || !image.naturalWidth) return;
+  const body = dialog.querySelector<HTMLElement>(".lightbox-body")!;
+  const bodyStyle = getComputedStyle(body);
+  const horizontalPadding =
+    parseFloat(bodyStyle.paddingLeft) + parseFloat(bodyStyle.paddingRight);
+  const topHeight =
+    dialog.querySelector<HTMLElement>(".lightbox-top")!.offsetHeight;
+  // Source pixels are the ceiling, including the screen's physical pixel density.
+  // Reserve room for controls and the caption; longer credits remain scrollable.
+  const scale = Math.min(
+    1 / Math.max(1, window.devicePixelRatio),
+    Math.max(1, document.documentElement.clientWidth - 24 - horizontalPadding) /
+      image.naturalWidth,
+    Math.max(1, window.innerHeight * 0.96 - topHeight - 192) /
+      image.naturalHeight,
+  );
+  const width = Math.floor(image.naturalWidth * scale);
+  const height = (width * image.naturalHeight) / image.naturalWidth;
+  image.style.width = `${width}px`;
+  image.style.height = `${height}px`;
+  dialog.style.setProperty(
+    "--lightbox-image-width",
+    `${width + horizontalPadding}px`,
+  );
+  image.hidden = false;
+  dialog.dataset.imageState = "ready";
+}
+window.addEventListener("resize", fitLightboxImage);
+function watchPixelDensity() {
+  const density = matchMedia(`(resolution: ${window.devicePixelRatio}dppx)`);
+  density.addEventListener(
+    "change",
+    () => {
+      fitLightboxImage();
+      watchPixelDensity();
+    },
+    { once: true },
+  );
+}
+watchPixelDensity();
+
 function nextPhoto(step: number) {
+  photoDescriptionOpen = false;
   const id = new URL(location.href).searchParams.get("photo");
   const i = gallery.findIndex((p) => p.id === id);
   const u = new URL(location.href);

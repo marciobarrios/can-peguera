@@ -176,6 +176,12 @@ export const copy = {
   reset: bi("Restableix els filtres", "Restablecer filtros"),
   openImage: bi("Amplia la imatge", "Ampliar imagen"),
   close: bi("Tanca la imatge", "Cerrar imagen"),
+  description: bi("Descripció", "Descripción"),
+  imageLoading: bi("Carregant la imatge…", "Cargando la imagen…"),
+  imageError: bi(
+    "No s’ha pogut carregar la imatge.",
+    "No se ha podido cargar la imagen.",
+  ),
   previous: bi("Imatge anterior", "Imagen anterior"),
   next: bi("Imatge següent", "Imagen siguiente"),
   unknownAuthor: bi(

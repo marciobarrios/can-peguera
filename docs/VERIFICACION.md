@@ -1,5 +1,13 @@
 # Verificación de la ampliación
 
+## Visor adaptable (24 de octubre de 2026)
+
+- La imagen ocupa una sola columna, con año, título, crédito y avisos de permisos visibles debajo. La descripción se despliega a petición; mantiene su estado al cambiar de idioma y se cierra al avanzar a otra foto. Navegación, idioma y cierre permanecen en la barra superior.
+- Se conserva el máximo de 1600 px de lado largo de los WebP de Marcio. El visor calcula el tamaño a partir de las dimensiones reales del archivo cargado, del espacio disponible y de `devicePixelRatio`: nunca utiliza más píxeles físicos que los del archivo. En Retina 2×, un ancho de 1600 px permite hasta 800 px CSS. Las imágenes históricas de menor resolución tienen un modal más estrecho, con un mínimo de espacio para los controles.
+- El tamaño se recalcula al redimensionar la ventana o cambiar la densidad de pantalla. Hay estados bilingües de carga y error, sin mostrar imágenes sobredimensionadas durante la carga; se puede avanzar aunque falle una foto.
+- TypeScript, ESLint, contenido y build Vite aprobados. 28 pruebas Playwright aprobadas: 14 de escritorio y 14 de móvil emulado en Chromium. Incluyen ambas lenguas, foco, teclado, historial, derechos y axe; dimensiones físicas en densidades 1×, 2× y 3× con fotos horizontales, verticales, cuadradas y pequeñas; redimensionado a 320 × 568 y 900 × 420; carga lenta, fallo y navegación durante la carga.
+- Revisión visual local de paisaje en escritorio 1× y Retina 2×, Sant Joan en móvil 3× y fotografía histórica pequeña en Retina 2×. Capturas comparativas en `test-results/`, ignoradas por Git. Safari/iOS real y Firefox no probados.
+
 ## Colección de Marcio Barrios Lesmes (24 de octubre de 2026)
 
 - Se inventariaron 37 originales (14 de dron y 23 restantes), todos con `DateTimeOriginal`. Los 37 SHA-256 coinciden después de la conversión; no hay duplicados binarios.

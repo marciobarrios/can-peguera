@@ -369,6 +369,8 @@ test("author collection, drone topic, real dates and Sant Joan in both languages
         (img: HTMLImageElement) => img.naturalWidth < img.naturalHeight,
       ),
   ).toBe(true);
+  await page.locator(".lightbox-description summary").click();
+  await expect(page.locator(".lightbox-description > p")).toBeVisible();
   await page.screenshot({
     path: `test-results/${info.project.name}-sant-joan-es.png`,
   });
@@ -417,6 +419,212 @@ test("all new full-size images and responsive portraits load without the removed
   await page
     .locator("dialog img")
     .evaluate((img: HTMLImageElement) => img.decode());
-  await expect(page.locator("dialog img")).toHaveAttribute("width", "4284");
-  await expect(page.locator("dialog img")).toHaveAttribute("height", "5712");
+  expect(
+    await page
+      .locator("dialog img")
+      .evaluate((img: HTMLImageElement) => [
+        img.naturalWidth,
+        img.naturalHeight,
+      ]),
+  ).toEqual([1200, 1600]);
+});
+
+test("viewer prioritizes the photo, folds the description and preserves attribution", async ({
+  page,
+}, info) => {
+  await page.goto("/ca/?photo=marcio-dji-0022");
+  await expect(page.locator("dialog")).toHaveAttribute(
+    "data-image-state",
+    "ready",
+  );
+  await expect(page.locator(".lightbox-description > p")).not.toBeVisible();
+  await expect(page.locator("dialog .photo-rights")).toBeVisible();
+  await expect(page.locator(".lightbox-description summary")).toBeInViewport();
+  const layout = await page.locator("dialog").evaluate((dialog) => {
+    const image = dialog.querySelector("img")!.getBoundingClientRect();
+    const caption = dialog
+      .querySelector(".lightbox-caption")!
+      .getBoundingClientRect();
+    return {
+      imageWidth: image.width,
+      bottom: image.bottom,
+      captionTop: caption.top,
+      dialogWidth: dialog.getBoundingClientRect().width,
+    };
+  });
+  expect(layout.captionTop).toBeGreaterThanOrEqual(layout.bottom);
+  expect(layout.dialogWidth - layout.imageWidth).toBeLessThan(40);
+  if (info.project.name === "desktop")
+    expect(layout.imageWidth).toBeGreaterThan(1200);
+  await page.screenshot({
+    path: `test-results/${info.project.name}-viewer-landscape.png`,
+  });
+  await page.locator(".lightbox-description summary").click();
+  await expect(page.locator(".lightbox-description > p")).toBeVisible();
+  await page.locator('.lightbox-languages [data-lang="es"]').click();
+  await expect(page.locator(".lightbox-description > p")).toBeVisible();
+  await expect(page.locator(".lightbox-description summary")).toHaveText(
+    "Descripción",
+  );
+  await page.keyboard.press("ArrowRight");
+  await expect(page.locator(".lightbox-description > p")).not.toBeVisible();
+  await expect(page.locator("dialog")).toHaveAttribute(
+    "data-image-state",
+    "ready",
+  );
+  await page.goto("/ca/?photo=shelter-sealed");
+  await expect(page.locator("dialog")).toHaveAttribute(
+    "data-image-state",
+    "ready",
+  );
+  await expect(page.locator("dialog .rights-warning")).toBeVisible();
+  await expect(page.locator("dialog .photo-rights a")).toBeVisible();
+  await expect(page.locator(".lightbox-description > p")).not.toBeVisible();
+  expect(
+    await page
+      .locator("dialog")
+      .evaluate((el) => el.getBoundingClientRect().width),
+  ).toBeLessThanOrEqual(322);
+  const a11y = await new AxeBuilder({ page })
+    .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
+    .analyze();
+  expect(a11y.violations).toEqual([]);
+  await page.screenshot({
+    path: `test-results/${info.project.name}-viewer-small.png`,
+  });
+});
+
+for (const density of [1, 2, 3]) {
+  test(`viewer never enlarges source pixels at density ${density}, including resize`, async ({
+    browser,
+  }, info) => {
+    const context = await browser.newContext({
+      viewport:
+        info.project.name === "mobile"
+          ? { width: 390, height: 844 }
+          : { width: 1920, height: 1080 },
+      deviceScaleFactor: density,
+    });
+    const page = await context.newPage();
+    try {
+      for (const id of [
+        "marcio-dji-0022",
+        "marcio-img-3714",
+        "marcio-img-0415",
+        "school-building",
+        "shelter-sealed",
+        "edge",
+      ]) {
+        await page.goto(`http://127.0.0.1:4173/ca/?photo=${id}`);
+        await expect(page.locator("dialog")).toHaveAttribute(
+          "data-image-state",
+          "ready",
+        );
+        const size = await page
+          .locator("dialog img")
+          .evaluate((img: HTMLImageElement) => {
+            const box = img.getBoundingClientRect();
+            return {
+              width: box.width,
+              height: box.height,
+              sourceWidth: img.naturalWidth,
+              sourceHeight: img.naturalHeight,
+              right: box.right,
+              bottom: box.bottom,
+              viewportWidth: innerWidth,
+              viewportHeight: innerHeight,
+            };
+          });
+        expect(size.width).toBeGreaterThan(0);
+        expect(size.width * density).toBeLessThanOrEqual(size.sourceWidth + 1);
+        expect(size.height * density).toBeLessThanOrEqual(
+          size.sourceHeight + 1,
+        );
+        expect(size.width / size.height).toBeCloseTo(
+          size.sourceWidth / size.sourceHeight,
+          2,
+        );
+        expect(size.right).toBeLessThan(size.viewportWidth);
+        expect(size.bottom).toBeLessThan(size.viewportHeight);
+      }
+      await page.setViewportSize({ width: 320, height: 568 });
+      await expect
+        .poll(() =>
+          page
+            .locator("dialog")
+            .evaluate((el) => el.getBoundingClientRect().width),
+        )
+        .toBeLessThanOrEqual(296);
+      expect(
+        await page
+          .locator("dialog")
+          .evaluate((el) => el.scrollWidth <= el.clientWidth),
+      ).toBe(true);
+      await page.setViewportSize({ width: 900, height: 420 });
+      await expect
+        .poll(() =>
+          page
+            .locator("dialog img")
+            .evaluate((el) => el.getBoundingClientRect().bottom),
+        )
+        .toBeLessThan(420);
+      await expect(
+        page.locator('[data-action="close-photo"]'),
+      ).toBeInViewport();
+    } finally {
+      await context.close();
+    }
+  });
+}
+
+test("viewer handles slow and failed images without oversized placeholders or stale loads", async ({
+  page,
+}) => {
+  let release!: () => void;
+  const gate = new Promise<void>((resolve) => {
+    release = resolve;
+  });
+  await page.route("**/assets/marcio-dji-0022-large.webp", async (route) => {
+    await gate;
+    await route.continue();
+  });
+  await page.goto("/ca/?photo=marcio-dji-0022", {
+    waitUntil: "domcontentloaded",
+  });
+  await expect(page.locator("dialog")).toHaveAttribute(
+    "data-image-state",
+    "loading",
+  );
+  await expect(page.locator("dialog img")).not.toBeVisible();
+  await expect(page.locator(".lightbox-status")).toHaveText(
+    "Carregant la imatge…",
+  );
+  await page.locator('[data-action="next-photo"]').click();
+  await expect(page.locator("dialog")).toHaveAttribute(
+    "data-image-state",
+    "ready",
+  );
+  release();
+  await expect(page.locator("dialog img")).toHaveAttribute(
+    "src",
+    "/assets/marcio-dji-0023-large.webp",
+  );
+  await page.route("**/assets/shelter-sealed-large.webp", (route) =>
+    route.abort(),
+  );
+  await page.goto("/es/?photo=shelter-sealed");
+  await expect(page.locator("dialog")).toHaveAttribute(
+    "data-image-state",
+    "error",
+  );
+  await expect(page.locator(".lightbox-status")).toHaveText(
+    "No se ha podido cargar la imagen.",
+  );
+  await expect(page.locator("dialog .rights-warning")).toBeVisible();
+  await page.keyboard.press("ArrowRight");
+  await expect(page.locator("dialog")).toHaveAttribute(
+    "data-image-state",
+    "ready",
+  );
+  await expect(page.locator(".lightbox-status")).not.toBeVisible();
 });
