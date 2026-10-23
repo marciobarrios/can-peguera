@@ -46,7 +46,6 @@ const state = {
   side: false,
 };
 let lastPhotoTrigger = "";
-let photoDescriptionOpen = false;
 let menuOpen = false;
 const t = (value: Bilingual) => value[lang];
 const esc = (value: string | number) =>
@@ -311,7 +310,6 @@ function changeLang(next: Lang) {
     ?.focus({ preventScroll: true });
 }
 function openPhoto(id: string, trigger?: string) {
-  photoDescriptionOpen = false;
   lastPhotoTrigger = trigger || lastPhotoTrigger;
   const u = new URL(location.href);
   u.searchParams.set("photo", id);
@@ -349,7 +347,7 @@ function syncPhoto() {
   const i = gallery.indexOf(p);
   dialog.dataset.imageState = "loading";
   dialog.style.removeProperty("--lightbox-image-width");
-  dialog.innerHTML = `<div class="lightbox-top"><span>${i + 1} / ${gallery.length}</span><div class="lightbox-controls"><button class="icon-button" data-action="previous-photo" aria-label="${t(copy.previous)}">←</button><button class="icon-button" data-action="next-photo" aria-label="${t(copy.next)}">→</button><div class="lightbox-languages"><button data-action="language" data-lang="ca" lang="ca" aria-pressed="${lang === "ca"}">CA</button><button data-action="language" data-lang="es" lang="es" aria-pressed="${lang === "es"}">ES</button><button class="icon-button" data-action="close-photo" aria-label="${t(copy.close)}">${icon("close")}</button></div></div></div><div class="lightbox-body"><div class="lightbox-stage"><img class="lightbox-image" src="/assets/${p.id}-large.webp" alt="${esc(t(p.alt))}" loading="eager" decoding="async" hidden><p class="lightbox-status" role="status">${t(copy.imageLoading)}</p></div><div class="lightbox-caption"><p>${esc(t(p.date))}</p><h2 id="lightbox-title">${esc(t(p.title))}</h2>${rights(p, false)}${p.note[lang] ? `<details class="lightbox-description" ${photoDescriptionOpen ? "open" : ""}><summary>${t(copy.description)}</summary><p>${esc(t(p.note))}</p></details>` : ""}</div></div>`;
+  dialog.innerHTML = `<div class="lightbox-top"><span>${i + 1} / ${gallery.length}</span><div class="lightbox-controls"><button class="icon-button" data-action="previous-photo" aria-label="${t(copy.previous)}">←</button><button class="icon-button" data-action="next-photo" aria-label="${t(copy.next)}">→</button><div class="lightbox-languages"><button data-action="language" data-lang="ca" lang="ca" aria-pressed="${lang === "ca"}">CA</button><button data-action="language" data-lang="es" lang="es" aria-pressed="${lang === "es"}">ES</button><button class="icon-button" data-action="close-photo" aria-label="${t(copy.close)}">${icon("close")}</button></div></div></div><div class="lightbox-body"><div class="lightbox-stage"><img class="lightbox-image" src="/assets/${p.id}-large.webp" alt="${esc(t(p.alt))}" loading="eager" decoding="async" hidden><p class="lightbox-status" role="status">${t(copy.imageLoading)}</p></div><div class="lightbox-caption"><p>${esc(t(p.date))}</p><h2 id="lightbox-title">${esc(t(p.title))}</h2>${p.note[lang] ? `<div class="lightbox-description"><p>${esc(t(p.note))}</p></div>` : ""}${rights(p, false)}</div></div>`;
   const image = dialog.querySelector<HTMLImageElement>(".lightbox-image")!;
   image.addEventListener("load", fitLightboxImage, { once: true });
   image.addEventListener(
@@ -363,12 +361,6 @@ function syncPhoto() {
     },
     { once: true },
   );
-  const description = dialog.querySelector<HTMLDetailsElement>(
-    ".lightbox-description",
-  );
-  description?.addEventListener("toggle", () => {
-    if (description.isConnected) photoDescriptionOpen = description.open;
-  });
   if (!dialog.open) dialog.showModal();
   dialog.scrollTop = 0;
   document.body.classList.add("modal-open");
@@ -388,27 +380,62 @@ function fitLightboxImage() {
     parseFloat(bodyStyle.paddingLeft) + parseFloat(bodyStyle.paddingRight);
   const topHeight =
     dialog.querySelector<HTMLElement>(".lightbox-top")!.offsetHeight;
-  // Source pixels are the ceiling, including the screen's physical pixel density.
-  // Reserve room for controls and the caption; longer credits remain scrollable.
-  const scale = Math.min(
-    1 / Math.max(1, window.devicePixelRatio),
-    Math.max(1, document.documentElement.clientWidth - 24 - horizontalPadding) /
-      image.naturalWidth,
-    Math.max(1, window.innerHeight * 0.96 - topHeight - 192) /
+  const verticalPadding =
+    parseFloat(bodyStyle.paddingTop) + parseFloat(bodyStyle.paddingBottom);
+  const density = Math.max(1, window.devicePixelRatio);
+  const maxHeight = window.innerHeight * 0.96;
+  const maxWidth = document.documentElement.clientWidth - 24;
+  const sideBySide = matchMedia(
+    "(min-width: 700px) and (max-height: 600px)",
+  ).matches;
+  // Choose a stable text width first, so wrapping cannot chase the image size.
+  const initialScale = Math.min(
+    1 / density,
+    Math.max(1, maxWidth - horizontalPadding) / image.naturalWidth,
+    Math.max(1, maxHeight - topHeight - verticalPadding - 120) /
       image.naturalHeight,
   );
-  const width = Math.floor(image.naturalWidth * scale);
-  const height = (width * image.naturalHeight) / image.naturalWidth;
-  image.style.width = `${width}px`;
-  image.style.height = `${height}px`;
+  const readingWidth = Math.min(
+    480,
+    image.naturalWidth / density + horizontalPadding,
+  );
+  const dialogWidth = sideBySide
+    ? Math.max(640, image.naturalWidth / density + 440 + horizontalPadding)
+    : Math.max(
+        readingWidth,
+        Math.floor(image.naturalWidth * initialScale) + horizontalPadding,
+      );
   dialog.style.setProperty(
     "--lightbox-image-width",
-    `${width + horizontalPadding}px`,
+    `${Math.min(maxWidth, dialogWidth)}px`,
   );
+  // Reserve the caption's actual height, including the always-visible description.
+  const captionHeight = dialog
+    .querySelector<HTMLElement>(".lightbox-caption")!
+    .getBoundingClientRect().height;
+  const scale = Math.min(
+    1 / density,
+    Math.max(
+      1,
+      dialog.querySelector<HTMLElement>(".lightbox-stage")!.clientWidth,
+    ) / image.naturalWidth,
+    Math.max(
+      1,
+      maxHeight -
+        topHeight -
+        verticalPadding -
+        (sideBySide ? 0 : captionHeight) -
+        2,
+    ) / image.naturalHeight,
+  );
+  const width = Math.floor(image.naturalWidth * scale);
+  image.style.width = `${width}px`;
+  image.style.height = `${(width * image.naturalHeight) / image.naturalWidth}px`;
   image.hidden = false;
   dialog.dataset.imageState = "ready";
 }
 window.addEventListener("resize", fitLightboxImage);
+void document.fonts.ready.then(fitLightboxImage);
 function watchPixelDensity() {
   const density = matchMedia(`(resolution: ${window.devicePixelRatio}dppx)`);
   density.addEventListener(
@@ -423,7 +450,6 @@ function watchPixelDensity() {
 watchPixelDensity();
 
 function nextPhoto(step: number) {
-  photoDescriptionOpen = false;
   const id = new URL(location.href).searchParams.get("photo");
   const i = gallery.findIndex((p) => p.id === id);
   const u = new URL(location.href);

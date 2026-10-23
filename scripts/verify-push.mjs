@@ -67,10 +67,13 @@ function inspect(revision) {
       fail(`No se admiten enlaces ni submódulos: ${path}`);
     if (!allowedRoots.has(path) && !asset.test(path))
       fail(`Ruta ajena a la web seleccionada: ${path}`);
-    if (size > 600_000) fail(`Archivo demasiado grande: ${path}`);
+    const limit = /^public\/assets\/marcio-.+-large\.webp$/.test(path)
+      ? 1_300_000
+      : 600_000;
+    if (size > limit) fail(`Archivo demasiado grande: ${path}`);
     total += size;
   }
-  if (entries.length > 150 || total > 20_000_000)
+  if (entries.length > 150 || total > 32_000_000)
     fail("El árbol excede el presupuesto de la web.");
   return { files: entries.length, bytes: total };
 }

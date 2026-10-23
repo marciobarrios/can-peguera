@@ -59,6 +59,12 @@ for (const p of photos) {
       const meta = await sharp(`public/${file}`).metadata();
       assert.equal(meta.format, "webp");
       assert.equal(meta.width, p[`${size}Width`]);
+      assert.ok(meta.width <= p.width && meta.height <= p.height);
+      if (size === "large")
+        assert.equal(
+          Math.max(meta.width, meta.height),
+          Math.min(2560, Math.max(p.width, p.height)),
+        );
       assert.ok(
         Math.abs(meta.width / meta.height - p.width / p.height) < 0.002,
       );
@@ -96,7 +102,11 @@ assert.deepEqual(
   expectedAssets,
 );
 for (const a of assets) {
-  assert.ok(a.bytes < 600_000, `${a.file} too large`);
+  const limit =
+    a.permission === "author" && a.file.endsWith("-large.webp")
+      ? 1_300_000
+      : 600_000;
+  assert.ok(a.bytes < limit, `${a.file} too large`);
   assert.equal((await fs.stat(`public/${a.file}`)).size, a.bytes);
 }
 assert.ok(map.boundary.length > 20);
@@ -109,7 +119,7 @@ for (const p of map.points) {
   if (p.photo) assert.ok(photos.some((photo) => photo.id === p.photo));
 }
 const total = assets.reduce((n, a) => n + a.bytes, 0);
-assert.ok(total < 19_500_000);
+assert.ok(total < 31_500_000);
 console.log(
   `Content passed: ${events.length} events, ${photos.length} curated images, ${sources.length} source records, ${map.points.length} places, ${map.points.filter((p) => p.xy).length} map points, 6 aerials. ${assets.length} assets / ${total} bytes.`,
 );

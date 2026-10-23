@@ -1,12 +1,16 @@
 # Verificación de la ampliación
 
-## Visor adaptable (24 de octubre de 2026)
+## Ampliaciones de 2560 px y descripción visible (24 de octubre de 2026)
 
-- La imagen ocupa una sola columna, con año, título, crédito y avisos de permisos visibles debajo. La descripción se despliega a petición; mantiene su estado al cambiar de idioma y se cierra al avanzar a otra foto. Navegación, idioma y cierre permanecen en la barra superior.
-- Se conserva el máximo de 1600 px de lado largo de los WebP de Marcio. El visor calcula el tamaño a partir de las dimensiones reales del archivo cargado, del espacio disponible y de `devicePixelRatio`: nunca utiliza más píxeles físicos que los del archivo. En Retina 2×, un ancho de 1600 px permite hasta 800 px CSS. Las imágenes históricas de menor resolución tienen un modal más estrecho, con un mínimo de espacio para los controles.
-- El tamaño se recalcula al redimensionar la ventana o cambiar la densidad de pantalla. Hay estados bilingües de carga y error, sin mostrar imágenes sobredimensionadas durante la carga; se puede avanzar aunque falle una foto.
-- TypeScript, ESLint, contenido y build Vite aprobados. 28 pruebas Playwright aprobadas: 14 de escritorio y 14 de móvil emulado en Chromium. Incluyen ambas lenguas, foco, teclado, historial, derechos y axe; dimensiones físicas en densidades 1×, 2× y 3× con fotos horizontales, verticales, cuadradas y pequeñas; redimensionado a 320 × 568 y 900 × 420; carga lenta, fallo y navegación durante la carga.
-- Revisión visual local de paisaje en escritorio 1× y Retina 2×, Sant Joan en móvil 3× y fotografía histórica pequeña en Retina 2×. Capturas comparativas en `test-results/`, ignoradas por Git. Safari/iOS real y Firefox no probados.
+- Se regeneran las 35 ampliaciones de la colección de Marcio desde sus originales con orientación EXIF, sRGB, `-resize '2560x2560>'`, calidad WebP 80 y método 6, sin EXIF/XMP incrustados. 34 alcanzan 2560 px de lado largo; `Drone view/IMG_0415.JPG` conserva sus 2280 × 2280 px originales, sin ampliación artificial. Los 37 originales mantienen sus SHA-256 anteriores; las miniaturas de 720 px y la selección aprobada se conservan.
+- Los 70 WebP utilizados de Marcio ocupan 23.825.876 bytes; las 114 imágenes de la web suman 30.718.782 bytes. La ampliación mayor ocupa 1.252.110 bytes. El límite individual de 1,3 MB se aplica únicamente a las ampliaciones de Marcio ya incluidas en la lista permitida; el resto conserva 600 kB. Presupuesto de contenido: 31,5 MB; árbol Git: 150 archivos / 32 MB. Se actualizan las anchuras de `srcset` y los tamaños del manifiesto.
+- La descripción completa se muestra al abrir, junto al año, título, créditos y avisos de derechos. El visor mide el alto real del texto antes de ajustar la imagen al espacio restante. En ventanas de al menos 700 px de ancho y hasta 600 px de alto, el texto pasa al lado para conservar una altura útil para la foto. El cálculo se repite al redimensionar, cambiar la densidad, navegar, cambiar de idioma y terminar de cargar las fuentes.
+- El tamaño sigue limitado a los píxeles reales del archivo, incluida la densidad de pantalla. Con 2560 px se admiten hasta 1280 px CSS en Retina 2×, si caben en la ventana. En una prueba de 1440 × 1000, la imagen horizontal pasa de 800 a unos 1240 px CSS con la descripción visible; las verticales se limitan por el alto disponible.
+- TypeScript, ESLint, contenido y build aprobados. 28 pruebas Playwright aprobadas (14 escritorio y 14 móvil emulado en Chromium): idiomas, navegación, foco, derechos, axe, dimensiones en densidades 1×/2×/3×, descripción visible, ausencia de scroll en las vistas comprobadas y redimensionado de Sant Joan a 320 × 568 y 900 × 420, además de carga lenta y fallida.
+- Revisión visual local de paisaje y vertical en Retina 2×, móvil 3× y ventana de 900 × 420. Capturas comparativas en `test-results/`, ignoradas por Git. Safari/iOS real y Firefox no probados.
+- El control de subida admite un derivado seleccionado de 1.252.110 bytes y rechaza ampliaciones sobre 1,3 MB, miniaturas y otras fotos sobre 600 kB, derivados desconocidos, originales JPEG, corpus, enlaces simbólicos y un árbol superior a 32 MB. El hook sigue activo.
+
+Los registros siguientes describen la incorporación inicial y sus presupuestos anteriores a la ampliación a 2560 px.
 
 ## Colección de Marcio Barrios Lesmes (24 de octubre de 2026)
 

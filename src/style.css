@@ -1257,17 +1257,26 @@ dialog[data-image-state="ready"] .lightbox-status {
   overflow-wrap: anywhere;
 }
 .lightbox-description {
-  margin-top: 8px;
+  margin-bottom: 12px;
   font-size: 14px;
-}
-.lightbox-description summary {
-  min-height: 44px;
-  padding-block: 12px;
-  cursor: pointer;
+  line-height: 1.5;
 }
 .lightbox-description > p {
-  max-width: 75ch;
-  padding-bottom: 8px;
+  max-width: 85ch;
+}
+@media (min-width: 700px) and (max-height: 600px) {
+  dialog {
+    width: var(--lightbox-image-width, 760px);
+  }
+  .lightbox-body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+    gap: 24px;
+    align-items: center;
+  }
+  .lightbox-caption {
+    padding-top: 0;
+  }
 }
 @media (hover: hover) and (pointer: fine) {
   #site-nav a:hover:after {

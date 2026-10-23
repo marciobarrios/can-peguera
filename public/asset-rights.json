@@ -494,8 +494,8 @@
     },
     "capturedAt": "2018-06-02T13:24:00",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 202290
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 426144
   },
   {
     "file": "assets/marcio-dji-0020-small.webp",
@@ -528,8 +528,8 @@
     },
     "capturedAt": "2018-06-02T13:24:08",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 340332
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 739882
   },
   {
     "file": "assets/marcio-dji-0022-small.webp",
@@ -562,8 +562,8 @@
     },
     "capturedAt": "2018-06-02T13:24:45",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 241194
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 506034
   },
   {
     "file": "assets/marcio-dji-0023-small.webp",
@@ -596,8 +596,8 @@
     },
     "capturedAt": "2018-06-02T13:24:57",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 239372
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 520308
   },
   {
     "file": "assets/marcio-dji-0025-small.webp",
@@ -630,8 +630,8 @@
     },
     "capturedAt": "2018-06-02T13:25:04",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 231236
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 483926
   },
   {
     "file": "assets/marcio-dji-0028-small.webp",
@@ -664,8 +664,8 @@
     },
     "capturedAt": "2018-06-02T13:26:16",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 234498
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 492368
   },
   {
     "file": "assets/marcio-dji-0142-small.webp",
@@ -698,8 +698,8 @@
     },
     "capturedAt": "2018-06-23T21:27:36",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 194790
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 424448
   },
   {
     "file": "assets/marcio-dji-0143-small.webp",
@@ -732,8 +732,8 @@
     },
     "capturedAt": "2018-06-23T21:27:48",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 266030
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 583140
   },
   {
     "file": "assets/marcio-dji-0146-small.webp",
@@ -766,8 +766,8 @@
     },
     "capturedAt": "2018-06-23T21:28:22",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 164814
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 393114
   },
   {
     "file": "assets/marcio-dji-0147-small.webp",
@@ -800,8 +800,8 @@
     },
     "capturedAt": "2018-06-23T21:28:33",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 186026
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 412932
   },
   {
     "file": "assets/marcio-dji-0152-small.webp",
@@ -834,8 +834,8 @@
     },
     "capturedAt": "2018-06-23T21:32:20",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 261308
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 565084
   },
   {
     "file": "assets/marcio-dji-0154-small.webp",
@@ -868,8 +868,8 @@
     },
     "capturedAt": "2018-06-23T21:32:50",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 233360
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 500522
   },
   {
     "file": "assets/marcio-drone-e2643a21-small.webp",
@@ -902,8 +902,8 @@
     },
     "capturedAt": "2018-06-02T13:25:01",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 253582
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 525094
   },
   {
     "file": "assets/marcio-img-0415-small.webp",
@@ -936,8 +936,8 @@
     },
     "capturedAt": "2018-06-02T13:25:01",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 423916
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 752634
   },
   {
     "file": "assets/marcio-img-0008-small.webp",
@@ -970,8 +970,8 @@
     },
     "capturedAt": "2016-04-20T20:46:40",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 244540
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 485670
   },
   {
     "file": "assets/marcio-img-3057-small.webp",
@@ -1004,8 +1004,8 @@
     },
     "capturedAt": "2021-01-21T15:14:07",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 386664
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 869958
   },
   {
     "file": "assets/marcio-img-3714-small.webp",
@@ -1038,8 +1038,8 @@
     },
     "capturedAt": "2019-06-24T01:10:34",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 133930
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 344652
   },
   {
     "file": "assets/marcio-img-4328-small.webp",
@@ -1072,8 +1072,8 @@
     },
     "capturedAt": "2020-09-09T20:07:38",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 328892
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 744990
   },
   {
     "file": "assets/marcio-img-4341-small.webp",
@@ -1106,8 +1106,8 @@
     },
     "capturedAt": "2024-11-09T13:11:25",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 305946
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 707376
   },
   {
     "file": "assets/marcio-img-4357-small.webp",
@@ -1140,8 +1140,8 @@
     },
     "capturedAt": "2024-11-09T16:06:05",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 243250
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 549136
   },
   {
     "file": "assets/marcio-img-4365-small.webp",
@@ -1174,8 +1174,8 @@
     },
     "capturedAt": "2024-11-09T16:37:27",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 564308
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 1252110
   },
   {
     "file": "assets/marcio-img-4607-small.webp",
@@ -1208,8 +1208,8 @@
     },
     "capturedAt": "2019-08-08T21:03:08",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 284234
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 669046
   },
   {
     "file": "assets/marcio-img-4608-small.webp",
@@ -1242,8 +1242,8 @@
     },
     "capturedAt": "2019-08-08T21:03:13",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 176596
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 407242
   },
   {
     "file": "assets/marcio-img-4609-small.webp",
@@ -1276,8 +1276,8 @@
     },
     "capturedAt": "2019-08-08T21:03:58",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 177968
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 442520
   },
   {
     "file": "assets/marcio-img-4610-small.webp",
@@ -1310,8 +1310,8 @@
     },
     "capturedAt": "2019-08-08T21:04:17",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 192748
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 471470
   },
   {
     "file": "assets/marcio-img-4611-small.webp",
@@ -1344,8 +1344,8 @@
     },
     "capturedAt": "2019-08-08T21:05:15",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 329156
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 737072
   },
   {
     "file": "assets/marcio-img-4915-small.webp",
@@ -1378,8 +1378,8 @@
     },
     "capturedAt": "2017-08-17T21:01:12",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 133220
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 284210
   },
   {
     "file": "assets/marcio-img-5030-small.webp",
@@ -1412,8 +1412,8 @@
     },
     "capturedAt": "2021-02-20T17:23:41",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 332836
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 748572
   },
   {
     "file": "assets/marcio-img-5031-small.webp",
@@ -1446,8 +1446,8 @@
     },
     "capturedAt": "2021-02-20T17:23:47",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 408050
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 908004
   },
   {
     "file": "assets/marcio-img-5062-small.webp",
@@ -1480,8 +1480,8 @@
     },
     "capturedAt": "2023-05-31T19:23:44",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 260566
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 607366
   },
   {
     "file": "assets/marcio-img-5113-small.webp",
@@ -1514,8 +1514,8 @@
     },
     "capturedAt": "2023-06-03T13:46:48",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 425674
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 973568
   },
   {
     "file": "assets/marcio-img-5114-small.webp",
@@ -1548,8 +1548,8 @@
     },
     "capturedAt": "2023-06-03T13:46:56",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 364764
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 898264
   },
   {
     "file": "assets/marcio-img-5115-small.webp",
@@ -1582,8 +1582,8 @@
     },
     "capturedAt": "2023-06-03T13:47:02",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 313342
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 743392
   },
   {
     "file": "assets/marcio-img-5244-small.webp",
@@ -1616,8 +1616,8 @@
     },
     "capturedAt": "2017-09-08T20:16:14",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 174212
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 359752
   },
   {
     "file": "assets/marcio-img-7604-small.webp",
@@ -1650,7 +1650,7 @@
     },
     "capturedAt": "2026-05-16T13:15:08",
     "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 378934
+    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 893782
   }
 ]

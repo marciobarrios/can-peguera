@@ -369,7 +369,6 @@ test("author collection, drone topic, real dates and Sant Joan in both languages
         (img: HTMLImageElement) => img.naturalWidth < img.naturalHeight,
       ),
   ).toBe(true);
-  await page.locator(".lightbox-description summary").click();
   await expect(page.locator(".lightbox-description > p")).toBeVisible();
   await page.screenshot({
     path: `test-results/${info.project.name}-sant-joan-es.png`,
@@ -410,7 +409,7 @@ test("all new full-size images and responsive portraits load without the removed
   }
   await expect(
     page.locator("#open-gallery-marcio-img-3057 img"),
-  ).toHaveAttribute("srcset", /small.webp 720w, .*large.webp 1200w/);
+  ).toHaveAttribute("srcset", /small.webp 720w, .*large.webp 1920w/);
   await expect(page.locator('img[src*="/street-"]')).toHaveCount(0);
   await expect(page.locator('a[href=""]')).toHaveCount(0);
   await page.goto("/es/?photo=marcio-img-7604");
@@ -426,10 +425,10 @@ test("all new full-size images and responsive portraits load without the removed
         img.naturalWidth,
         img.naturalHeight,
       ]),
-  ).toEqual([1200, 1600]);
+  ).toEqual([1920, 2560]);
 });
 
-test("viewer prioritizes the photo, folds the description and preserves attribution", async ({
+test("viewer shows the complete description and preserves attribution", async ({
   page,
 }, info) => {
   await page.goto("/ca/?photo=marcio-dji-0022");
@@ -437,9 +436,10 @@ test("viewer prioritizes the photo, folds the description and preserves attribut
     "data-image-state",
     "ready",
   );
-  await expect(page.locator(".lightbox-description > p")).not.toBeVisible();
+  await expect(page.locator(".lightbox-description > p")).toBeVisible();
   await expect(page.locator("dialog .photo-rights")).toBeVisible();
-  await expect(page.locator(".lightbox-description summary")).toBeInViewport();
+  await expect(page.locator(".lightbox-description summary")).toHaveCount(0);
+  await expect(page.locator(".lightbox-description > p")).toBeInViewport();
   const layout = await page.locator("dialog").evaluate((dialog) => {
     const image = dialog.querySelector("img")!.getBoundingClientRect();
     const caption = dialog
@@ -453,21 +453,20 @@ test("viewer prioritizes the photo, folds the description and preserves attribut
     };
   });
   expect(layout.captionTop).toBeGreaterThanOrEqual(layout.bottom);
-  expect(layout.dialogWidth - layout.imageWidth).toBeLessThan(40);
+  expect(layout.imageWidth).toBeLessThan(layout.dialogWidth);
   if (info.project.name === "desktop")
     expect(layout.imageWidth).toBeGreaterThan(1200);
   await page.screenshot({
     path: `test-results/${info.project.name}-viewer-landscape.png`,
   });
-  await page.locator(".lightbox-description summary").click();
   await expect(page.locator(".lightbox-description > p")).toBeVisible();
   await page.locator('.lightbox-languages [data-lang="es"]').click();
   await expect(page.locator(".lightbox-description > p")).toBeVisible();
-  await expect(page.locator(".lightbox-description summary")).toHaveText(
-    "Descripción",
+  await expect(page.locator(".lightbox-description > p")).toContainText(
+    "tejados",
   );
   await page.keyboard.press("ArrowRight");
-  await expect(page.locator(".lightbox-description > p")).not.toBeVisible();
+  await expect(page.locator(".lightbox-description > p")).toBeVisible();
   await expect(page.locator("dialog")).toHaveAttribute(
     "data-image-state",
     "ready",
@@ -479,7 +478,7 @@ test("viewer prioritizes the photo, folds the description and preserves attribut
   );
   await expect(page.locator("dialog .rights-warning")).toBeVisible();
   await expect(page.locator("dialog .photo-rights a")).toBeVisible();
-  await expect(page.locator(".lightbox-description > p")).not.toBeVisible();
+  await expect(page.locator(".lightbox-description > p")).toBeVisible();
   expect(
     await page
       .locator("dialog")
@@ -533,6 +532,9 @@ for (const density of [1, 2, 3]) {
               bottom: box.bottom,
               viewportWidth: innerWidth,
               viewportHeight: innerHeight,
+              overflow:
+                img.closest("dialog")!.scrollHeight -
+                img.closest("dialog")!.clientHeight,
             };
           });
         expect(size.width).toBeGreaterThan(0);
@@ -546,8 +548,27 @@ for (const density of [1, 2, 3]) {
         );
         expect(size.right).toBeLessThan(size.viewportWidth);
         expect(size.bottom).toBeLessThan(size.viewportHeight);
+        expect(size.overflow, id).toBeLessThanOrEqual(1);
+        if (
+          info.project.name === "desktop" &&
+          density === 2 &&
+          id === "marcio-dji-0022"
+        )
+          expect(size.width).toBeGreaterThan(1200);
       }
+      await page.goto("http://127.0.0.1:4173/es/?photo=marcio-img-3714");
+      await expect(page.locator("dialog")).toHaveAttribute(
+        "data-image-state",
+        "ready",
+      );
       await page.setViewportSize({ width: 320, height: 568 });
+      await expect
+        .poll(() =>
+          page
+            .locator("dialog")
+            .evaluate((el) => el.scrollHeight - el.clientHeight),
+        )
+        .toBeLessThanOrEqual(1);
       await expect
         .poll(() =>
           page
@@ -561,6 +582,13 @@ for (const density of [1, 2, 3]) {
           .evaluate((el) => el.scrollWidth <= el.clientWidth),
       ).toBe(true);
       await page.setViewportSize({ width: 900, height: 420 });
+      await expect
+        .poll(() =>
+          page
+            .locator("dialog")
+            .evaluate((el) => el.scrollHeight - el.clientHeight),
+        )
+        .toBeLessThanOrEqual(1);
       await expect
         .poll(() =>
           page
