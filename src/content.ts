@@ -26,8 +26,8 @@ export const copy = {
   begin: bi("Recorre la història", "Recorre la historia"),
   explore: bi("Mira les fotografies", "Mira las fotografías"),
   preview: bi(
-    "Previsualització en revisió. Algunes imatges tenen autorització de reproducció pendent.",
-    "Previsualización en revisión. Algunas imágenes tienen autorización de reproducción pendiente.",
+    "Algunes imatges tenen autorització de reproducció pendent. Consulta els avisos i les fonts de cada peça.",
+    "Algunas imágenes tienen autorización de reproducción pendiente. Consulta los avisos y las fuentes de cada pieza.",
   ),
   place: bi("Nou Barris, Barcelona", "Nou Barris, Barcelona"),
   introTitle: bi("Un lloc on quedar-se.", "Un lugar donde quedarse."),
@@ -220,8 +220,8 @@ export const copy = {
   ),
   method2Title: bi("Drets per peça", "Derechos por pieza"),
   method2: bi(
-    "L’accés a una imatge no és permís de reproducció. Aquesta preview privada inclou setze peces amb autorització pendent, amb avís individual. Cal revisar-les abans d’obrir la web al públic. No hi ha una llicència global sobre les imatges.",
-    "El acceso a una imagen no es permiso de reproducción. Esta preview privada incluye dieciséis piezas con autorización pendiente, con aviso individual. Deben revisarse antes de abrir la web al público. No hay una licencia global sobre las imágenes.",
+    "L’accés a una imatge no és permís de reproducció. Aquesta edició inclou setze peces amb autorització pendent, amb avís individual, autoria o dipositari i font. La seva presència en aquesta web no acredita el permís dels titulars. No hi ha una llicència global sobre les imatges.",
+    "El acceso a una imagen no es permiso de reproducción. Esta edición incluye dieciséis piezas con autorización pendiente, con aviso individual, autoría o depositario y fuente. Su presencia en esta web no acredita el permiso de los titulares. No hay una licencia global sobre las imágenes.",
   ),
   method3Title: bi("Una recerca oberta", "Una investigación abierta"),
   method3: bi(

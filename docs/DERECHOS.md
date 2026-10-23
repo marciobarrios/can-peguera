@@ -1,6 +1,6 @@
 # Derechos por pieza y lanzamiento público
 
-Esta edición se entrega como preview local y código en un repositorio privado. La autorización de Marcio permite incluir piezas pendientes en esta revisión; no acredita permiso de los titulares ni autoriza un lanzamiento público. Los avisos están junto a cada aparición, también en el visor.
+El repositorio es público y Marcio autoriza los despliegues públicos de la web según `AGENTS.md`, sin requisito de preview privada. Esta autorización no acredita el permiso de los titulares ni cambia el estado de las dieciséis piezas pendientes. Los avisos están junto a cada aparición, también en el visor.
 
 ## Cuatro imágenes municipales de la primera edición
 
@@ -28,9 +28,9 @@ Avís CA: «Autorització de reproducció pendent. Abans de publicar aquesta ima
 
 `public/asset-rights.json` registra solo los derivados utilizados y sus procedencias. Ninguna licencia se extiende al resto de piezas. No se han usado las portadas de 9Barris ni se ha atribuido licencia a los enlaces de Google Photos.
 
-## Antes de un lanzamiento público
+## Seguimiento de derechos y revisión editorial
 
-Confirmar por escrito el permiso de las dieciséis piezas pendientes o retirarlas de galería, historia y memoria. Revisar citas, traducciones, atribuciones, alcance de fuentes y accesibilidad con personas reales. No presentar la actividad prevista del 25 de octubre de 2026 como celebrada. El repositorio privado y el aviso de reproducción pendiente no sustituyen estas decisiones.
+Mantener el estado pendiente y los avisos individuales de las dieciséis piezas mientras no se documente el permiso de sus titulares. Registrar cualquier confirmación de derechos o retirada en `src/gallery.json` y `public/asset-rights.json`. La autorización de despliegue no concede una licencia sobre estas imágenes. Revisar citas, traducciones, atribuciones, alcance de fuentes y accesibilidad con personas reales. No presentar la actividad prevista del 25 de octubre de 2026 como celebrada.
 
 ## Doce piezas añadidas el 12 de octubre de 2026
 
