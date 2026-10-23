@@ -19,7 +19,7 @@ Avís CA: «Autorització de reproducció pendent. Abans de publicar aquesta ima
 
 ## Licencias verificadas
 
-- `street`, `church`, `sundial`: Pere López Brosa, CC BY-SA 3.0. Fuente individual y URL de licencia en `src/gallery.json` y visibles en cada pie.
+- `church`, `sundial`: Pere López Brosa, CC BY-SA 3.0. Fuente individual y URL de licencia en `src/gallery.json` y visibles en cada pie.
 - `edge`: Jordi Cucurull, CC BY-SA 2.0. El parque pertenece a la Guineueta; el edificio del passeig d’Urrutia está en el extremo de Can Peguera.
 - `aerial-0` a `aerial-5`: ICGC, CC BY 4.0. Recortes WMS de 800 × 800 m, EPSG:25831, reducidos y comprimidos. Para 1945–1946 y 1956–1957: Army Map Service / Ministerio de Defensa CECAF–CEGET, ortorrectificación ICGC. Crédito visible en comparador y mapa; las fechas locales proceden de un solo punto muestreado.
 - Límite municipal 47: Ajuntament de Barcelona, OpenDataBCN, CC BY 4.0; archivo consultado de 2025. Transformación a coordenadas del lienzo, sin atribuirle carácter histórico.
@@ -47,3 +47,15 @@ Todas quedan pendientes de permiso, con aviso individual ca/es en galería, fich
 | shelter-survey | Servei d’Arqueologia de Barcelona; imagen facilitada a betevé |
 
 Los medios íntegros descargados, incluidas variantes y descartes, se conservan únicamente en `research/ampliacion-2026-10-12/`. La web enlaza los vídeos en sus páginas editoriales originales y no sirve archivos audiovisuales completos. El registro del archivo local no otorga una licencia de publicación.
+
+## Fotografías de Marcio Barrios Lesmes (24 de octubre de 2026)
+
+35 fotografías aportadas por su autor y publicadas por petición expresa: 14 de la carpeta `Drone view` y 21 del resto. Crédito y depositario: Marcio Barrios Lesmes. Se muestran como archivo personal, con permiso del autor para esta web y todos los derechos reservados; no se les asigna una licencia Creative Commons ni un enlace de fuente ficticio. El filtro «Permiso del autor» las distingue de las licencias verificadas y de las piezas pendientes.
+
+Se retira «Carrers i cases» (`street`) de Pere López Brosa y sus dos derivados. La portada utiliza ahora `IMG_5115.jpg` (2023) y su crédito real. Las otras atribuciones y los dieciséis avisos pendientes se conservan.
+
+Las 37 imágenes suministradas se convirtieron a WebP. El autor aprobó excluir de la galería `IMG_5032.jpg` e `IMG_5116.jpg` por similitud; sus derivados quedan solo en el archivo local ignorado. Se conservan las 14 de dron, incluidas las variaciones próximas y el encuadre cuadrado `IMG_0415.JPG`, que comparte fecha y hora con `E2643A21A1F2CA43FEF04C5FC4ABB664.jpg`. Los originales no se modifican ni se incorporan a Git.
+
+Cada ficha y entrada de derechos conserva el archivo de procedencia, `capturedAt` y `dateSource: EXIF DateTimeOriginal`. Todas tienen fecha EXIF, de 2016 a 2026. Se conserva la hora registrada sin inventar una zona horaria; los metadatos de cámara no son una verificación independiente del reloj. Tras extraer la fecha se aplica orientación EXIF, conversión sRGB, reducción y compresión WebP, sin edición generativa. Los derivados no incluyen EXIF ni GPS. Miniaturas de 720 px de ancho; ampliaciones de hasta 1600 px por lado, con sus anchuras reales en `srcset`.
+
+La imagen de Sant Joan es `IMG_3714.HEIC`, fechada por EXIF el 24 de junio de 2019 a las 01:10:34. La identificación de la celebración y el relato de las familias que siguen cenando fuera proceden del autor y así se atribuyen en ambos idiomas. Las otras descripciones se limitan a lo visible, sin deducir nombres de calles a partir de las coordenadas.

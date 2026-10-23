@@ -1,25 +1,5 @@
 [
   {
-    "file": "assets/street-small.webp",
-    "source": "https://commons.wikimedia.org/wiki/File:Barri_de_Can_Peguera_P1520552.jpg",
-    "author": "Pere López Brosa",
-    "holder": "Wikimedia Commons",
-    "license": "CC BY-SA 3.0",
-    "pending": false,
-    "transformations": "EXIF orientation, resize, WebP compression; no generative editing",
-    "bytes": 34856
-  },
-  {
-    "file": "assets/street-large.webp",
-    "source": "https://commons.wikimedia.org/wiki/File:Barri_de_Can_Peguera_P1520552.jpg",
-    "author": "Pere López Brosa",
-    "holder": "Wikimedia Commons",
-    "license": "CC BY-SA 3.0",
-    "pending": false,
-    "transformations": "EXIF orientation, resize, WebP compression; no generative editing",
-    "bytes": 158428
-  },
-  {
     "file": "assets/church-small.webp",
     "source": "https://commons.wikimedia.org/wiki/File:Esgl%C3%A9sia_de_Sant_Francesc_Xavier_al_barri_de_Can_Peguera_P1520553.jpg",
     "author": "Pere López Brosa",
@@ -482,5 +462,1195 @@
     "pending": true,
     "transformations": "EXIF orientation, resize, WebP compression; no generative editing",
     "bytes": 140892
+  },
+  {
+    "file": "assets/marcio-drone-c618a5a5-small.webp",
+    "source": "Drone view/C618A5A57D744D3D3A9E4FFF3B712987.jpg",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-02T13:24:00",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 44916
+  },
+  {
+    "file": "assets/marcio-drone-c618a5a5-large.webp",
+    "source": "Drone view/C618A5A57D744D3D3A9E4FFF3B712987.jpg",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-02T13:24:00",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 202290
+  },
+  {
+    "file": "assets/marcio-dji-0020-small.webp",
+    "source": "Drone view/DJI_0020.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-02T13:24:08",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 68120
+  },
+  {
+    "file": "assets/marcio-dji-0020-large.webp",
+    "source": "Drone view/DJI_0020.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-02T13:24:08",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 340332
+  },
+  {
+    "file": "assets/marcio-dji-0022-small.webp",
+    "source": "Drone view/DJI_0022.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-02T13:24:45",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 53258
+  },
+  {
+    "file": "assets/marcio-dji-0022-large.webp",
+    "source": "Drone view/DJI_0022.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-02T13:24:45",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 241194
+  },
+  {
+    "file": "assets/marcio-dji-0023-small.webp",
+    "source": "Drone view/DJI_0023.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-02T13:24:57",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 50034
+  },
+  {
+    "file": "assets/marcio-dji-0023-large.webp",
+    "source": "Drone view/DJI_0023.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-02T13:24:57",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 239372
+  },
+  {
+    "file": "assets/marcio-dji-0025-small.webp",
+    "source": "Drone view/DJI_0025.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-02T13:25:04",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 51030
+  },
+  {
+    "file": "assets/marcio-dji-0025-large.webp",
+    "source": "Drone view/DJI_0025.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-02T13:25:04",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 231236
+  },
+  {
+    "file": "assets/marcio-dji-0028-small.webp",
+    "source": "Drone view/DJI_0028.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-02T13:26:16",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 50162
+  },
+  {
+    "file": "assets/marcio-dji-0028-large.webp",
+    "source": "Drone view/DJI_0028.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-02T13:26:16",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 234498
+  },
+  {
+    "file": "assets/marcio-dji-0142-small.webp",
+    "source": "Drone view/DJI_0142.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-23T21:27:36",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 45262
+  },
+  {
+    "file": "assets/marcio-dji-0142-large.webp",
+    "source": "Drone view/DJI_0142.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-23T21:27:36",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 194790
+  },
+  {
+    "file": "assets/marcio-dji-0143-small.webp",
+    "source": "Drone view/DJI_0143.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-23T21:27:48",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 58898
+  },
+  {
+    "file": "assets/marcio-dji-0143-large.webp",
+    "source": "Drone view/DJI_0143.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-23T21:27:48",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 266030
+  },
+  {
+    "file": "assets/marcio-dji-0146-small.webp",
+    "source": "Drone view/DJI_0146.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-23T21:28:22",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 34204
+  },
+  {
+    "file": "assets/marcio-dji-0146-large.webp",
+    "source": "Drone view/DJI_0146.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-23T21:28:22",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 164814
+  },
+  {
+    "file": "assets/marcio-dji-0147-small.webp",
+    "source": "Drone view/DJI_0147.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-23T21:28:33",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 42498
+  },
+  {
+    "file": "assets/marcio-dji-0147-large.webp",
+    "source": "Drone view/DJI_0147.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-23T21:28:33",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 186026
+  },
+  {
+    "file": "assets/marcio-dji-0152-small.webp",
+    "source": "Drone view/DJI_0152.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-23T21:32:20",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 60846
+  },
+  {
+    "file": "assets/marcio-dji-0152-large.webp",
+    "source": "Drone view/DJI_0152.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-23T21:32:20",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 261308
+  },
+  {
+    "file": "assets/marcio-dji-0154-small.webp",
+    "source": "Drone view/DJI_0154.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-23T21:32:50",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 54542
+  },
+  {
+    "file": "assets/marcio-dji-0154-large.webp",
+    "source": "Drone view/DJI_0154.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-23T21:32:50",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 233360
+  },
+  {
+    "file": "assets/marcio-drone-e2643a21-small.webp",
+    "source": "Drone view/E2643A21A1F2CA43FEF04C5FC4ABB664.jpg",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-02T13:25:01",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 56312
+  },
+  {
+    "file": "assets/marcio-drone-e2643a21-large.webp",
+    "source": "Drone view/E2643A21A1F2CA43FEF04C5FC4ABB664.jpg",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-02T13:25:01",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 253582
+  },
+  {
+    "file": "assets/marcio-img-0415-small.webp",
+    "source": "Drone view/IMG_0415.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-02T13:25:01",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 94098
+  },
+  {
+    "file": "assets/marcio-img-0415-large.webp",
+    "source": "Drone view/IMG_0415.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2018-06-02T13:25:01",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 423916
+  },
+  {
+    "file": "assets/marcio-img-0008-small.webp",
+    "source": "IMG_0008.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2016-04-20T20:46:40",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 55968
+  },
+  {
+    "file": "assets/marcio-img-0008-large.webp",
+    "source": "IMG_0008.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2016-04-20T20:46:40",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 244540
+  },
+  {
+    "file": "assets/marcio-img-3057-small.webp",
+    "source": "IMG_3057.jpg",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2021-01-21T15:14:07",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 131880
+  },
+  {
+    "file": "assets/marcio-img-3057-large.webp",
+    "source": "IMG_3057.jpg",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2021-01-21T15:14:07",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 386664
+  },
+  {
+    "file": "assets/marcio-img-3714-small.webp",
+    "source": "IMG_3714.HEIC",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2019-06-24T01:10:34",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 45088
+  },
+  {
+    "file": "assets/marcio-img-3714-large.webp",
+    "source": "IMG_3714.HEIC",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2019-06-24T01:10:34",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 133930
+  },
+  {
+    "file": "assets/marcio-img-4328-small.webp",
+    "source": "IMG_4328.jpg",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2020-09-09T20:07:38",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 111942
+  },
+  {
+    "file": "assets/marcio-img-4328-large.webp",
+    "source": "IMG_4328.jpg",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2020-09-09T20:07:38",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 328892
+  },
+  {
+    "file": "assets/marcio-img-4341-small.webp",
+    "source": "IMG_4341.heic",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2024-11-09T13:11:25",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 103570
+  },
+  {
+    "file": "assets/marcio-img-4341-large.webp",
+    "source": "IMG_4341.heic",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2024-11-09T13:11:25",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 305946
+  },
+  {
+    "file": "assets/marcio-img-4357-small.webp",
+    "source": "IMG_4357.heic",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2024-11-09T16:06:05",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 81688
+  },
+  {
+    "file": "assets/marcio-img-4357-large.webp",
+    "source": "IMG_4357.heic",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2024-11-09T16:06:05",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 243250
+  },
+  {
+    "file": "assets/marcio-img-4365-small.webp",
+    "source": "IMG_4365.heic",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2024-11-09T16:37:27",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 109226
+  },
+  {
+    "file": "assets/marcio-img-4365-large.webp",
+    "source": "IMG_4365.heic",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2024-11-09T16:37:27",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 564308
+  },
+  {
+    "file": "assets/marcio-img-4607-small.webp",
+    "source": "IMG_4607.HEIC",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2019-08-08T21:03:08",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 89008
+  },
+  {
+    "file": "assets/marcio-img-4607-large.webp",
+    "source": "IMG_4607.HEIC",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2019-08-08T21:03:08",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 284234
+  },
+  {
+    "file": "assets/marcio-img-4608-small.webp",
+    "source": "IMG_4608.HEIC",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2019-08-08T21:03:13",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 55408
+  },
+  {
+    "file": "assets/marcio-img-4608-large.webp",
+    "source": "IMG_4608.HEIC",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2019-08-08T21:03:13",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 176596
+  },
+  {
+    "file": "assets/marcio-img-4609-small.webp",
+    "source": "IMG_4609.HEIC",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2019-08-08T21:03:58",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 58308
+  },
+  {
+    "file": "assets/marcio-img-4609-large.webp",
+    "source": "IMG_4609.HEIC",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2019-08-08T21:03:58",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 177968
+  },
+  {
+    "file": "assets/marcio-img-4610-small.webp",
+    "source": "IMG_4610.HEIC",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2019-08-08T21:04:17",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 58442
+  },
+  {
+    "file": "assets/marcio-img-4610-large.webp",
+    "source": "IMG_4610.HEIC",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2019-08-08T21:04:17",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 192748
+  },
+  {
+    "file": "assets/marcio-img-4611-small.webp",
+    "source": "IMG_4611.HEIC",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2019-08-08T21:05:15",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 112388
+  },
+  {
+    "file": "assets/marcio-img-4611-large.webp",
+    "source": "IMG_4611.HEIC",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2019-08-08T21:05:15",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 329156
+  },
+  {
+    "file": "assets/marcio-img-4915-small.webp",
+    "source": "IMG_4915.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2017-08-17T21:01:12",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 32286
+  },
+  {
+    "file": "assets/marcio-img-4915-large.webp",
+    "source": "IMG_4915.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2017-08-17T21:01:12",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 133220
+  },
+  {
+    "file": "assets/marcio-img-5030-small.webp",
+    "source": "IMG_5030.jpg",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2021-02-20T17:23:41",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 66864
+  },
+  {
+    "file": "assets/marcio-img-5030-large.webp",
+    "source": "IMG_5030.jpg",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2021-02-20T17:23:41",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 332836
+  },
+  {
+    "file": "assets/marcio-img-5031-small.webp",
+    "source": "IMG_5031.jpg",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2021-02-20T17:23:47",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 82868
+  },
+  {
+    "file": "assets/marcio-img-5031-large.webp",
+    "source": "IMG_5031.jpg",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2021-02-20T17:23:47",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 408050
+  },
+  {
+    "file": "assets/marcio-img-5062-small.webp",
+    "source": "IMG_5062.jpg",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2023-05-31T19:23:44",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 84750
+  },
+  {
+    "file": "assets/marcio-img-5062-large.webp",
+    "source": "IMG_5062.jpg",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2023-05-31T19:23:44",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 260566
+  },
+  {
+    "file": "assets/marcio-img-5113-small.webp",
+    "source": "IMG_5113.jpg",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2023-06-03T13:46:48",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 79960
+  },
+  {
+    "file": "assets/marcio-img-5113-large.webp",
+    "source": "IMG_5113.jpg",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2023-06-03T13:46:48",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 425674
+  },
+  {
+    "file": "assets/marcio-img-5114-small.webp",
+    "source": "IMG_5114.jpg",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2023-06-03T13:46:56",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 58188
+  },
+  {
+    "file": "assets/marcio-img-5114-large.webp",
+    "source": "IMG_5114.jpg",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2023-06-03T13:46:56",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 364764
+  },
+  {
+    "file": "assets/marcio-img-5115-small.webp",
+    "source": "IMG_5115.jpg",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2023-06-03T13:47:02",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 57766
+  },
+  {
+    "file": "assets/marcio-img-5115-large.webp",
+    "source": "IMG_5115.jpg",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2023-06-03T13:47:02",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 313342
+  },
+  {
+    "file": "assets/marcio-img-5244-small.webp",
+    "source": "IMG_5244.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2017-09-08T20:16:14",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 37630
+  },
+  {
+    "file": "assets/marcio-img-5244-large.webp",
+    "source": "IMG_5244.JPG",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2017-09-08T20:16:14",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 174212
+  },
+  {
+    "file": "assets/marcio-img-7604-small.webp",
+    "source": "IMG_7604.heic",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2026-05-16T13:15:08",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 124686
+  },
+  {
+    "file": "assets/marcio-img-7604-large.webp",
+    "source": "IMG_7604.heic",
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "license": "",
+    "pending": false,
+    "permission": "author",
+    "permissionScope": {
+      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
+      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
+    },
+    "capturedAt": "2026-05-16T13:15:08",
+    "dateSource": "EXIF DateTimeOriginal",
+    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
+    "bytes": 378934
   }
 ]

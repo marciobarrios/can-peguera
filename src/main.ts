@@ -70,10 +70,14 @@ const refs = (list: string[]) =>
     .join(" / ")}</p>`;
 const photoById = (id: string) => gallery.find((p) => p.id === id)!;
 const author = (p: Photo) => p.author || t(copy.unknownAuthor);
+const credit = (p: Photo) =>
+  p.permission === "author"
+    ? `${esc(author(p))} · ${t(copy.personalArchive)}. ${t(copy.authorPermission)}`
+    : `${esc(author(p))}. ${esc(p.holder)}. <a href="${esc(p.source)}">${t(copy.readSource)}</a>${p.license ? ` · <a href="${esc(p.licenseUrl)}">${esc(p.license)}</a>` : ""}`;
 const rights = (p: Photo, full = true) =>
-  `<div class="photo-rights ${p.pending ? "pending" : ""}">${p.pending ? `<p class="rights-warning">${t(copy.pending)}</p>` : ""}<p>${esc(author(p))}. ${esc(p.holder)}. <a href="${esc(p.source)}">${t(copy.readSource)}</a>${p.license ? ` · <a href="${esc(p.licenseUrl)}">${esc(p.license)}</a>` : ""}${full ? `<br>${t(copy.resized)} ${p.license.includes("BY-SA") ? t(copy.shareAlike) : ""}` : ""}</p></div>`;
+  `<div class="photo-rights ${p.pending ? "pending" : ""}">${p.pending ? `<p class="rights-warning">${t(copy.pending)}</p>` : ""}<p>${credit(p)}${full ? `<br>${t(copy.resized)} ${p.license.includes("BY-SA") ? t(copy.shareAlike) : ""}` : ""}</p></div>`;
 const img = (p: Photo, large = false, eager = false) =>
-  `<img src="/assets/${p.id}-${large ? "large" : "small"}.webp" ${large ? "" : `srcset="/assets/${p.id}-small.webp 720w, /assets/${p.id}-large.webp 1600w" sizes="(max-width: 650px) 92vw, (max-width: 1000px) 45vw, 30vw"`} width="${p.width}" height="${p.height}" alt="${esc(t(p.alt))}" loading="${eager ? "eager" : "lazy"}" ${eager ? 'fetchpriority="high"' : ""} decoding="async">`;
+  `<img src="/assets/${p.id}-${large ? "large" : "small"}.webp" ${large ? "" : `srcset="/assets/${p.id}-small.webp ${p.smallWidth ?? 720}w, /assets/${p.id}-large.webp ${p.largeWidth ?? 1600}w" sizes="(max-width: 650px) 92vw, (max-width: 1000px) 45vw, 30vw"`} width="${p.width}" height="${p.height}" alt="${esc(t(p.alt))}" loading="${eager ? "eager" : "lazy"}" ${eager ? 'fetchpriority="high"' : ""} decoding="async">`;
 const imageButton = (p: Photo, cls = "", eager = false) =>
   `<button class="photo-button ${cls}" data-action="photo" data-photo="${p.id}" id="open-${cls || "gallery"}-${p.id}" aria-label="${t(copy.openImage)}: ${esc(t(p.title))}">${img(p, eager, eager)}<span class="image-expand" aria-hidden="true">${icon("plus")}</span></button>`;
 const figure = (id: string, cls = "") => {
@@ -83,8 +87,8 @@ const figure = (id: string, cls = "") => {
 const header = () =>
   `<a class="skip" href="#main">${t(copy.skip)}</a><header class="site-header"><a class="brand" href="/${lang}/#inici" aria-label="Can Peguera — ${t(copy.top)}"><svg viewBox="0 0 68 30" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m2 13 10-8 10 8v14H2Zm20 0L33 5l11 8v14H22Zm22 0 11-8 11 8v14H44ZM9 27V16h6v11m15 0V16h6v11m16 0V16h6v11"/></svg><span>Can Peguera<small>${t(copy.tagline)}</small></span></a><nav id="site-nav" aria-label="${t(bi("Navegació principal", "Navegación principal"))}">${ids.map((id, i) => `<a href="#${id}">${t(copy.nav[i])}</a>`).join("")}</nav><div class="header-tools"><div class="language" aria-label="${t(bi("Idioma", "Idioma"))}"><a data-action="language" data-lang="ca" href="/ca/${location.search}${location.hash}" lang="ca" ${lang === "ca" ? 'aria-current="true"' : ""}>CA</a><span aria-hidden="true">/</span><a data-action="language" data-lang="es" href="/es/${location.search}${location.hash}" lang="es" ${lang === "es" ? 'aria-current="true"' : ""}>ES</a></div><button class="menu-button icon-button" data-action="menu" aria-controls="site-nav" aria-expanded="false" aria-label="${t(copy.menu)}">${icon("menu")}</button></div></header>`;
 const hero = () => {
-  const p = photoById("street");
-  return `<section class="hero" id="inici"><div class="hero-copy"><p class="location">${t(copy.place)}</p><h1>Can Peguera,<br>${t(copy.tagline).toLocaleLowerCase(lang)}.</h1><p class="hero-intro">${t(copy.heroIntro)}</p><a class="primary-link" href="#historia">${t(copy.begin)}${icon("arrow")}</a><a class="plain-link" href="#arxiu">${t(copy.explore)}</a><span class="hero-footnote">${t(copy.date)}</span></div><figure class="hero-photo">${imageButton(p, "hero-image", true)}<figcaption><span>${t(p.title)}, 2016</span><span>Pere López Brosa / <a href="${p.source}">Commons</a> / <a href="${p.licenseUrl}">CC BY-SA 3.0</a></span><span class="hero-adaptation">${t(copy.resized)} ${t(copy.shareAlike)}</span></figcaption></figure></section><div class="preview-note"><span aria-hidden="true">◌</span><p>${t(copy.preview)}</p><a href="#fonts">${t(copy.nav[6])}</a></div><section class="introduction section-wrap"><h2>${t(copy.introTitle)}</h2><div><p class="lead">${t(copy.intro)}</p><p>${t(copy.heroBody)}</p></div></section>`;
+  const p = photoById("marcio-img-5115");
+  return `<section class="hero" id="inici"><div class="hero-copy"><p class="location">${t(copy.place)}</p><h1>Can Peguera,<br>${t(copy.tagline).toLocaleLowerCase(lang)}.</h1><p class="hero-intro">${t(copy.heroIntro)}</p><a class="primary-link" href="#historia">${t(copy.begin)}${icon("arrow")}</a><a class="plain-link" href="#arxiu">${t(copy.explore)}</a><span class="hero-footnote">${t(copy.date)}</span></div><figure class="hero-photo">${imageButton(p, "hero-image", true)}<figcaption><span>${t(p.title)}, ${t(p.date)}</span><span>${credit(p)}</span><span class="hero-adaptation">${t(copy.resized)}</span></figcaption></figure></section><div class="preview-note"><span aria-hidden="true">◌</span><p>${t(copy.preview)}</p><a href="#fonts">${t(copy.nav[6])}</a></div><section class="introduction section-wrap"><h2>${t(copy.introTitle)}</h2><div><p class="lead">${t(copy.intro)}</p><p>${t(copy.heroBody)}</p></div></section>`;
 };
 const historyContent = () =>
   chapters
@@ -159,9 +163,13 @@ const filteredPhotos = () =>
                 ? p.year >= 1950 && p.year < 2000
                 : p.year >= 2000))) &&
       (state.rights === "all" ||
-        (state.rights === "pending" ? p.pending : !p.pending)) &&
+        (state.rights === "pending"
+          ? p.pending
+          : state.rights === "author"
+            ? p.permission === "author"
+            : !p.pending && Boolean(p.license))) &&
       normalize(
-        `${p.title.ca} ${p.title.es} ${p.originalTitle} ${p.alt.ca} ${p.alt.es} ${p.author} ${p.year ?? ""} ${p.date.ca} ${p.date.es} ${p.keywords}`,
+        `${p.title.ca} ${p.title.es} ${p.originalTitle} ${p.alt.ca} ${p.alt.es} ${p.author} ${p.year ?? ""} ${p.date.ca} ${p.date.es} ${p.note.ca} ${p.note.es} ${p.keywords}`,
       ).includes(normalize(state.query)),
   );
 const galleryCards = () =>
@@ -181,7 +189,7 @@ const selectOptions = (list: Record<string, Bilingual>, selected: string) =>
     )
     .join("");
 const archiveSection = () =>
-  `<section id="arxiu" class="section-wrap archive"><div class="section-heading"><div><p class="section-kicker">${t(copy.nav[4])}</p><h2>${t(copy.archiveTitle)}</h2></div><p>${t(copy.archiveIntro)}</p></div><div class="archive-controls"><label class="search-label">${t(copy.search)}<input id="archive-search" type="search" value="${esc(state.query)}" placeholder="${t(copy.searchPlaceholder)}"></label><label>${t(copy.topic)}<select id="archive-topic">${selectOptions({ all: copy.allTopics, ...copy.topics }, state.topic)}</select></label><label>${t(copy.period)}<select id="archive-period">${selectOptions({ all: copy.allPeriods, old: bi("Abans de 1950", "Antes de 1950"), middle: bi("1950–1999", "1950–1999"), recent: bi("Des de 2000", "Desde 2000"), undated: bi("Presa sense data confirmada", "Toma sin fecha confirmada") }, state.period)}</select></label><label>${t(copy.rights)}<select id="archive-rights">${selectOptions({ all: copy.allRights, licensed: copy.licensed, pending: copy.pendingShort }, state.rights)}</select></label></div><div class="archive-status"><span id="archive-count" role="status">${filteredPhotos().length} ${t(copy.found)}</span><button class="text-button" data-action="reset-filters">${t(copy.reset)}</button></div><div id="gallery-grid" class="gallery-grid">${filteredPhotos().length ? galleryCards() : empty()}</div></section>`;
+  `<section id="arxiu" class="section-wrap archive"><div class="section-heading"><div><p class="section-kicker">${t(copy.nav[4])}</p><h2>${t(copy.archiveTitle)}</h2></div><p>${t(copy.archiveIntro)}</p></div><div class="archive-controls"><label class="search-label">${t(copy.search)}<input id="archive-search" type="search" value="${esc(state.query)}" placeholder="${t(copy.searchPlaceholder)}"></label><label>${t(copy.topic)}<select id="archive-topic">${selectOptions({ all: copy.allTopics, ...copy.topics }, state.topic)}</select></label><label>${t(copy.period)}<select id="archive-period">${selectOptions({ all: copy.allPeriods, old: bi("Abans de 1950", "Antes de 1950"), middle: bi("1950–1999", "1950–1999"), recent: bi("Des de 2000", "Desde 2000"), undated: bi("Presa sense data confirmada", "Toma sin fecha confirmada") }, state.period)}</select></label><label>${t(copy.rights)}<select id="archive-rights">${selectOptions({ all: copy.allRights, licensed: copy.licensed, author: copy.authorPermissionShort, pending: copy.pendingShort }, state.rights)}</select></label></div><div class="archive-status"><span id="archive-count" role="status">${filteredPhotos().length} ${t(copy.found)}</span><button class="text-button" data-action="reset-filters">${t(copy.reset)}</button></div><div id="gallery-grid" class="gallery-grid">${filteredPhotos().length ? galleryCards() : empty()}</div></section>`;
 const neighborsSection = () =>
   `<section id="veinat" class="neighbors-section section-wrap"><div class="section-heading"><div><p class="section-kicker">${t(copy.nav[5])}</p><h2>${t(copy.neighborsTitle)}</h2></div><p>${t(copy.neighborsIntro)}</p></div><div class="neighbors-layout">${figure("neighbors", "neighbors-photo")}<div class="community-notes">${community.map((c) => `<article><h3>${t(c.title)}</h3><p>${t(c.text)}</p>${refs(c.sources)}</article>`).join("")}</div></div><div class="today"><h3>${t(copy.todayTitle)}</h3><div><p>${t(copy.todayBody)}</p>${refs(["S20", "COM-057", "S50"])}</div></div><div class="voices"><div><h3>${t(copy.voicesTitle)}</h3><p>${t(copy.voicesBody)}</p></div>${voices.map((v) => `<article><span>${v.date}</span><h4>${v.title}</h4><p>${t(v.text)}</p>${refs(v.sources)}</article>`).join("")}</div></section>`;
 const methodsSection = () =>

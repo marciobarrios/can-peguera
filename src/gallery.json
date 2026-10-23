@@ -1,34 +1,40 @@
 [
   {
-    "id": "street",
+    "id": "marcio-img-5115",
+    "topic": "houses",
     "title": {
-      "ca": "Carrers i cases",
-      "es": "Calles y casas"
+      "ca": "Un carrer cap al verd",
+      "es": "Una calle hacia el verde"
     },
     "alt": {
-      "ca": "Cases d’una planta a banda i banda d’un carrer, amb cotxes aparcats.",
-      "es": "Casas de una planta a ambos lados de una calle, con coches aparcados."
+      "ca": "Carrer amb cases blanques a banda i banda, passos de vianants i un vessant arbrat al fons.",
+      "es": "Calle con casas blancas a ambos lados, pasos de peatones y una ladera arbolada al fondo."
+    },
+    "note": {
+      "ca": "La vista horitzontal segueix el carrer entre les cases fins al vessant cobert d’arbres. Els passos de vianants i les marques de zona 30 queden en primer pla.",
+      "es": "La vista horizontal sigue la calle entre las casas hasta la ladera cubierta de árboles. Los pasos de peatones y las marcas de zona 30 quedan en primer plano."
     },
     "date": {
-      "ca": "2016",
-      "es": "2016"
+      "ca": "2023",
+      "es": "2023"
     },
-    "year": 2016,
-    "topic": "houses",
-    "author": "Pere López Brosa",
-    "holder": "Wikimedia Commons",
-    "source": "https://commons.wikimedia.org/wiki/File:Barri_de_Can_Peguera_P1520552.jpg",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "year": 2023,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
     "pending": false,
-    "originalTitle": "Barri de Can Peguera P1520552",
-    "note": {
-      "ca": "",
-      "es": ""
-    },
-    "width": 3072,
-    "height": 2304,
-    "keywords": ""
+    "permission": "author",
+    "originalTitle": "IMG_5115.jpg",
+    "sourceFile": "IMG_5115.jpg",
+    "capturedAt": "2023-06-03T13:47:02",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 4032,
+    "height": 3024,
+    "smallWidth": 720,
+    "largeWidth": 1600,
+    "keywords": "Marcio Barrios Lesmes "
   },
   {
     "id": "church",
@@ -618,5 +624,1263 @@
     "width": 1920,
     "height": 1080,
     "keywords": "refugi refugio Cornudella Guerra Civil"
+  },
+  {
+    "id": "marcio-drone-c618a5a5",
+    "topic": "drone",
+    "title": {
+      "ca": "Teulades a peu de vol",
+      "es": "Tejados a pie de vuelo"
+    },
+    "alt": {
+      "ca": "Vista de dron sobre cases blanques amb teulades vermelles i un carrer amb vehicles aparcats.",
+      "es": "Vista de dron sobre casas blancas con tejados rojos y una calle con vehículos aparcados."
+    },
+    "note": {
+      "ca": "Una vista baixa de dron ressegueix les fileres de cases i la línia del carrer. Els blocs més alts apareixen al fons, darrere les teulades.",
+      "es": "Una vista baja de dron recorre las hileras de casas y la línea de la calle. Los bloques más altos aparecen al fondo, detrás de los tejados."
+    },
+    "date": {
+      "ca": "2018",
+      "es": "2018"
+    },
+    "year": 2018,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "C618A5A57D744D3D3A9E4FFF3B712987.jpg",
+    "sourceFile": "Drone view/C618A5A57D744D3D3A9E4FFF3B712987.jpg",
+    "capturedAt": "2018-06-02T13:24:00",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 4056,
+    "height": 2280,
+    "smallWidth": 720,
+    "largeWidth": 1600,
+    "keywords": "Marcio Barrios Lesmes dron drone vista aèria aérea"
+  },
+  {
+    "id": "marcio-dji-0020",
+    "topic": "drone",
+    "title": {
+      "ca": "El parc entre les cases i els pins",
+      "es": "El parque entre las casas y los pinos"
+    },
+    "alt": {
+      "ca": "Vista aèria d’una zona de jocs, amb cases a l’esquerra i un turó arbrat al fons.",
+      "es": "Vista aérea de una zona de juegos, con casas a la izquierda y una colina arbolada al fondo."
+    },
+    "note": {
+      "ca": "Des de l’aire, el parc infantil i els camins arbrats es veuen al costat mateix de les cases. Les capçades dels arbres emmarquen la zona de jocs.",
+      "es": "Desde el aire, el parque infantil y los caminos arbolados se ven junto a las casas. Las copas de los árboles enmarcan la zona de juegos."
+    },
+    "date": {
+      "ca": "2018",
+      "es": "2018"
+    },
+    "year": 2018,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "DJI_0020.JPG",
+    "sourceFile": "Drone view/DJI_0020.JPG",
+    "capturedAt": "2018-06-02T13:24:08",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 4056,
+    "height": 2280,
+    "smallWidth": 720,
+    "largeWidth": 1600,
+    "keywords": "Marcio Barrios Lesmes dron drone vista aèria aérea"
+  },
+  {
+    "id": "marcio-dji-0022",
+    "topic": "drone",
+    "title": {
+      "ca": "La trama de les teulades",
+      "es": "La trama de los tejados"
+    },
+    "alt": {
+      "ca": "Fileres de cases baixes i teulades de terracota, amb carrers paral·lels entre els habitatges.",
+      "es": "Hileras de casas bajas y tejados de terracota, con calles paralelas entre las viviendas."
+    },
+    "note": {
+      "ca": "L’enquadrament mostra la repetició de les teulades i els carrers que separen les fileres de cases. La vista permet seguir la forma dels petits blocs d’habitatges.",
+      "es": "El encuadre muestra la repetición de los tejados y las calles que separan las hileras de casas. La vista permite seguir la forma de las pequeñas manzanas de viviendas."
+    },
+    "date": {
+      "ca": "2018",
+      "es": "2018"
+    },
+    "year": 2018,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "DJI_0022.JPG",
+    "sourceFile": "Drone view/DJI_0022.JPG",
+    "capturedAt": "2018-06-02T13:24:45",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 4056,
+    "height": 2280,
+    "smallWidth": 720,
+    "largeWidth": 1600,
+    "keywords": "Marcio Barrios Lesmes dron drone vista aèria aérea"
+  },
+  {
+    "id": "marcio-dji-0023",
+    "topic": "drone",
+    "title": {
+      "ca": "Cases al peu del turó",
+      "es": "Casas al pie de la colina"
+    },
+    "alt": {
+      "ca": "Cases de teulada vermella, una zona de jocs i un turó cobert de pins al fons.",
+      "es": "Casas de tejado rojo, una zona de juegos y una colina cubierta de pinos al fondo."
+    },
+    "note": {
+      "ca": "El vol mira cap al vessant arbrat. Entre les cases i el turó es distingeixen els camins i els espais oberts del barri.",
+      "es": "El vuelo mira hacia la ladera arbolada. Entre las casas y la colina se distinguen los caminos y los espacios abiertos del barrio."
+    },
+    "date": {
+      "ca": "2018",
+      "es": "2018"
+    },
+    "year": 2018,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "DJI_0023.JPG",
+    "sourceFile": "Drone view/DJI_0023.JPG",
+    "capturedAt": "2018-06-02T13:24:57",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 4056,
+    "height": 2280,
+    "smallWidth": 720,
+    "largeWidth": 1600,
+    "keywords": "Marcio Barrios Lesmes dron drone vista aèria aérea"
+  },
+  {
+    "id": "marcio-dji-0025",
+    "topic": "drone",
+    "title": {
+      "ca": "Dues escales de ciutat",
+      "es": "Dos escalas de ciudad"
+    },
+    "alt": {
+      "ca": "Vista de dron amb cases baixes en primer pla i un bloc alt de maó a la dreta.",
+      "es": "Vista de dron con casas bajas en primer plano y un bloque alto de ladrillo a la derecha."
+    },
+    "note": {
+      "ca": "Les cases d’una planta comparteixen l’enquadrament amb un edifici molt més alt. Al fons, els turons tanquen l’horitzó urbà.",
+      "es": "Las casas de una planta comparten el encuadre con un edificio mucho más alto. Al fondo, las colinas cierran el horizonte urbano."
+    },
+    "date": {
+      "ca": "2018",
+      "es": "2018"
+    },
+    "year": 2018,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "DJI_0025.JPG",
+    "sourceFile": "Drone view/DJI_0025.JPG",
+    "capturedAt": "2018-06-02T13:25:04",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 4056,
+    "height": 2280,
+    "smallWidth": 720,
+    "largeWidth": 1600,
+    "keywords": "Marcio Barrios Lesmes dron drone vista aèria aérea"
+  },
+  {
+    "id": "marcio-dji-0028",
+    "topic": "drone",
+    "title": {
+      "ca": "El barri en diagonal",
+      "es": "El barrio en diagonal"
+    },
+    "alt": {
+      "ca": "Vista obliqua de diverses fileres de cases, amb un carrer en diagonal i el vessant arbrat a la dreta.",
+      "es": "Vista oblicua de varias hileras de casas, con una calle en diagonal y la ladera arbolada a la derecha."
+    },
+    "note": {
+      "ca": "Des d’aquest angle, les teulades dibuixen diagonals que travessen la imatge. La perspectiva reuneix les façanes, els patis i els carrers en una mateixa mirada.",
+      "es": "Desde este ángulo, los tejados dibujan diagonales que atraviesan la imagen. La perspectiva reúne las fachadas, los patios y las calles en una misma mirada."
+    },
+    "date": {
+      "ca": "2018",
+      "es": "2018"
+    },
+    "year": 2018,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "DJI_0028.JPG",
+    "sourceFile": "Drone view/DJI_0028.JPG",
+    "capturedAt": "2018-06-02T13:26:16",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 4056,
+    "height": 2280,
+    "smallWidth": 720,
+    "largeWidth": 1600,
+    "keywords": "Marcio Barrios Lesmes dron drone vista aèria aérea"
+  },
+  {
+    "id": "marcio-dji-0142",
+    "topic": "drone",
+    "title": {
+      "ca": "La tarda damunt les cases",
+      "es": "La tarde sobre las casas"
+    },
+    "alt": {
+      "ca": "Vista aèria de fileres de cases sota un cel blau rosat, amb blocs alts al fons.",
+      "es": "Vista aérea de hileras de casas bajo un cielo azul rosado, con bloques altos al fondo."
+    },
+    "note": {
+      "ca": "La llum del vespre del 23 de juny de 2018 tenyeix suaument les teulades. El dron mira al llarg dels carrers, cap als edificis que envolten el barri.",
+      "es": "La luz del atardecer del 23 de junio de 2018 tiñe suavemente los tejados. El dron mira a lo largo de las calles, hacia los edificios que rodean el barrio."
+    },
+    "date": {
+      "ca": "2018",
+      "es": "2018"
+    },
+    "year": 2018,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "DJI_0142.JPG",
+    "sourceFile": "Drone view/DJI_0142.JPG",
+    "capturedAt": "2018-06-23T21:27:36",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 4056,
+    "height": 2280,
+    "smallWidth": 720,
+    "largeWidth": 1600,
+    "keywords": "Marcio Barrios Lesmes dron drone vista aèria aérea"
+  },
+  {
+    "id": "marcio-dji-0143",
+    "topic": "drone",
+    "title": {
+      "ca": "Una cruïlla des de dalt",
+      "es": "Un cruce desde arriba"
+    },
+    "alt": {
+      "ca": "Vista inclinada sobre una cruïlla, amb cases blanques, teulades vermelles i cotxes aparcats.",
+      "es": "Vista inclinada sobre un cruce, con casas blancas, tejados rojos y coches aparcados."
+    },
+    "note": {
+      "ca": "La mirada més propera al carrer deixa veure les cantonades, les portes i els petits patis. La cruïlla ordena les fileres de cases dins l’enquadrament.",
+      "es": "La mirada más cercana a la calle deja ver las esquinas, las puertas y los pequeños patios. El cruce ordena las hileras de casas dentro del encuadre."
+    },
+    "date": {
+      "ca": "2018",
+      "es": "2018"
+    },
+    "year": 2018,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "DJI_0143.JPG",
+    "sourceFile": "Drone view/DJI_0143.JPG",
+    "capturedAt": "2018-06-23T21:27:48",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 4056,
+    "height": 2280,
+    "smallWidth": 720,
+    "largeWidth": 1600,
+    "keywords": "Marcio Barrios Lesmes dron drone vista aèria aérea"
+  },
+  {
+    "id": "marcio-dji-0146",
+    "topic": "drone",
+    "title": {
+      "ca": "Última llum a l’horitzó",
+      "es": "Última luz en el horizonte"
+    },
+    "alt": {
+      "ca": "Vista aèria del barri al capvespre, amb turons a contrallum i un bloc alt a la dreta.",
+      "es": "Vista aérea del barrio al atardecer, con colinas a contraluz y un bloque alto a la derecha."
+    },
+    "note": {
+      "ca": "El sol ja queda darrere dels turons i el cel conserva una franja de llum. Les cases i els arbres del primer pla comencen a quedar a l’ombra.",
+      "es": "El sol ya queda detrás de las colinas y el cielo conserva una franja de luz. Las casas y los árboles del primer plano empiezan a quedar en sombra."
+    },
+    "date": {
+      "ca": "2018",
+      "es": "2018"
+    },
+    "year": 2018,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "DJI_0146.JPG",
+    "sourceFile": "Drone view/DJI_0146.JPG",
+    "capturedAt": "2018-06-23T21:28:22",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 4056,
+    "height": 2280,
+    "smallWidth": 720,
+    "largeWidth": 1600,
+    "keywords": "Marcio Barrios Lesmes dron drone vista aèria aérea"
+  },
+  {
+    "id": "marcio-dji-0147",
+    "topic": "drone",
+    "title": {
+      "ca": "Carrers sota el cel del vespre",
+      "es": "Calles bajo el cielo del atardecer"
+    },
+    "alt": {
+      "ca": "Dues fileres llargues de teulades convergeixen cap al fons sota un cel rosat.",
+      "es": "Dos hileras largas de tejados convergen hacia el fondo bajo un cielo rosado."
+    },
+    "note": {
+      "ca": "Una vista oberta del mateix vol del 23 de juny permet seguir els carrers fins al límit de les cases baixes. El cel ocupa més espai en aquest enquadrament.",
+      "es": "Una vista abierta del mismo vuelo del 23 de junio permite seguir las calles hasta el límite de las casas bajas. El cielo ocupa más espacio en este encuadre."
+    },
+    "date": {
+      "ca": "2018",
+      "es": "2018"
+    },
+    "year": 2018,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "DJI_0147.JPG",
+    "sourceFile": "Drone view/DJI_0147.JPG",
+    "capturedAt": "2018-06-23T21:28:33",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 4056,
+    "height": 2280,
+    "smallWidth": 720,
+    "largeWidth": 1600,
+    "keywords": "Marcio Barrios Lesmes dron drone vista aèria aérea"
+  },
+  {
+    "id": "marcio-dji-0152",
+    "topic": "drone",
+    "title": {
+      "ca": "La cantonada i el pas de vianants",
+      "es": "La esquina y el paso de peatones"
+    },
+    "alt": {
+      "ca": "Vista de dron sobre una cantonada amb un arbre, un pas de vianants i una marca de zona 30.",
+      "es": "Vista de dron sobre una esquina con un árbol, un paso de peatones y una marca de zona 30."
+    },
+    "note": {
+      "ca": "La perspectiva baixa acosta el vol a la vida del carrer: aparcaments, passos de vianants i arbres entre les cases. Un fanal encès marca l’arribada del vespre.",
+      "es": "La perspectiva baja acerca el vuelo a la vida de la calle: aparcamientos, pasos de peatones y árboles entre las casas. Una farola encendida marca la llegada del atardecer."
+    },
+    "date": {
+      "ca": "2018",
+      "es": "2018"
+    },
+    "year": 2018,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "DJI_0152.JPG",
+    "sourceFile": "Drone view/DJI_0152.JPG",
+    "capturedAt": "2018-06-23T21:32:20",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 4056,
+    "height": 2280,
+    "smallWidth": 720,
+    "largeWidth": 1600,
+    "keywords": "Marcio Barrios Lesmes dron drone vista aèria aérea"
+  },
+  {
+    "id": "marcio-dji-0154",
+    "topic": "drone",
+    "title": {
+      "ca": "Teulades en la llum blava",
+      "es": "Tejados en la luz azul"
+    },
+    "alt": {
+      "ca": "Fileres de teulades vermelles amb cotxes i arbres als carrers, sota la llum blavosa del vespre.",
+      "es": "Hileras de tejados rojos con coches y árboles en las calles, bajo la luz azulada del atardecer."
+    },
+    "note": {
+      "ca": "Aquesta altra presa del vol del 23 de juny mostra les teulades amb una llum més freda. El punt de vista posa l’accent en la continuïtat de les fileres d’habitatges.",
+      "es": "Esta otra toma del vuelo del 23 de junio muestra los tejados con una luz más fría. El punto de vista pone el acento en la continuidad de las hileras de viviendas."
+    },
+    "date": {
+      "ca": "2018",
+      "es": "2018"
+    },
+    "year": 2018,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "DJI_0154.JPG",
+    "sourceFile": "Drone view/DJI_0154.JPG",
+    "capturedAt": "2018-06-23T21:32:50",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 4056,
+    "height": 2280,
+    "smallWidth": 720,
+    "largeWidth": 1600,
+    "keywords": "Marcio Barrios Lesmes dron drone vista aèria aérea"
+  },
+  {
+    "id": "marcio-drone-e2643a21",
+    "topic": "drone",
+    "title": {
+      "ca": "Les cases i l’horitzó de turons",
+      "es": "Las casas y el horizonte de colinas"
+    },
+    "alt": {
+      "ca": "Vista aèria de cases i carrers arbrats, amb blocs d’habitatges i turons al fons.",
+      "es": "Vista aérea de casas y calles arboladas, con bloques de viviendas y colinas al fondo."
+    },
+    "note": {
+      "ca": "La panoràmica situa les cases baixes dins el seu entorn urbà. La successió de teulades deixa pas als blocs i, més enllà, al relleu dels turons.",
+      "es": "La panorámica sitúa las casas bajas dentro de su entorno urbano. La sucesión de tejados deja paso a los bloques y, más allá, al relieve de las colinas."
+    },
+    "date": {
+      "ca": "2018",
+      "es": "2018"
+    },
+    "year": 2018,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "E2643A21A1F2CA43FEF04C5FC4ABB664.jpg",
+    "sourceFile": "Drone view/E2643A21A1F2CA43FEF04C5FC4ABB664.jpg",
+    "capturedAt": "2018-06-02T13:25:01",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 4056,
+    "height": 2280,
+    "smallWidth": 720,
+    "largeWidth": 1600,
+    "keywords": "Marcio Barrios Lesmes dron drone vista aèria aérea"
+  },
+  {
+    "id": "marcio-img-0415",
+    "topic": "drone",
+    "title": {
+      "ca": "Un carrer entre teulades",
+      "es": "Una calle entre tejados"
+    },
+    "alt": {
+      "ca": "Enquadrament quadrat d’un carrer entre fileres de cases, amb teulades vermelles i turons al fons.",
+      "es": "Encuadre cuadrado de una calle entre hileras de casas, con tejados rojos y colinas al fondo."
+    },
+    "note": {
+      "ca": "El format quadrat concentra la mirada en un carrer i les cases que el flanquegen. Comparteix data i hora EXIF amb la panoràmica «Les cases i l’horitzó de turons».",
+      "es": "El formato cuadrado concentra la mirada en una calle y las casas que la flanquean. Comparte fecha y hora EXIF con la panorámica «Las casas y el horizonte de colinas»."
+    },
+    "date": {
+      "ca": "2018",
+      "es": "2018"
+    },
+    "year": 2018,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "IMG_0415.JPG",
+    "sourceFile": "Drone view/IMG_0415.JPG",
+    "capturedAt": "2018-06-02T13:25:01",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 2280,
+    "height": 2280,
+    "smallWidth": 720,
+    "largeWidth": 1600,
+    "keywords": "Marcio Barrios Lesmes dron drone vista aèria aérea"
+  },
+  {
+    "id": "marcio-img-0008",
+    "topic": "houses",
+    "title": {
+      "ca": "Els fanals s’encenen",
+      "es": "Se encienden las farolas"
+    },
+    "alt": {
+      "ca": "Carrer de cases baixes al vespre, amb fanals encesos, arbres i motos en primer pla.",
+      "es": "Calle de casas bajas al atardecer, con farolas encendidas, árboles y motos en primer plano."
+    },
+    "note": {
+      "ca": "La llum dels fanals acompanya l’última claror del dia. Les façanes baixes, els arbres i els vehicles aparcats dibuixen una escena quotidiana del barri.",
+      "es": "La luz de las farolas acompaña la última claridad del día. Las fachadas bajas, los árboles y los vehículos aparcados dibujan una escena cotidiana del barrio."
+    },
+    "date": {
+      "ca": "2016",
+      "es": "2016"
+    },
+    "year": 2016,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "IMG_0008.JPG",
+    "sourceFile": "IMG_0008.JPG",
+    "capturedAt": "2016-04-20T20:46:40",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 4032,
+    "height": 3024,
+    "smallWidth": 720,
+    "largeWidth": 1600,
+    "keywords": "Marcio Barrios Lesmes "
+  },
+  {
+    "id": "marcio-img-3057",
+    "topic": "houses",
+    "title": {
+      "ca": "Una cantonada vista des de dalt",
+      "es": "Una esquina vista desde arriba"
+    },
+    "alt": {
+      "ca": "Casa blanca amb teulada de teula en primer pla, una cruïlla i blocs d’habitatges al fons.",
+      "es": "Casa blanca con tejado de teja en primer plano, un cruce y bloques de viviendas al fondo."
+    },
+    "note": {
+      "ca": "L’enquadrament vertical ressegueix una cantonada i el carrer del costat. Al darrere de les cases es veuen els arbres sense fulles i els edificis més alts de l’entorn.",
+      "es": "El encuadre vertical recorre una esquina y la calle contigua. Detrás de las casas se ven los árboles sin hojas y los edificios más altos del entorno."
+    },
+    "date": {
+      "ca": "2021",
+      "es": "2021"
+    },
+    "year": 2021,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "IMG_3057.jpg",
+    "sourceFile": "IMG_3057.jpg",
+    "capturedAt": "2021-01-21T15:14:07",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 3024,
+    "height": 4032,
+    "smallWidth": 720,
+    "largeWidth": 1200,
+    "keywords": "Marcio Barrios Lesmes "
+  },
+  {
+    "id": "marcio-img-3714",
+    "topic": "life",
+    "title": {
+      "ca": "La nit de Sant Joan",
+      "es": "La noche de Sant Joan"
+    },
+    "alt": {
+      "ca": "Carrer de nit amb fanals encesos i focs artificials brillants al fons, entre les cases.",
+      "es": "Calle de noche con farolas encendidas y fuegos artificiales brillantes al fondo, entre las casas."
+    },
+    "note": {
+      "ca": "Els focs artificials il·luminen el carrer durant la revetlla de Sant Joan de 2019. A Can Peguera, les famílies encara es reuneixen per sopar a fora i celebrar plegades aquesta nit, tal com explica l’autor, Marcio Barrios Lesmes. La fotografia es va fer de matinada, el 24 de juny, a la 01.10 segons les dades EXIF.",
+      "es": "Los fuegos artificiales iluminan la calle durante la verbena de Sant Joan de 2019. En Can Peguera, las familias todavía se reúnen para cenar fuera y celebrar juntas esta noche, como explica el autor, Marcio Barrios Lesmes. La fotografía se tomó de madrugada, el 24 de junio, a la 01:10 según los datos EXIF."
+    },
+    "date": {
+      "ca": "2019",
+      "es": "2019"
+    },
+    "year": 2019,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "IMG_3714.HEIC",
+    "sourceFile": "IMG_3714.HEIC",
+    "capturedAt": "2019-06-24T01:10:34",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 3024,
+    "height": 4032,
+    "smallWidth": 720,
+    "largeWidth": 1200,
+    "keywords": "Marcio Barrios Lesmes "
+  },
+  {
+    "id": "marcio-img-4328",
+    "topic": "houses",
+    "title": {
+      "ca": "Núvols sobre el carrer",
+      "es": "Nubes sobre la calle"
+    },
+    "alt": {
+      "ca": "Cases blanques i cotxes aparcats sota un cel fosc, amb un arbre a la dreta.",
+      "es": "Casas blancas y coches aparcados bajo un cielo oscuro, con un árbol a la derecha."
+    },
+    "note": {
+      "ca": "El cel carregat de núvols contrasta amb les façanes blanques i les teulades. La fotografia recull un racó del carrer una tarda de setembre de 2020.",
+      "es": "El cielo cargado de nubes contrasta con las fachadas blancas y los tejados. La fotografía recoge un rincón de la calle una tarde de septiembre de 2020."
+    },
+    "date": {
+      "ca": "2020",
+      "es": "2020"
+    },
+    "year": 2020,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "IMG_4328.jpg",
+    "sourceFile": "IMG_4328.jpg",
+    "capturedAt": "2020-09-09T20:07:38",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 3024,
+    "height": 4032,
+    "smallWidth": 720,
+    "largeWidth": 1200,
+    "keywords": "Marcio Barrios Lesmes "
+  },
+  {
+    "id": "marcio-img-4341",
+    "topic": "houses",
+    "title": {
+      "ca": "El carrer mira cap als pins",
+      "es": "La calle mira hacia los pinos"
+    },
+    "alt": {
+      "ca": "Pas de vianants entre dues fileres de cases blanques, amb un turó arbrat al fons.",
+      "es": "Paso de peatones entre dos hileras de casas blancas, con una colina arbolada al fondo."
+    },
+    "note": {
+      "ca": "Les cases emmarquen la vista cap al vessant verd. Les marques del pas de vianants ocupen el primer pla d’aquesta presa de novembre de 2024.",
+      "es": "Las casas enmarcan la vista hacia la ladera verde. Las marcas del paso de peatones ocupan el primer plano de esta toma de noviembre de 2024."
+    },
+    "date": {
+      "ca": "2024",
+      "es": "2024"
+    },
+    "year": 2024,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "IMG_4341.heic",
+    "sourceFile": "IMG_4341.heic",
+    "capturedAt": "2024-11-09T13:11:25",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 3024,
+    "height": 4032,
+    "smallWidth": 720,
+    "largeWidth": 1200,
+    "keywords": "Marcio Barrios Lesmes "
+  },
+  {
+    "id": "marcio-img-4357",
+    "topic": "places",
+    "title": {
+      "ca": "Ocells damunt les façanes",
+      "es": "Pájaros sobre las fachadas"
+    },
+    "alt": {
+      "ca": "Ocells posats en un cable sobre una filera de cases blanques, sota un cel amb núvols petits.",
+      "es": "Pájaros posados en un cable sobre una hilera de casas blancas, bajo un cielo con nubes pequeñas."
+    },
+    "note": {
+      "ca": "Els ocells alineats al cable afegeixen un detall a la perspectiva del carrer. Les portes, les finestres i els ràfecs es repeteixen sota un cel de tardor.",
+      "es": "Los pájaros alineados en el cable añaden un detalle a la perspectiva de la calle. Las puertas, las ventanas y los aleros se repiten bajo un cielo de otoño."
+    },
+    "date": {
+      "ca": "2024",
+      "es": "2024"
+    },
+    "year": 2024,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "IMG_4357.heic",
+    "sourceFile": "IMG_4357.heic",
+    "capturedAt": "2024-11-09T16:06:05",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 3024,
+    "height": 4032,
+    "smallWidth": 720,
+    "largeWidth": 1200,
+    "keywords": "Marcio Barrios Lesmes "
+  },
+  {
+    "id": "marcio-img-4365",
+    "topic": "life",
+    "title": {
+      "ca": "Colors a la zona de jocs",
+      "es": "Colores en la zona de juegos"
+    },
+    "alt": {
+      "ca": "Zona de jocs infantils amb una tanca de colors, arbres i cases baixes al voltant.",
+      "es": "Zona de juegos infantiles con una valla de colores, árboles y casas bajas alrededor."
+    },
+    "note": {
+      "ca": "La tanca de colors delimita un espai de joc entre els arbres. Les cases queden a tocar d’aquest petit espai compartit del barri.",
+      "es": "La valla de colores delimita un espacio de juego entre los árboles. Las casas quedan junto a este pequeño espacio compartido del barrio."
+    },
+    "date": {
+      "ca": "2024",
+      "es": "2024"
+    },
+    "year": 2024,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "IMG_4365.heic",
+    "sourceFile": "IMG_4365.heic",
+    "capturedAt": "2024-11-09T16:37:27",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 4032,
+    "height": 3024,
+    "smallWidth": 720,
+    "largeWidth": 1600,
+    "keywords": "Marcio Barrios Lesmes "
+  },
+  {
+    "id": "marcio-img-4607",
+    "topic": "houses",
+    "title": {
+      "ca": "El carrer sota la lluna",
+      "es": "La calle bajo la luna"
+    },
+    "alt": {
+      "ca": "Carrer recte de cases baixes, un pas de vianants i una petita lluna en un cel clar.",
+      "es": "Calle recta de casas bajas, un paso de peatones y una pequeña luna en un cielo claro."
+    },
+    "note": {
+      "ca": "La lluna ja és visible mentre encara queda llum al carrer. Els arbres i les fileres de cotxes acompanyen la perspectiva d’una tarda d’agost de 2019.",
+      "es": "La luna ya es visible mientras todavía queda luz en la calle. Los árboles y las hileras de coches acompañan la perspectiva de una tarde de agosto de 2019."
+    },
+    "date": {
+      "ca": "2019",
+      "es": "2019"
+    },
+    "year": 2019,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "IMG_4607.HEIC",
+    "sourceFile": "IMG_4607.HEIC",
+    "capturedAt": "2019-08-08T21:03:08",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 3024,
+    "height": 4032,
+    "smallWidth": 720,
+    "largeWidth": 1200,
+    "keywords": "Marcio Barrios Lesmes "
+  },
+  {
+    "id": "marcio-img-4608",
+    "topic": "places",
+    "title": {
+      "ca": "Una cantonada al capvespre",
+      "es": "Una esquina al atardecer"
+    },
+    "alt": {
+      "ca": "Cantonada de cases baixes amb un fanal alt, un arbre jove i el cel groguenc del vespre.",
+      "es": "Esquina de casas bajas con una farola alta, un árbol joven y el cielo amarillento del atardecer."
+    },
+    "note": {
+      "ca": "La llum baixa retalla el fanal i l’arbre davant del cel. L’enquadrament posa l’atenció en la trobada de dos carrers i les façanes de la cantonada.",
+      "es": "La luz baja recorta la farola y el árbol ante el cielo. El encuadre pone la atención en el encuentro de dos calles y las fachadas de la esquina."
+    },
+    "date": {
+      "ca": "2019",
+      "es": "2019"
+    },
+    "year": 2019,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "IMG_4608.HEIC",
+    "sourceFile": "IMG_4608.HEIC",
+    "capturedAt": "2019-08-08T21:03:13",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 3024,
+    "height": 4032,
+    "smallWidth": 720,
+    "largeWidth": 1200,
+    "keywords": "Marcio Barrios Lesmes "
+  },
+  {
+    "id": "marcio-img-4609",
+    "topic": "houses",
+    "title": {
+      "ca": "Façanes en la calma del vespre",
+      "es": "Fachadas en la calma del atardecer"
+    },
+    "alt": {
+      "ca": "Carrer estret entre cases blanques, amb cotxes aparcats a l’esquerra i la lluna al cel.",
+      "es": "Calle estrecha entre casas blancas, con coches aparcados a la izquierda y la luna en el cielo."
+    },
+    "note": {
+      "ca": "La perspectiva segueix un carrer de façanes baixes sota la lluna. Els murs, les reixes i les vores de la vorera mostren textures diferents en la llum del vespre.",
+      "es": "La perspectiva sigue una calle de fachadas bajas bajo la luna. Los muros, las rejas y los bordes de la acera muestran texturas distintas en la luz del atardecer."
+    },
+    "date": {
+      "ca": "2019",
+      "es": "2019"
+    },
+    "year": 2019,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "IMG_4609.HEIC",
+    "sourceFile": "IMG_4609.HEIC",
+    "capturedAt": "2019-08-08T21:03:58",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 3024,
+    "height": 4032,
+    "smallWidth": 720,
+    "largeWidth": 1200,
+    "keywords": "Marcio Barrios Lesmes "
+  },
+  {
+    "id": "marcio-img-4610",
+    "topic": "houses",
+    "title": {
+      "ca": "L’última llum al final del carrer",
+      "es": "La última luz al final de la calle"
+    },
+    "alt": {
+      "ca": "Filera de cases blanques amb un cotxe blau en primer pla i llum daurada al fons.",
+      "es": "Hilera de casas blancas con un coche azul en primer plano y luz dorada al fondo."
+    },
+    "note": {
+      "ca": "La claror del final del dia es concentra al fons del carrer. Les cases i els cotxes aparcats formen una línia contínua en primer pla.",
+      "es": "La claridad del final del día se concentra al fondo de la calle. Las casas y los coches aparcados forman una línea continua en primer plano."
+    },
+    "date": {
+      "ca": "2019",
+      "es": "2019"
+    },
+    "year": 2019,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "IMG_4610.HEIC",
+    "sourceFile": "IMG_4610.HEIC",
+    "capturedAt": "2019-08-08T21:04:17",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 3024,
+    "height": 4032,
+    "smallWidth": 720,
+    "largeWidth": 1200,
+    "keywords": "Marcio Barrios Lesmes "
+  },
+  {
+    "id": "marcio-img-4611",
+    "topic": "life",
+    "title": {
+      "ca": "Una cadira a la vorera",
+      "es": "Una silla en la acera"
+    },
+    "alt": {
+      "ca": "Cadira taronja davant d’una casa blanca, al costat d’una vorera amb arbres i fanals.",
+      "es": "Silla naranja delante de una casa blanca, junto a una acera con árboles y farolas."
+    },
+    "note": {
+      "ca": "Una cadira plegable queda al costat de la porta, entre la façana i la vorera. Aquest petit detall centra una escena de carrer al vespre.",
+      "es": "Una silla plegable queda junto a la puerta, entre la fachada y la acera. Este pequeño detalle centra una escena de calle al atardecer."
+    },
+    "date": {
+      "ca": "2019",
+      "es": "2019"
+    },
+    "year": 2019,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "IMG_4611.HEIC",
+    "sourceFile": "IMG_4611.HEIC",
+    "capturedAt": "2019-08-08T21:05:15",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 3024,
+    "height": 4032,
+    "smallWidth": 720,
+    "largeWidth": 1200,
+    "keywords": "Marcio Barrios Lesmes "
+  },
+  {
+    "id": "marcio-img-4915",
+    "topic": "houses",
+    "title": {
+      "ca": "Teulades abans de fer-se fosc",
+      "es": "Tejados antes de anochecer"
+    },
+    "alt": {
+      "ca": "Vista elevada de teulades vermelles i patis, amb edificis i turons al fons al capvespre.",
+      "es": "Vista elevada de tejados rojos y patios, con edificios y colinas al fondo al atardecer."
+    },
+    "note": {
+      "ca": "Des d’un punt elevat, les teulades del barri ocupen el primer pla. La llum del capvespre deixa els turons i els blocs de l’entorn en una silueta suau.",
+      "es": "Desde un punto elevado, los tejados del barrio ocupan el primer plano. La luz del atardecer deja las colinas y los bloques del entorno en una silueta suave."
+    },
+    "date": {
+      "ca": "2017",
+      "es": "2017"
+    },
+    "year": 2017,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "IMG_4915.JPG",
+    "sourceFile": "IMG_4915.JPG",
+    "capturedAt": "2017-08-17T21:01:12",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 4032,
+    "height": 3024,
+    "smallWidth": 720,
+    "largeWidth": 1600,
+    "keywords": "Marcio Barrios Lesmes "
+  },
+  {
+    "id": "marcio-img-5030",
+    "topic": "houses",
+    "title": {
+      "ca": "Cases i teulades a l’hivern",
+      "es": "Casas y tejados en invierno"
+    },
+    "alt": {
+      "ca": "Vista elevada d’una cantonada de cases blanques amb teulades vermelles i blocs alts al fons.",
+      "es": "Vista elevada de una esquina de casas blancas con tejados rojos y bloques altos al fondo."
+    },
+    "note": {
+      "ca": "La llum d’una tarda de febrer il·lumina les teulades i les façanes. Des d’aquest punt es veu el contrast entre les cases baixes i els grans blocs de l’entorn.",
+      "es": "La luz de una tarde de febrero ilumina los tejados y las fachadas. Desde este punto se ve el contraste entre las casas bajas y los grandes bloques del entorno."
+    },
+    "date": {
+      "ca": "2021",
+      "es": "2021"
+    },
+    "year": 2021,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "IMG_5030.jpg",
+    "sourceFile": "IMG_5030.jpg",
+    "capturedAt": "2021-02-20T17:23:41",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 4032,
+    "height": 3024,
+    "smallWidth": 720,
+    "largeWidth": 1600,
+    "keywords": "Marcio Barrios Lesmes "
+  },
+  {
+    "id": "marcio-img-5031",
+    "topic": "houses",
+    "title": {
+      "ca": "Patis entre dues teulades",
+      "es": "Patios entre dos tejados"
+    },
+    "alt": {
+      "ca": "Teulades de teula en primer pla amb un passatge de patis i cobertes entre les cases.",
+      "es": "Tejados de teja en primer plano con una franja de patios y cubiertas entre las casas."
+    },
+    "note": {
+      "ca": "La mirada s’endinsa entre les teulades i deixa veure els espais posteriors dels habitatges. Tendals, cobertes i petits patis interrompen la continuïtat de les teules.",
+      "es": "La mirada se adentra entre los tejados y deja ver los espacios traseros de las viviendas. Toldos, cubiertas y pequeños patios interrumpen la continuidad de las tejas."
+    },
+    "date": {
+      "ca": "2021",
+      "es": "2021"
+    },
+    "year": 2021,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "IMG_5031.jpg",
+    "sourceFile": "IMG_5031.jpg",
+    "capturedAt": "2021-02-20T17:23:47",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 4032,
+    "height": 3024,
+    "smallWidth": 720,
+    "largeWidth": 1600,
+    "keywords": "Marcio Barrios Lesmes "
+  },
+  {
+    "id": "marcio-img-5062",
+    "topic": "places",
+    "title": {
+      "ca": "Finestres, cables i ocells",
+      "es": "Ventanas, cables y pájaros"
+    },
+    "alt": {
+      "ca": "Filera de façanes blanques amb finestres enreixades, ocells sobre un cable i una bicicleta pintada a la calçada.",
+      "es": "Hilera de fachadas blancas con ventanas enrejadas, pájaros sobre un cable y una bicicleta pintada en la calzada."
+    },
+    "note": {
+      "ca": "Les finestres i les portes marquen el ritme d’una filera de cases. A sobre, uns ocells descansen al cable que travessa el carrer.",
+      "es": "Las ventanas y las puertas marcan el ritmo de una hilera de casas. Encima, unos pájaros descansan en el cable que cruza la calle."
+    },
+    "date": {
+      "ca": "2023",
+      "es": "2023"
+    },
+    "year": 2023,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "IMG_5062.jpg",
+    "sourceFile": "IMG_5062.jpg",
+    "capturedAt": "2023-05-31T19:23:44",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 3024,
+    "height": 4032,
+    "smallWidth": 720,
+    "largeWidth": 1200,
+    "keywords": "Marcio Barrios Lesmes "
+  },
+  {
+    "id": "marcio-img-5113",
+    "topic": "houses",
+    "title": {
+      "ca": "L’ombra dels arbres",
+      "es": "La sombra de los árboles"
+    },
+    "alt": {
+      "ca": "Vorera ampla amb arbres, cases blanques a l’esquerra i vehicles aparcats a la dreta.",
+      "es": "Acera ancha con árboles, casas blancas a la izquierda y vehículos aparcados a la derecha."
+    },
+    "note": {
+      "ca": "Els arbres acompanyen el recorregut de la vorera i projecten ombra sobre el carrer. Les portes de les cases s’obren directament a aquest espai quotidià.",
+      "es": "Los árboles acompañan el recorrido de la acera y proyectan sombra sobre la calle. Las puertas de las casas se abren directamente a este espacio cotidiano."
+    },
+    "date": {
+      "ca": "2023",
+      "es": "2023"
+    },
+    "year": 2023,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "IMG_5113.jpg",
+    "sourceFile": "IMG_5113.jpg",
+    "capturedAt": "2023-06-03T13:46:48",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 4032,
+    "height": 3024,
+    "smallWidth": 720,
+    "largeWidth": 1600,
+    "keywords": "Marcio Barrios Lesmes "
+  },
+  {
+    "id": "marcio-img-5114",
+    "topic": "life",
+    "title": {
+      "ca": "La roba a la finestra",
+      "es": "La ropa en la ventana"
+    },
+    "alt": {
+      "ca": "Cantonada d’una casa blanca amb roba penjada a les reixes de les finestres.",
+      "es": "Esquina de una casa blanca con ropa colgada en las rejas de las ventanas."
+    },
+    "note": {
+      "ca": "Les peces de roba penjades a les finestres aporten un detall domèstic a la cantonada. La fotografia acosta la mirada a la façana i als usos quotidians del carrer.",
+      "es": "Las prendas colgadas en las ventanas aportan un detalle doméstico a la esquina. La fotografía acerca la mirada a la fachada y a los usos cotidianos de la calle."
+    },
+    "date": {
+      "ca": "2023",
+      "es": "2023"
+    },
+    "year": 2023,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "IMG_5114.jpg",
+    "sourceFile": "IMG_5114.jpg",
+    "capturedAt": "2023-06-03T13:46:56",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 4032,
+    "height": 3024,
+    "smallWidth": 720,
+    "largeWidth": 1600,
+    "keywords": "Marcio Barrios Lesmes "
+  },
+  {
+    "id": "marcio-img-5244",
+    "topic": "houses",
+    "title": {
+      "ca": "Les teulades i la ciutat",
+      "es": "Los tejados y la ciudad"
+    },
+    "alt": {
+      "ca": "Panoràmica elevada de les teulades del barri, amb blocs d’habitatges i turons a l’horitzó.",
+      "es": "Panorámica elevada de los tejados del barrio, con bloques de viviendas y colinas en el horizonte."
+    },
+    "note": {
+      "ca": "La panoràmica del setembre de 2017 reuneix teulades, arbres i edificis de diferents alçades. Els turons del fons situen el barri dins el paisatge de la ciutat.",
+      "es": "La panorámica de septiembre de 2017 reúne tejados, árboles y edificios de distintas alturas. Las colinas del fondo sitúan el barrio dentro del paisaje de la ciudad."
+    },
+    "date": {
+      "ca": "2017",
+      "es": "2017"
+    },
+    "year": 2017,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "IMG_5244.JPG",
+    "sourceFile": "IMG_5244.JPG",
+    "capturedAt": "2017-09-08T20:16:14",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 4032,
+    "height": 3024,
+    "smallWidth": 720,
+    "largeWidth": 1600,
+    "keywords": "Marcio Barrios Lesmes "
+  },
+  {
+    "id": "marcio-img-7604",
+    "topic": "places",
+    "title": {
+      "ca": "La font i els graons",
+      "es": "La fuente y los escalones"
+    },
+    "alt": {
+      "ca": "Font fosca damunt d’una plataforma amb graons, un fanal esfèric i cases al fons.",
+      "es": "Fuente oscura sobre una plataforma con escalones, una farola esférica y casas al fondo."
+    },
+    "note": {
+      "ca": "La font ocupa el centre d’un petit espai esglaonat, envoltat de vegetació. La llum del migdia destaca les textures de la pedra i les ombres sobre els graons.",
+      "es": "La fuente ocupa el centro de un pequeño espacio escalonado, rodeado de vegetación. La luz del mediodía destaca las texturas de la piedra y las sombras sobre los escalones."
+    },
+    "date": {
+      "ca": "2026",
+      "es": "2026"
+    },
+    "year": 2026,
+    "author": "Marcio Barrios Lesmes",
+    "holder": "Marcio Barrios Lesmes",
+    "source": "",
+    "license": "",
+    "licenseUrl": "",
+    "pending": false,
+    "permission": "author",
+    "originalTitle": "IMG_7604.heic",
+    "sourceFile": "IMG_7604.heic",
+    "capturedAt": "2026-05-16T13:15:08",
+    "dateSource": "EXIF DateTimeOriginal",
+    "width": 4284,
+    "height": 5712,
+    "smallWidth": 720,
+    "largeWidth": 1200,
+    "keywords": "Marcio Barrios Lesmes "
   }
 ]

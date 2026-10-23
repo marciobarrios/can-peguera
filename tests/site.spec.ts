@@ -75,7 +75,7 @@ test("combined gallery filters, translated empty states and repeated language ch
   page,
 }) => {
   await page.goto("/ca/#arxiu");
-  await expect(page.locator(".gallery-card")).toHaveCount(20);
+  await expect(page.locator(".gallery-card")).toHaveCount(54);
   await page.selectOption("#archive-topic", "life");
   await page.selectOption("#archive-period", "old");
   await page.selectOption("#archive-rights", "pending");
@@ -92,7 +92,7 @@ test("combined gallery filters, translated empty states and repeated language ch
   await expect(page.locator(".empty-state")).toContainText("No hay imágenes");
   await expect(page.locator("#archive-search")).toHaveValue("inexistent");
   await page.locator(".empty-state button").click();
-  await expect(page.locator(".gallery-card")).toHaveCount(20);
+  await expect(page.locator(".gallery-card")).toHaveCount(54);
   await page.selectOption("#archive-period", "undated");
   await expect(page.locator(".gallery-card")).toHaveCount(9);
   await page.fill("#archive-search", "refugio");
@@ -302,4 +302,121 @@ test("all selected images load, private local resources and visual review captur
   });
   expect(failures).toEqual([]);
   expect(external).toEqual([]);
+});
+
+test("author collection, drone topic, real dates and Sant Joan in both languages", async ({
+  page,
+}, info) => {
+  await page.goto("/ca/");
+  await expect(page.locator(".hero-photo")).toContainText(
+    "Marcio Barrios Lesmes",
+  );
+  await expect(page.locator(".hero-photo")).toContainText("2023");
+  await expect(page.locator(".hero-photo")).not.toContainText(
+    "Pere López Brosa",
+  );
+  await expect(page.locator(".hero-image img")).toHaveAttribute(
+    "src",
+    "/assets/marcio-img-5115-large.webp",
+  );
+  await page.selectOption("#archive-rights", "author");
+  await expect(page.locator(".gallery-card")).toHaveCount(35);
+  await page.selectOption("#archive-period", "recent");
+  await expect(page.locator(".gallery-card")).toHaveCount(35);
+  await expect(page.locator(".gallery-card .rights-warning")).toHaveCount(0);
+  await expect(page.locator(".gallery-card .photo-rights a")).toHaveCount(0);
+  await page.selectOption("#archive-topic", "drone");
+  await expect(page.locator("#archive-topic option:checked")).toHaveText(
+    "Vista de dron",
+  );
+  await expect(page.locator(".gallery-card")).toHaveCount(14);
+  for (const card of await page.locator(".gallery-card").all()) {
+    await expect(card).toContainText("2018");
+    await expect(card).toContainText("Marcio Barrios Lesmes");
+  }
+  for (const image of await page.locator(".gallery-card img").all()) {
+    await image.scrollIntoViewIfNeeded();
+    await image.evaluate((img: HTMLImageElement) => img.decode());
+  }
+  await page.locator(".archive-controls").evaluate((el) => {
+    el.scrollIntoView({ behavior: "instant", block: "start" });
+    window.scrollBy({ top: -100, behavior: "instant" });
+  });
+  await page.screenshot({
+    path: `test-results/${info.project.name}-drone.png`,
+  });
+  await page.locator('.header-tools [data-lang="es"]').click();
+  await expect(page.locator("#archive-topic")).toHaveValue("drone");
+  await expect(page.locator(".gallery-card")).toHaveCount(14);
+  await expect(page.locator(".gallery-card").first()).toContainText(
+    "Publicada con permiso del autor",
+  );
+  await page.selectOption("#archive-topic", "all");
+  await page.fill("#archive-search", "familias");
+  await expect(page.locator(".gallery-card")).toHaveCount(1);
+  await expect(page.locator(".gallery-card")).toContainText("2019");
+  await page.locator("#open-gallery-marcio-img-3714").click();
+  await expect(page.locator("dialog")).toContainText("La noche de Sant Joan");
+  await expect(page.locator("dialog")).toContainText("cenar fuera");
+  await expect(page.locator("dialog")).toContainText("24 de junio");
+  await page
+    .locator("dialog img")
+    .evaluate((img: HTMLImageElement) => img.decode());
+  expect(
+    await page
+      .locator("dialog img")
+      .evaluate(
+        (img: HTMLImageElement) => img.naturalWidth < img.naturalHeight,
+      ),
+  ).toBe(true);
+  await page.screenshot({
+    path: `test-results/${info.project.name}-sant-joan-es.png`,
+  });
+  await page.locator('.lightbox-languages [data-lang="ca"]').click();
+  await expect(page.locator("dialog")).toContainText("La nit de Sant Joan");
+  await expect(page.locator("dialog")).toContainText("sopar a fora");
+  await expect(page.locator("dialog")).toContainText("24 de juny");
+  await expect(page.locator("dialog")).toContainText(
+    "Tots els drets reservats",
+  );
+  await page.keyboard.press("Escape");
+  await page.locator('[data-action="reset-filters"]').click();
+  await page.selectOption("#archive-rights", "licensed");
+  await expect(page.locator(".gallery-card")).toHaveCount(3);
+  await page.selectOption("#archive-rights", "pending");
+  await expect(page.locator(".gallery-card")).toHaveCount(16);
+  await expect(page.locator(".gallery-card .rights-warning")).toHaveCount(16);
+});
+
+test("all new full-size images and responsive portraits load without the removed photo", async ({
+  page,
+  request,
+}) => {
+  await page.goto("/es/#arxiu");
+  await page.selectOption("#archive-rights", "author");
+  const ids = await page
+    .locator(".gallery-card [data-photo]")
+    .evaluateAll((buttons) =>
+      buttons.map((button) => button.getAttribute("data-photo")!),
+    );
+  expect(ids).not.toContain("marcio-img-5032");
+  expect(ids).not.toContain("marcio-img-5116");
+  for (const id of ids) {
+    const response = await request.get(`/assets/${id}-large.webp`);
+    expect(response.ok()).toBe(true);
+    expect(response.headers()["content-type"]).toContain("image/webp");
+  }
+  await expect(
+    page.locator("#open-gallery-marcio-img-3057 img"),
+  ).toHaveAttribute("srcset", /small.webp 720w, .*large.webp 1200w/);
+  await expect(page.locator('img[src*="/street-"]')).toHaveCount(0);
+  await expect(page.locator('a[href=""]')).toHaveCount(0);
+  await page.goto("/es/?photo=marcio-img-7604");
+  await expect(page.locator("dialog")).toBeVisible();
+  await expect(page.locator("dialog")).toContainText("2026");
+  await page
+    .locator("dialog img")
+    .evaluate((img: HTMLImageElement) => img.decode());
+  await expect(page.locator("dialog img")).toHaveAttribute("width", "4284");
+  await expect(page.locator("dialog img")).toHaveAttribute("height", "5712");
 });

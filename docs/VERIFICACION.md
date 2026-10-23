@@ -1,5 +1,17 @@
 # Verificación de la ampliación
 
+## Colección de Marcio Barrios Lesmes (24 de octubre de 2026)
+
+- Se inventariaron 37 originales (14 de dron y 23 restantes), todos con `DateTimeOriginal`. Los 37 SHA-256 coinciden después de la conversión; no hay duplicados binarios.
+- Conversión local con ImageMagick: orientación EXIF, sRGB, miniaturas de 720 px de ancho a calidad 77 y ampliaciones de hasta 1600 × 1600 px a calidad 80, método WebP 6, sin metadatos incrustados ni edición generativa. 118.733.425 bytes de originales → 13.149.390 bytes entre los 74 WebP (88,93 % menos).
+- Selección aprobada por el autor: se excluyen `IMG_5032.jpg` e `IMG_5116.jpg` de la web, conservando sus derivados localmente; se incluyen las 14 de dron. Las 35 fotos seleccionadas ocupan 12.034.672 bytes entre miniaturas y ampliaciones. Se retiran los dos derivados de `street`.
+- La galería suma 54 piezas; 35 con permiso del autor, tres con licencia y dieciséis pendientes. 114 derivados totales / 18.927.578 bytes; ninguno supera 600 kB. Presupuesto de contenido: 19,5 MB. Pre-push: 150 archivos / 20 MB, con únicamente los 35 nombres nuevos y la rama de esta PR añadidos a las listas permitidas.
+- TypeScript, ESLint, contenido y build Vite aprobados. La comprobación de contenido valida fechas, procedencia, créditos, correspondencia exacta entre galería, manifiesto y archivos, orientación, anchuras reales de `srcset` y ausencia de EXIF/XMP en los nuevos WebP.
+- 18 pruebas Playwright aprobadas (9 escritorio y 9 móvil emulado en Chromium), incluidos ambos idiomas, autor/fecha, 14 resultados de dron, filtros de permisos separados, descripción de Sant Joan, visor vertical, todas las ampliaciones, recursos sin errores, navegación, foco, historial y axe WCAG A/AA. Tras actualizar la fecha editorial y mejorar la espera de carga de las capturas, se repitieron con éxito el build y las dos pruebas de la colección de autor.
+- Revisión visual local de portada, galería de dron y visor de Sant Joan en escritorio y móvil. Capturas `*-drone.png` y `*-sant-joan-es.png` en `test-results/`, fuera de Git. No se afirma validación en Safari/iOS real ni Firefox.
+- El control de subida admite la instantánea seleccionada de 145 archivos y rechaza, en un repositorio temporal, corpus, JPEG original, ZIP, un derivado descartado, un archivo de más de 600 kB y un enlace simbólico. El hook permanece activo; no se omiten controles ni se suben originales.
+- Trabajo aislado desde `origin/main` (`10d4f6c`); los cambios previos del checkout principal se preservan. Los registros siguientes son históricos.
+
 Nota de política vigente (23 de octubre de 2026): `AGENTS.md` autoriza el repositorio público y los despliegues públicos, sin requisito de preview privada. El hook conserva los controles de corpus, rutas, tamaños e historial. Los registros fechados que siguen describen las condiciones de las verificaciones del 11 y 12 de octubre; sus referencias a un destino privado o a requisitos previos al lanzamiento son históricas y no sustituyen la política actual. El estado pendiente de los permisos de las imágenes se mantiene.
 
 Fecha: 12 de octubre de 2026. Comprobaciones locales de la ampliación; preview protegida de Vercel autorizada para revisión.

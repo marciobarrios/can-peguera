@@ -4,6 +4,7 @@ import { readFileSync } from "node:fs";
 // Fail closed. This control permits only the selected website, never the archive.
 const repository = "marciobarrios/can-peguera";
 const allowedRefs = new Set([
+  "refs/heads/codex/can-peguera-own-photos",
   "refs/heads/codex/fix-mobile-history-overlap",
   "refs/heads/main",
   "refs/heads/codex/can-peguera-research-expansion",
@@ -43,7 +44,7 @@ const allowedRoots = new Set([
   "public/robots.txt",
 ]);
 const asset =
-  /^public\/assets\/(?:(?:street|church|sundial|edge|masia|school|neighbors|panorama|construction|housing-plan|school-building|casa-poble|shelter-entrance|shelter-sealed|street-life|shelter-vault|shelter-plan|school-access|balco|shelter-survey)-(?:small|large)|aerial-[0-5])\.webp$/;
+  /^public\/assets\/(?:(?:street|church|sundial|edge|masia|school|neighbors|panorama|construction|housing-plan|school-building|casa-poble|shelter-entrance|shelter-sealed|street-life|shelter-vault|shelter-plan|school-access|balco|shelter-survey|marcio-img-5115|marcio-drone-c618a5a5|marcio-dji-0020|marcio-dji-0022|marcio-dji-0023|marcio-dji-0025|marcio-dji-0028|marcio-dji-0142|marcio-dji-0143|marcio-dji-0146|marcio-dji-0147|marcio-dji-0152|marcio-dji-0154|marcio-drone-e2643a21|marcio-img-0415|marcio-img-0008|marcio-img-3057|marcio-img-3714|marcio-img-4328|marcio-img-4341|marcio-img-4357|marcio-img-4365|marcio-img-4607|marcio-img-4608|marcio-img-4609|marcio-img-4610|marcio-img-4611|marcio-img-4915|marcio-img-5030|marcio-img-5031|marcio-img-5062|marcio-img-5113|marcio-img-5114|marcio-img-5244|marcio-img-7604)-(?:small|large)|aerial-[0-5])\.webp$/;
 const git = (...args) =>
   execFileSync("git", args, {
     encoding: "utf8",
@@ -69,7 +70,7 @@ function inspect(revision) {
     if (size > 600_000) fail(`Archivo demasiado grande: ${path}`);
     total += size;
   }
-  if (entries.length > 80 || total > 8_000_000)
+  if (entries.length > 150 || total > 20_000_000)
     fail("El árbol excede el presupuesto de la web.");
   return { files: entries.length, bytes: total };
 }
@@ -110,7 +111,9 @@ try {
         remoteRef !== localRef ||
         /^0+$/.test(localSha)
       )
-        fail("Solo se permiten las ramas autorizadas, sin borrados ni cambios de destino.");
+        fail(
+          "Solo se permiten las ramas autorizadas, sin borrados ni cambios de destino.",
+        );
       if (!/^0+$/.test(remoteSha))
         git("merge-base", "--is-ancestor", remoteSha, localSha);
       for (const revision of git("rev-list", localSha).split("\n")) {

@@ -2,7 +2,7 @@
 
 Web editorial estàtica en català i castellà. El repositori és públic i els desplegaments públics estan autoritzats segons `AGENTS.md`. [Documentació tècnica completa en castellà](README.md).
 
-Inclou sis etapes històriques, 31 fites documentades, deu fitxes de llocs, mapa del barri 47 amb quatre punts orientatius, comparador de sis cobertures aèries de l’ICGC, vint fotografies i plànols seleccionats, memòria comunitària i fonts. Els controls, avisos, peus, textos alternatius i metadades tenen versió ca/es.
+Inclou sis etapes històriques, 31 fites documentades, deu fitxes de llocs, mapa del barri 47 amb quatre punts orientatius, comparador de sis cobertures aèries de l’ICGC, 54 fotografies i plànols seleccionats, memòria comunitària i fonts. Els controls, avisos, peus, textos alternatius i metadades tenen versió ca/es.
 
 ```sh
 npm ci
