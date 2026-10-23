@@ -1385,6 +1385,7 @@ dialog::backdrop {
   }
   .history-layout {
     grid-template-columns: 1fr;
+    row-gap: 0;
   }
   .history-photo {
     max-width: 650px;

@@ -1,7 +1,7 @@
 {
   "name": "can-peguera-memoria-viva",
   "version": "1.0.0",
-  "description": "Archivo editorial bilingüe de Can Peguera. Preview privada.",
+  "description": "Archivo editorial bilingüe de Can Peguera.",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "tsc --noEmit && vite build && node scripts/static-routes.mjs",

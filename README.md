@@ -1,6 +1,6 @@
 # Can Peguera, memòria viva
 
-Primera web editorial estática en catalán y castellano. Preview privada: no está autorizada su publicación abierta. El archivo íntegro de investigación se conserva en `research/`, excluido de Git. [Llegiu-me en català](LLEGEIX-ME.md).
+Primera web editorial estática en catalán y castellano. El repositorio es público y los despliegues públicos están autorizados según `AGENTS.md`. El archivo íntegro de investigación se conserva en `research/`, excluido de Git. [Llegiu-me en català](LLEGEIX-ME.md).
 
 ## Desarrollo
 
@@ -41,7 +41,7 @@ Las traducciones editoriales están en `src/content.ts` y en los campos ca/es de
 
 ## Derechos y lanzamiento público
 
-Dieciséis imágenes requieren confirmación de reproducción: cuatro municipales de la primera edición y doce incorporaciones de esta ampliación. Marcio ha autorizado su uso en esta preview privada y su inclusión en la web dentro del repositorio privado, con aviso individual. El aviso **no** es un permiso del titular. No desplegar esta edición públicamente sin revisar y autorizar o retirar esas piezas. Consultar [DERECHOS.md](docs/DERECHOS.md) y `public/asset-rights.json`.
+Dieciséis imágenes requieren confirmación de reproducción: cuatro municipales de la primera edición y doce incorporaciones de esta ampliación. Marcio autoriza el repositorio y los despliegues públicos de la web, sin requisito de preview privada. Se mantienen los avisos individuales ca/es, autor o depositario y fuente. La autorización de despliegue y los avisos **no** acreditan el permiso de los titulares ni cambian el estado pendiente de estas piezas. Consultar [DERECHOS.md](docs/DERECHOS.md) y `public/asset-rights.json`.
 
 No se aplica una licencia global al corpus ni a las imágenes. `UNLICENSED` en package.json solo declara que este proyecto no concede una licencia global del código. Las licencias CC, ODbL y OFL conservan sus propios términos.
 
@@ -49,7 +49,7 @@ No se aplica una licencia global al corpus ni a las imágenes. `UNLICENSED` en p
 
 `research/` agrupa dossiers, originales, ZIP, catálogos masivos, notas y scripts de investigación. Su índice anterior está en `research/README.md`; la reubicación se explica en `research/REUBICACION_WEB.md`. Los originales se mantienen intactos. Git solo contiene código, contenido y datos seleccionados, derivados usados, atribuciones y documentación técnica.
 
-El proyecto está conectado a Vercel para generar previews protegidas de las PR. No hay workflow de CI propio. El hook de subida debe comprobar exclusivamente la web y rechazar cualquier corpus o archivo masivo. Nunca usar `--no-verify`.
+El proyecto está conectado a Vercel para generar previews de las PR; la política de `AGENTS.md` también permite despliegues públicos. No hay workflow de CI propio. El hook de subida debe comprobar exclusivamente la web y rechazar cualquier corpus o archivo masivo. Nunca usar `--no-verify`.
 
 ## Ampliación del 12 de octubre de 2026
 
@@ -57,4 +57,4 @@ Se revisaron las 13 referencias solicitadas y enlaces relacionados. El archivo l
 
 La revisión distingue las interpretaciones iniciales del refugio en 2022 de las inspecciones y cierres documentados en 2023. Los planos no se presentan como prueba de galerías completamente ejecutadas. Fechas de publicación sin captura identificada se filtran como «Toma sin fecha confirmada».
 
-Las previews de Vercel permiten revisar los cambios con autenticación. Esta PR no modifica producción. El pre-push admite `main` y la rama de esta ampliación, manteniendo el bloqueo del corpus.
+El estado actual de publicación se rige por `AGENTS.md`. El pre-push admite el repositorio público y las ramas enumeradas en `scripts/verify-push.mjs`, manteniendo el bloqueo del corpus y los controles de rutas, tamaños e historial.

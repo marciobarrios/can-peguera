@@ -1,5 +1,7 @@
 # Verificación de la ampliación
 
+Nota de política vigente (23 de octubre de 2026): `AGENTS.md` autoriza el repositorio público y los despliegues públicos, sin requisito de preview privada. El hook conserva los controles de corpus, rutas, tamaños e historial. Los registros fechados que siguen describen las condiciones de las verificaciones del 11 y 12 de octubre; sus referencias a un destino privado o a requisitos previos al lanzamiento son históricas y no sustituyen la política actual. El estado pendiente de los permisos de las imágenes se mantiene.
+
 Fecha: 12 de octubre de 2026. Comprobaciones locales de la ampliación; preview protegida de Vercel autorizada para revisión.
 
 - TypeScript, lint, comprobación de contenido y build correctos.
