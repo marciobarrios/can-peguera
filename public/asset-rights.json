@@ -1518,40 +1518,6 @@
     "bytes": 973568
   },
   {
-    "file": "assets/marcio-img-5114-small.webp",
-    "source": "IMG_5114.jpg",
-    "author": "Marcio Barrios Lesmes",
-    "holder": "Marcio Barrios Lesmes",
-    "license": "",
-    "pending": false,
-    "permission": "author",
-    "permissionScope": {
-      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
-      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
-    },
-    "capturedAt": "2023-06-03T13:46:56",
-    "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 58188
-  },
-  {
-    "file": "assets/marcio-img-5114-large.webp",
-    "source": "IMG_5114.jpg",
-    "author": "Marcio Barrios Lesmes",
-    "holder": "Marcio Barrios Lesmes",
-    "license": "",
-    "pending": false,
-    "permission": "author",
-    "permissionScope": {
-      "ca": "Publicació autoritzada per l’autor en aquesta web. Tots els drets reservats.",
-      "es": "Publicación autorizada por el autor en esta web. Todos los derechos reservados."
-    },
-    "capturedAt": "2023-06-03T13:46:56",
-    "dateSource": "EXIF DateTimeOriginal",
-    "transformations": "EXIF orientation, sRGB, resize to at most 2560 px on the long edge without upscaling, WebP compression; embedded metadata removed after date extraction; no generative editing",
-    "bytes": 898264
-  },
-  {
     "file": "assets/marcio-img-5115-small.webp",
     "source": "IMG_5115.jpg",
     "author": "Marcio Barrios Lesmes",

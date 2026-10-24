@@ -78,7 +78,7 @@ test("combined gallery filters, translated empty states and repeated language ch
   page,
 }) => {
   await page.goto("/ca/#arxiu");
-  await expect(page.locator(".gallery-card")).toHaveCount(54);
+  await expect(page.locator(".gallery-card")).toHaveCount(53);
   await page.selectOption("#archive-topic", "life");
   await page.selectOption("#archive-period", "old");
   await page.selectOption("#archive-rights", "pending");
@@ -95,7 +95,7 @@ test("combined gallery filters, translated empty states and repeated language ch
   await expect(page.locator(".empty-state")).toContainText("No hay imágenes");
   await expect(page.locator("#archive-search")).toHaveValue("inexistent");
   await page.locator(".empty-state button").click();
-  await expect(page.locator(".gallery-card")).toHaveCount(54);
+  await expect(page.locator(".gallery-card")).toHaveCount(53);
   await page.selectOption("#archive-period", "undated");
   await expect(page.locator(".gallery-card")).toHaveCount(9);
   await page.fill("#archive-search", "refugio");
@@ -326,9 +326,9 @@ test("author collection, drone topic, real dates and Sant Joan in both languages
     imageURL("marcio-drone-e2643a21-small.webp"),
   );
   await page.selectOption("#archive-rights", "author");
-  await expect(page.locator(".gallery-card")).toHaveCount(35);
+  await expect(page.locator(".gallery-card")).toHaveCount(34);
   await page.selectOption("#archive-period", "recent");
-  await expect(page.locator(".gallery-card")).toHaveCount(35);
+  await expect(page.locator(".gallery-card")).toHaveCount(34);
   await expect(page.locator(".gallery-card .rights-warning")).toHaveCount(0);
   await expect(page.locator(".gallery-card .photo-rights a")).toHaveCount(0);
   await page.selectOption("#archive-topic", "drone");

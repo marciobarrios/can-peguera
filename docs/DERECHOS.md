@@ -50,7 +50,7 @@ Los medios íntegros descargados, incluidas variantes y descartes, se conservan 
 
 ## Fotografías de Marcio Barrios Lesmes (24 de octubre de 2026)
 
-35 fotografías aportadas por su autor y publicadas por petición expresa: 14 de la carpeta `Drone view` y 21 del resto. Crédito y depositario: Marcio Barrios Lesmes. Se muestran como archivo personal, con permiso del autor para esta web y todos los derechos reservados; no se les asigna una licencia Creative Commons ni un enlace de fuente ficticio. El filtro «Permiso del autor» las distingue de las licencias verificadas y de las piezas pendientes.
+34 fotografías aportadas por su autor y publicadas por petición expresa: 14 de la carpeta `Drone view` y 20 del resto. Crédito y depositario: Marcio Barrios Lesmes. Se muestran como archivo personal, con permiso del autor para esta web y todos los derechos reservados; no se les asigna una licencia Creative Commons ni un enlace de fuente ficticio. El filtro «Permiso del autor» las distingue de las licencias verificadas y de las piezas pendientes.
 
 Se retira «Carrers i cases» (`street`) de Pere López Brosa y sus dos derivados. La portada utiliza «Les cases i l’horitzó de turons», `Drone view/E2643A21A1F2CA43FEF04C5FC4ABB664.jpg` (2018), con el crédito de Marcio Barrios Lesmes. Las otras atribuciones y los dieciséis avisos pendientes se conservan.
 
