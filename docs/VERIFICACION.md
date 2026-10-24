@@ -1,5 +1,12 @@
 # Verificación de la ampliación
 
+## Selección final de portada (24 de octubre de 2026)
+
+- Se utiliza «Les cases i l’horitzó de turons» (`marcio-drone-e2643a21`, 2018), a petición del autor. Título, año, crédito y apertura del visor proceden de la misma ficha bilingüe.
+- Build, ESLint y comprobación de las 158 imágenes correctos; seis pruebas específicas de portada, idiomas, colección y descarga de ampliaciones aprobadas en escritorio y móvil después del cambio. Revisión visual de ambos tamaños.
+- La nueva portada descarga 371.162 bytes de imágenes en las mediciones 2× y 3×. El recorrido completo sigue en 9.309.174 bytes y 56 peticiones, sin ampliaciones del autor antes de abrir el visor.
+- Verificada en Vercel la respuesta 200 de una imagen del despliegue `b972932`: `Content-Type: image/webp` y `Cache-Control: public, max-age=31536000, immutable`.
+
 ## Entrega estática y transferencia (24 de octubre de 2026)
 
 - Se detectó que `srcset` podía seleccionar las 35 ampliaciones de 2560 px al recorrer la galería en Retina, antes de abrir el modal. Ahora portada y tarjetas usan vistas previas de hasta 1280 px, con las miniaturas de 720 px como opción menor. La ampliación se carga al abrir su foto; no se precargan las adyacentes.

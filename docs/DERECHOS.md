@@ -52,7 +52,7 @@ Los medios íntegros descargados, incluidas variantes y descartes, se conservan 
 
 35 fotografías aportadas por su autor y publicadas por petición expresa: 14 de la carpeta `Drone view` y 21 del resto. Crédito y depositario: Marcio Barrios Lesmes. Se muestran como archivo personal, con permiso del autor para esta web y todos los derechos reservados; no se les asigna una licencia Creative Commons ni un enlace de fuente ficticio. El filtro «Permiso del autor» las distingue de las licencias verificadas y de las piezas pendientes.
 
-Se retira «Carrers i cases» (`street`) de Pere López Brosa y sus dos derivados. La portada utiliza ahora `IMG_5115.jpg` (2023) y su crédito real. Las otras atribuciones y los dieciséis avisos pendientes se conservan.
+Se retira «Carrers i cases» (`street`) de Pere López Brosa y sus dos derivados. La portada utiliza «Les cases i l’horitzó de turons», `Drone view/E2643A21A1F2CA43FEF04C5FC4ABB664.jpg` (2018), con el crédito de Marcio Barrios Lesmes. Las otras atribuciones y los dieciséis avisos pendientes se conservan.
 
 Las 37 imágenes suministradas se convirtieron a WebP. El autor aprobó excluir de la galería `IMG_5032.jpg` e `IMG_5116.jpg` por similitud; sus derivados quedan solo en el archivo local ignorado. Se conservan las 14 de dron, incluidas las variaciones próximas y el encuadre cuadrado `IMG_0415.JPG`, que comparte fecha y hora con `E2643A21A1F2CA43FEF04C5FC4ABB664.jpg`. Los originales no se modifican ni se incorporan a Git.
 

@@ -314,13 +314,16 @@ test("author collection, drone topic, real dates and Sant Joan in both languages
   await expect(page.locator(".hero-photo")).toContainText(
     "Marcio Barrios Lesmes",
   );
-  await expect(page.locator(".hero-photo")).toContainText("2023");
+  await expect(page.locator(".hero-photo")).toContainText("2018");
+  await expect(page.locator(".hero-photo")).toContainText(
+    "Les cases i l’horitzó de turons",
+  );
   await expect(page.locator(".hero-photo")).not.toContainText(
     "Pere López Brosa",
   );
   await expect(page.locator(".hero-image img")).toHaveAttribute(
     "src",
-    imageURL("marcio-img-5115-small.webp"),
+    imageURL("marcio-drone-e2643a21-small.webp"),
   );
   await page.selectOption("#archive-rights", "author");
   await expect(page.locator(".gallery-card")).toHaveCount(35);
