@@ -1,5 +1,12 @@
 # Verificación de la ampliación
 
+## Tamaño de fotografías pequeñas en el visor — 24 de octubre de 2026
+
+- El límite `resolución / devicePixelRatio` reducía la foto de la escuela a 223 px CSS en escritorio Retina, por debajo de su tarjeta. El visor ahora utiliza el espacio disponible en píxeles CSS, conserva las proporciones y reserva sitio para la descripción, los créditos y el aviso individual.
+- Comparación local a 1440 × 1000 / 2×: foto de la escuela de 223 a 1327 px de ancho. En 390 × 844 / 3× ocupa 342 px. Las fuentes pequeñas pueden ampliarse visualmente; los archivos y su detalle original no cambian.
+- Build con TypeScript, ESLint, contenido e imágenes estáticas correctos. Las 32 pruebas Playwright pasan en Chromium de escritorio y móvil: regresión contra el tamaño pintado en la galería para tres fotos pequeñas a 1×/2×/3×, proporciones, límites de ventana, redimensionado, idiomas, teclado, historial, carga lenta/fallida y accesibilidad. Capturas antes/después revisadas en escritorio y móvil. Safari/iOS real y Firefox no probados.
+- Se añade únicamente la rama de esta corrección a la lista permitida del pre-push; los controles del corpus siguen activos.
+
 ## Nitidez de la portada Retina (24 de octubre de 2026)
 
 - Causa reproducida: la portada estaba limitada a 1280 × 720 y `sizes` solo estimaba el ancho de la caja. El recorte con `object-fit: cover` necesita 1851 px de ancho a 1440 × 1000/2× y 2313 px a 1920 × 1080/2×; la imagen se ampliaba y perdía detalle. El modal ya usaba los 2560 px.

@@ -488,11 +488,7 @@ test("viewer shows the complete description and preserves attribution", async ({
   await expect(page.locator("dialog .rights-warning")).toBeVisible();
   await expect(page.locator("dialog .photo-rights a")).toBeVisible();
   await expect(page.locator(".lightbox-description > p")).toBeVisible();
-  expect(
-    await page
-      .locator("dialog")
-      .evaluate((el) => el.getBoundingClientRect().width),
-  ).toBeLessThanOrEqual(322);
+  await expect(page.locator("dialog img")).toBeInViewport();
   const a11y = await new AxeBuilder({ page })
     .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
     .analyze();
@@ -503,7 +499,7 @@ test("viewer shows the complete description and preserves attribution", async ({
 });
 
 for (const density of [1, 2, 3]) {
-  test(`viewer never enlarges source pixels at density ${density}, including resize`, async ({
+  test(`viewer fits the viewport at density ${density}, including resize`, async ({
     browser,
   }, info) => {
     const context = await browser.newContext({
@@ -547,10 +543,6 @@ for (const density of [1, 2, 3]) {
             };
           });
         expect(size.width).toBeGreaterThan(0);
-        expect(size.width * density).toBeLessThanOrEqual(size.sourceWidth + 1);
-        expect(size.height * density).toBeLessThanOrEqual(
-          size.sourceHeight + 1,
-        );
         expect(size.width / size.height).toBeCloseTo(
           size.sourceWidth / size.sourceHeight,
           2,
@@ -558,6 +550,22 @@ for (const density of [1, 2, 3]) {
         expect(size.right).toBeLessThan(size.viewportWidth);
         expect(size.bottom).toBeLessThan(size.viewportHeight);
         expect(size.overflow, id).toBeLessThanOrEqual(1);
+        if (
+          info.project.name === "desktop" &&
+          ["school-building", "shelter-sealed", "edge"].includes(id)
+        ) {
+          // Compare the painted photo, excluding the gallery's contain letterbox.
+          const galleryWidth = await page
+            .locator(`#open-gallery-${id} img`)
+            .evaluate((img, ratio) => {
+              const box = img.getBoundingClientRect();
+              return Math.min(box.width, box.height * ratio);
+            }, size.sourceWidth / size.sourceHeight);
+          expect(
+            size.width,
+            `${id} should open larger than its card`,
+          ).toBeGreaterThan(galleryWidth);
+        }
         if (
           info.project.name === "desktop" &&
           density === 2 &&
