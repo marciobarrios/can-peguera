@@ -7,7 +7,7 @@
   {
     "id": "S04",
     "title": "Barcelona desafecta Plus Ultra y acuerda preservar Can Peguera",
-    "url": "https://ajuntament.barcelona.cat/premsa/wp-content/uploads/2015/01/150128-Plus-Ultra-CAn-Peguera.pdf"
+    "url": "https://ajuntament.barcelona.cat/premsa/2015/01/28/barcelona-desafecta-la-barriada-de-plus-ultra-i-acorda-salvar-i-preservar-can-peguera-lultim-barri-de-cases-barates-de-la-ciutat/"
   },
   {
     "id": "S05",
@@ -27,7 +27,11 @@
   {
     "id": "S10",
     "title": "La Peguera 20. Història d’un barri, especial 40 aniversari",
-    "url": "https://www.canpeguera.com/wp-content/uploads/2016/07/P20_Hivern_2014.pdf"
+    "url": "https://web.archive.org/web/20250619220924/https://www.canpeguera.com/wp-content/uploads/2016/07/P20_Hivern_2014.pdf",
+    "accessNote": {
+      "ca": "Còpia arxivada a Internet Archive",
+      "es": "Copia archivada en Internet Archive"
+    }
   },
   {
     "id": "S11",
@@ -112,7 +116,11 @@
   {
     "id": "S29",
     "title": "La Peguera 9: 30 anys de Festa Major i 75 anys fent barri",
-    "url": "https://www.canpeguera.com/wp-content/uploads/2016/07/P9_Estiu_2004.pdf"
+    "url": "https://web.archive.org/web/20240517235500/https://www.canpeguera.com/wp-content/uploads/2016/07/P9_Estiu_2004.pdf",
+    "accessNote": {
+      "ca": "Còpia arxivada a Internet Archive",
+      "es": "Copia archivada en Internet Archive"
+    }
   },
   {
     "id": "S30",
@@ -142,7 +150,11 @@
   {
     "id": "S37",
     "title": "Actes del Consell, mayo–julio 1931",
-    "url": "https://repositori.justicia.gencat.cat/bitstream/handle/20.500.14226/1815/ACTES_II-1931_maig-juliol.pdf?sequence=1"
+    "url": "https://llibres.blog.gencat.cat/2023/03/31/actes-del-consell-de-la-generalitat-de-catalunya-any-1931-maig-juliol-volum-ii-%E2%94%82-apunt-de-merce-morales/",
+    "accessNote": {
+      "ca": "Presentació de l’edició; PDF original no disponible",
+      "es": "Presentación de la edición; PDF original no disponible"
+    }
   },
   {
     "id": "S38",
@@ -172,7 +184,7 @@
   {
     "id": "S47",
     "title": "Política urbana i pensament econòmic",
-    "url": "https://diposit.ub.edu/dspace/bitstream/2445/42615/2/02.FRR_2de5.pdf"
+    "url": "https://hdl.handle.net/2445/42615"
   },
   {
     "id": "S49",
@@ -202,12 +214,20 @@
   {
     "id": "COM-001",
     "title": "La Peguera, núm. 20, hivern 2014",
-    "url": "https://www.canpeguera.com/wp-content/uploads/2016/07/P20_Hivern_2014.pdf"
+    "url": "https://web.archive.org/web/20250619220924/https://www.canpeguera.com/wp-content/uploads/2016/07/P20_Hivern_2014.pdf",
+    "accessNote": {
+      "ca": "Còpia arxivada a Internet Archive",
+      "es": "Copia archivada en Internet Archive"
+    }
   },
   {
     "id": "COM-003",
     "title": "La Peguera, núm. 8, hivern 2003",
-    "url": "https://www.canpeguera.com/wp-content/uploads/2016/07/P8_Hivern_2003.pdf"
+    "url": "https://web.archive.org/web/20240602155902/https://www.canpeguera.com/wp-content/uploads/2016/07/P8_Hivern_2003.pdf",
+    "accessNote": {
+      "ca": "Còpia arxivada a Internet Archive",
+      "es": "Copia archivada en Internet Archive"
+    }
   },
   {
     "id": "COM-007",
@@ -252,7 +272,7 @@
   {
     "id": "COM-055",
     "title": "Pla de Barris del Turó de la Peira i Can Peguera 2025–2028",
-    "url": "https://www.barcelona.cat/pladebarris/sites/default/files/2025-07/2.PdB_TP_CP_2025_tot_baixa.pdf"
+    "url": "https://www.barcelona.cat/pladebarris/sites/default/files/2025-12/2.PdB_TP_CP_2025_tot_baixa.pdf"
   },
   {
     "id": "COM-057",
@@ -277,7 +297,7 @@
   {
     "id": "POI01",
     "title": "Casal de Barri La Cosa Nostra",
-    "url": "https://ajuntament.barcelona.cat/ciutatdelaliteratura/ca/detail/casal-de-barri-la-cosa-nostra_99400143979"
+    "url": "https://guia.barcelona.cat/ca/detall/casal-de-barri-comunitari-la-cosa-nostra_99400143979.html"
   },
   {
     "id": "POI02",
