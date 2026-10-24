@@ -316,7 +316,7 @@ test("author collection, drone topic, real dates and Sant Joan in both languages
   );
   await expect(page.locator(".hero-photo")).toContainText("2018");
   await expect(page.locator(".hero-photo")).toContainText(
-    "Les cases i l’horitzó de turons",
+    "Les cases de Can Peguera amb Collserola al fons",
   );
   await expect(page.locator(".hero-photo")).not.toContainText(
     "Pere López Brosa",
@@ -765,7 +765,7 @@ test("hero chooses enough pixels for its cover crop and screen density", async (
       .locator(".hero-image img")
       .evaluate((img: HTMLImageElement) => img.decode());
     await expect(page.locator(".hero-photo")).toContainText(
-      "Las casas y el horizonte de colinas",
+      "Las casas de Can Peguera con Collserola al fondo",
     );
     await assertResolution();
     await page.locator(".hero-image").click();
