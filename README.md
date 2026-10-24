@@ -13,6 +13,7 @@ npm run typecheck
 npm run lint
 npm run check:content
 npm run build
+npm run check:images
 npm run preview -- --port 4173
 ```
 
@@ -34,10 +35,20 @@ Playwright usa un navegador aislado, con proyectos de escritorio y móvil. Los r
 - Relato original seleccionado en seis etapas; 31 hitos con fuentes y cautelas.
 - Mapa local con el límite municipal del barrio 47 y diez fichas de lugares. Cuatro tienen puntos representativos; seis ofrecen localización documental sin inventar coordenadas, incluido el refugio 647.
 - Seis coberturas ICGC comparables. Se conserva la diferencia entre rango de cobertura y fecha de vuelo del punto mostreado.
-- Veinte fotografías y planos seleccionados, búsqueda y filtros, visor accesible y derechos por pieza.
+- 54 fotografías y planos seleccionados, búsqueda y filtros, visor accesible y derechos por pieza. Las 35 fotografías de Marcio cuentan con WebP de hasta 2560 px de lado largo y miniaturas de 720 px; el visor limita ancho y alto a la ventana y a la resolución real, con descripción visible.
 - Memoria comunitaria, barrio actual, bibliografía seleccionada, método y criterios de corrección.
 
 Las traducciones editoriales están en `src/content.ts` y en los campos ca/es de los JSON seleccionados. Los títulos bibliográficos y los nombres propios permanecen en su idioma original. No se importa ni se sirve el corpus completo.
+
+## Imágenes y consumo de Vercel
+
+`npm run build` y `npm run dev` preparan los archivos estáticos con `scripts/prepare-images.mjs`; `typecheck` también prepara el manifiesto si es necesario. La galería elige miniaturas o vistas previas de hasta 1280 px de ancho. La portada también dispone de los 2560 px: su `sizes` se calcula con el ancho real pintado por `object-fit: cover`, incluyendo la parte recortada, y el navegador elige según la densidad de pantalla. Se mide antes de asignar las fuentes para evitar una primera descarga de menor resolución y se actualiza al cambiar de tamaño. Las demás ampliaciones del autor se solicitan al abrir su modal, sin precargar las siguientes. Las fotos pequeñas conservan su resolución real.
+
+El build publica las imágenes en `dist/media/` con un hash de contenido en cada nombre. `vercel.json` aplica `Cache-Control: public, max-age=31536000, immutable` solo a esas URLs. Cambiar una imagen cambia su URL; una nueva versión de la web puede reutilizar imágenes sin cambios desde el navegador. Las versiones generadas y su manifiesto se ignoran en Git; los derivados seleccionados de `public/assets/` siguen siendo las entradas auditadas. El manifiesto de derechos publicado se adapta a las URLs finales e incluye las vistas previas. `npm run check:images` valida hashes, tamaños, resolución, atribuciones y la política de caché después del build.
+
+No hay transformaciones de imágenes, funciones ni Blob por visita: Sharp se ejecuta durante la preparación del build. Sí cuentan la transferencia al visitante y las peticiones al CDN, incluso cuando Vercel sirve desde su caché. La caché del navegador evita parte de las visitas repetidas mientras conserve el archivo. Hobby incluye actualmente 100 GB de Fast Data Transfer y un millón de peticiones CDN al mes; hay que considerar el uso conjunto de los proyectos del equipo. Fuentes consultadas el 24/10/2026: [Hobby](https://vercel.com/docs/plans/hobby), [consumo CDN](https://vercel.com/docs/manage-cdn-usage) y [Cache-Control](https://vercel.com/docs/caching/cache-control-headers).
+
+En una prueba local con navegador nuevo, cargar la portada y recorrer todas las fotos de la galería pasó de 25.814.204 a 9.834.268 bytes de imágenes (61,90 % menos), tanto en escritorio Retina 2× como en móvil 3×. Son 57 peticiones; la única ampliación del autor solicitada antes del visor es la portada. Esta carga 525.094 bytes en Retina (382.670 más que su vista previa de 1280 px), con una sola petición de esa imagen; la carga inicial total de imágenes es de 753.832 bytes. En el escritorio de 1440 px a 1× se elige la variante de 1280 px. Son mediciones del recorrido, sin HTML, JS, CSS ni fuentes; no representan el consumo mensual real del equipo. La API de facturación no devolvió datos de consumo en esta revisión: el saldo disponible debe comprobarse en Usage del equipo.
 
 ## Derechos y lanzamiento público
 

@@ -136,8 +136,8 @@ export const copy = {
   ),
   archiveTitle: bi("Mirades que es queden", "Miradas que se quedan"),
   archiveIntro: bi(
-    "Vint imatges per mirar el barri: construcció, escola, vida al carrer i refugi antiaeri. Fotografies i plànols amb procedència individual; quan només coneixem la data de publicació, la presa consta com a no datada.",
-    "Veinte imágenes para mirar el barrio: construcción, escuela, vida en la calle y refugio antiaéreo. Fotografías y planos con procedencia individual; cuando solo conocemos la fecha de publicación, la toma consta como no fechada.",
+    "Fotografies i plànols per mirar el barri: memòria històrica, carrers, vida veïnal i vistes de dron. Les fotografies de Marcio Barrios Lesmes conserven l’any de les dades EXIF; cada peça indica la seva procedència i els drets.",
+    "Fotografías y planos para mirar el barrio: memoria histórica, calles, vida vecinal y vistas de dron. Las fotografías de Marcio Barrios Lesmes conservan el año de los datos EXIF; cada pieza indica su procedencia y derechos.",
   ),
   search: bi("Cerca a l’arxiu", "Buscar en el archivo"),
   searchPlaceholder: bi(
@@ -151,8 +151,15 @@ export const copy = {
   allPeriods: bi("Totes les èpoques", "Todas las épocas"),
   allRights: bi("Tots els estats", "Todos los estados"),
   licensed: bi("Llicència comprovada", "Licencia comprobada"),
+  authorPermissionShort: bi("Permís de l’autor", "Permiso del autor"),
+  personalArchive: bi("Arxiu personal", "Archivo personal"),
+  authorPermission: bi(
+    "Publicada amb permís de l’autor. Tots els drets reservats.",
+    "Publicada con permiso del autor. Todos los derechos reservados.",
+  ),
   pendingShort: bi("Autorització pendent", "Autorización pendiente"),
   topics: {
+    drone: bi("Vista de dron", "Vista de dron"),
     houses: bi("Cases i paisatge", "Casas y paisaje"),
     life: bi("Vida veïnal", "Vida vecinal"),
     places: bi("Llocs i detalls", "Lugares y detalles"),
@@ -169,6 +176,11 @@ export const copy = {
   reset: bi("Restableix els filtres", "Restablecer filtros"),
   openImage: bi("Amplia la imatge", "Ampliar imagen"),
   close: bi("Tanca la imatge", "Cerrar imagen"),
+  imageLoading: bi("Carregant la imatge…", "Cargando la imagen…"),
+  imageError: bi(
+    "No s’ha pogut carregar la imatge.",
+    "No se ha podido cargar la imagen.",
+  ),
   previous: bi("Imatge anterior", "Imagen anterior"),
   next: bi("Imatge següent", "Imagen siguiente"),
   unknownAuthor: bi(
@@ -245,8 +257,8 @@ export const copy = {
     "Impulsado por Marcio. Investigación documental asistida y selección editorial en revisión. Fotografías y cartografía acreditadas junto a cada pieza.",
   ),
   date: bi(
-    "Edició del 12 d’octubre de 2026",
-    "Edición del 12 de octubre de 2026",
+    "Edició del 24 d’octubre de 2026",
+    "Edición del 24 de octubre de 2026",
   ),
   top: bi("Torna a l’inici", "Volver al inicio"),
   nojs: bi(

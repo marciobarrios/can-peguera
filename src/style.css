@@ -1168,79 +1168,115 @@ dialog {
   padding: 0;
   background: var(--paper);
   color: var(--ink);
-  width: min(1260px, 94vw);
-  max-width: 94vw;
-  max-height: 92dvh;
+  width: var(--lightbox-image-width, 480px);
+  min-width: min(320px, calc(100vw - 24px));
+  max-width: calc(100vw - 24px);
+  max-height: 96dvh;
   border-radius: 4px;
+  overscroll-behavior: contain;
 }
 dialog::backdrop {
-  background: #122c28dc;
+  background: #122c28ed;
   backdrop-filter: blur(5px);
 }
 .lightbox-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 22px;
+  gap: 8px;
+  padding: 6px 12px;
   border-bottom: 1px solid var(--line);
-  font-size: 13px;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
   position: sticky;
   top: 0;
   z-index: 1;
   background: var(--paper);
 }
+.lightbox-controls,
 .lightbox-languages {
   display: flex;
-  gap: 6px;
   align-items: center;
 }
 .lightbox-languages > button:not(.icon-button) {
   min-width: 44px;
+  min-height: 44px;
   font-size: 12px;
+}
+.lightbox-controls button:focus-visible {
+  outline-offset: -3px;
 }
 .lightbox-languages button[aria-pressed="true"] {
   text-decoration: underline;
 }
 .lightbox-body {
-  display: grid;
-  grid-template-columns: 1.7fr 1fr;
-  align-items: center;
-  gap: 25px;
-  padding: 28px;
+  padding: 16px;
 }
-.lightbox-body > img {
-  width: 100%;
-  max-height: 73dvh;
+.lightbox-stage {
+  display: grid;
+  place-items: center;
+}
+.lightbox-image {
+  max-width: 100%;
   object-fit: contain;
+  outline: 1px solid oklch(0 0 0 / 0.1);
+  outline-offset: -1px;
+}
+.lightbox-image[hidden],
+dialog[data-image-state="ready"] .lightbox-status {
+  display: none;
+}
+.lightbox-status {
+  display: grid;
+  place-items: center;
+  min-height: min(60dvh, 480px);
+  font-size: 14px;
+}
+.lightbox-caption {
+  min-width: 0;
+  padding-top: 16px;
 }
 .lightbox-caption h2 {
-  font-size: 35px;
-  margin: 10px 0 20px;
+  font-size: 24px;
+  line-height: 1.2;
+  margin: 4px 0 10px;
+  text-wrap: balance;
 }
 .lightbox-caption > p {
-  font-size: 13px;
+  font-size: 12px;
+  color: var(--muted);
 }
 .lightbox-caption .photo-rights {
   font-size: 12px;
 }
 .lightbox-caption .rights-warning {
-  font-size: 13px;
-}
-.lightbox-nav {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  margin-top: 30px;
-}
-.lightbox-nav button {
   font-size: 12px;
-  padding: 8px 0;
-}
-.lightbox-caption {
-  min-width: 0;
 }
 .lightbox-caption a {
   overflow-wrap: anywhere;
+}
+.lightbox-description {
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.lightbox-description > p {
+  max-width: 85ch;
+}
+@media (min-width: 700px) and (max-height: 600px) {
+  dialog {
+    width: var(--lightbox-image-width, 760px);
+  }
+  .lightbox-body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+    gap: 24px;
+    align-items: center;
+  }
+  .lightbox-caption {
+    padding-top: 0;
+  }
 }
 @media (hover: hover) and (pointer: fine) {
   #site-nav a:hover:after {
@@ -1440,12 +1476,6 @@ dialog::backdrop {
   }
   .method-columns {
     gap: 25px;
-  }
-  .lightbox-body {
-    grid-template-columns: 1.3fr 1fr;
-  }
-  .lightbox-caption h2 {
-    font-size: 28px;
   }
   .compare-selects label {
     min-width: 140px;
@@ -1789,34 +1819,10 @@ dialog::backdrop {
     font-size: 12px;
   }
   .lightbox-body {
-    display: block;
-    padding: 16px;
-  }
-  .lightbox-body > img {
-    max-height: 48dvh;
-  }
-  .lightbox-caption {
-    padding-top: 20px;
+    padding: 12px;
   }
   .lightbox-caption h2 {
-    font-size: 30px;
-  }
-  .lightbox-top {
-    padding: 5px 12px;
-  }
-  .lightbox-nav {
-    margin-top: 20px;
-  }
-  .lightbox-caption .rights-warning {
-    font-size: 12px;
-  }
-  dialog {
-    width: 96vw;
-    max-width: 96vw;
-    max-height: 94dvh;
-  }
-  .lightbox-caption .photo-rights {
-    font-size: 11px;
+    font-size: 22px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
