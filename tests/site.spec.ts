@@ -1,3 +1,6 @@
+import imageData from "../src/generated/images.json" with { type: "json" };
+const imageFiles: Record<string, { url: string }> = imageData.files;
+const imageURL = (name: string) => imageFiles[name].url;
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
@@ -317,7 +320,7 @@ test("author collection, drone topic, real dates and Sant Joan in both languages
   );
   await expect(page.locator(".hero-image img")).toHaveAttribute(
     "src",
-    "/assets/marcio-img-5115-large.webp",
+    imageURL("marcio-img-5115-small.webp"),
   );
   await page.selectOption("#archive-rights", "author");
   await expect(page.locator(".gallery-card")).toHaveCount(35);
@@ -403,13 +406,16 @@ test("all new full-size images and responsive portraits load without the removed
   expect(ids).not.toContain("marcio-img-5032");
   expect(ids).not.toContain("marcio-img-5116");
   for (const id of ids) {
-    const response = await request.get(`/assets/${id}-large.webp`);
+    const response = await request.get(imageURL(`${id}-large.webp`));
     expect(response.ok()).toBe(true);
     expect(response.headers()["content-type"]).toContain("image/webp");
   }
   await expect(
     page.locator("#open-gallery-marcio-img-3057 img"),
-  ).toHaveAttribute("srcset", /small.webp 720w, .*large.webp 1920w/);
+  ).toHaveAttribute(
+    "srcset",
+    /small\.[a-f0-9]+\.webp 720w, .*preview\.[a-f0-9]+\.webp 1280w/,
+  );
   await expect(page.locator('img[src*="/street-"]')).toHaveCount(0);
   await expect(page.locator('a[href=""]')).toHaveCount(0);
   await page.goto("/es/?photo=marcio-img-7604");
@@ -612,7 +618,7 @@ test("viewer handles slow and failed images without oversized placeholders or st
   const gate = new Promise<void>((resolve) => {
     release = resolve;
   });
-  await page.route("**/assets/marcio-dji-0022-large.webp", async (route) => {
+  await page.route("**/media/marcio-dji-0022-large.*.webp", async (route) => {
     await gate;
     await route.continue();
   });
@@ -635,9 +641,9 @@ test("viewer handles slow and failed images without oversized placeholders or st
   release();
   await expect(page.locator("dialog img")).toHaveAttribute(
     "src",
-    "/assets/marcio-dji-0023-large.webp",
+    imageURL("marcio-dji-0023-large.webp"),
   );
-  await page.route("**/assets/shelter-sealed-large.webp", (route) =>
+  await page.route("**/media/shelter-sealed-large.*.webp", (route) =>
     route.abort(),
   );
   await page.goto("/es/?photo=shelter-sealed");
@@ -655,4 +661,40 @@ test("viewer handles slow and failed images without oversized placeholders or st
     "ready",
   );
   await expect(page.locator(".lightbox-status")).not.toBeVisible();
+});
+
+test("gallery reserves full-resolution author images for the opened modal", async ({
+  page,
+}) => {
+  const requested: string[] = [];
+  page.on("request", (request) => {
+    if (request.resourceType() === "image") requested.push(request.url());
+  });
+  await page.goto("/ca/");
+  await page.selectOption("#archive-rights", "author");
+  for (const image of await page.locator(".gallery-card img").all()) {
+    await image.scrollIntoViewIfNeeded();
+    await image.evaluate((img: HTMLImageElement) => img.decode());
+    expect(
+      await image.evaluate((img: HTMLImageElement) => img.currentSrc),
+    ).not.toMatch(/marcio-.*-large\./);
+  }
+  expect(requested.filter((url) => /marcio-.*-large\./.test(url))).toEqual([]);
+  expect(
+    requested.every((url) => new URL(url).pathname.startsWith("/media/")),
+  ).toBe(true);
+  expect(requested.some((url) => url.includes("/_next/image"))).toBe(false);
+  await page.locator("#open-gallery-marcio-dji-0022").click();
+  await expect(page.locator("dialog")).toHaveAttribute(
+    "data-image-state",
+    "ready",
+  );
+  expect(requested.filter((url) => /marcio-.*-large\./.test(url))).toHaveLength(
+    1,
+  );
+  expect(
+    await page
+      .locator("dialog img")
+      .evaluate((img: HTMLImageElement) => img.naturalWidth),
+  ).toBe(2560);
 });

@@ -1,5 +1,13 @@
 # Verificación de la ampliación
 
+## Entrega estática y transferencia (24 de octubre de 2026)
+
+- Se detectó que `srcset` podía seleccionar las 35 ampliaciones de 2560 px al recorrer la galería en Retina, antes de abrir el modal. Ahora portada y tarjetas usan vistas previas de hasta 1280 px, con las miniaturas de 720 px como opción menor. La ampliación se carga al abrir su foto; no se precargan las adyacentes.
+- 114 archivos de entrada auditados → 158 imágenes estáticas publicadas (44 vistas previas adicionales), 38.274.224 bytes en el artefacto completo. Ese tamaño no se descarga por visita. Generación durante el build, sin funciones, Blob ni Image Optimization de Vercel en ejecución. Los generados se ignoran en Git.
+- URLs con hash SHA-256 de contenido y caché de navegador de un año solo para `/media/`. El manifiesto de derechos publicado enlaza todas las variantes finales; se eliminan las copias sin versión del artefacto de producción. HTML conserva su política de actualización independiente.
+- Medición en Chromium nuevo, escritorio de 1440 × 1000 a 2× y móvil de 390 × 844 a 3×: portada 972.130 → 408.628 bytes de imágenes; recorrido completo de la galería 25.814.204 → 9.309.174 bytes (63,94 % menos), con 56 peticiones. No incluye los otros recursos ni aperturas posteriores de fotos. No se obtuvo consumo acumulado del equipo desde la API de facturación (`costs_not_found`); no se interpreta como consumo cero.
+- Build, TypeScript, ESLint, contenido y comprobación del artefacto correctos. 30 pruebas Playwright aprobadas (15 escritorio y 15 móvil Chromium), incluidas carga de todas las variantes, acceso a 2560 px solo al abrir, avisos y créditos, dos idiomas, tamaños Retina, verticales sin scroll, teclado, historial y axe. La comprobación estática valida los hashes contra los archivos servidos, la resolución sin ampliación artificial, las 158 atribuciones y la regla de caché. Safari/iOS real y Firefox no probados.
+
 ## Ampliaciones de 2560 px y descripción visible (24 de octubre de 2026)
 
 - Se regeneran las 35 ampliaciones de la colección de Marcio desde sus originales con orientación EXIF, sRGB, `-resize '2560x2560>'`, calidad WebP 80 y método 6, sin EXIF/XMP incrustados. 34 alcanzan 2560 px de lado largo; `Drone view/IMG_0415.JPG` conserva sus 2280 × 2280 px originales, sin ampliación artificial. Los 37 originales mantienen sus SHA-256 anteriores; las miniaturas de 720 px y la selección aprobada se conservan.

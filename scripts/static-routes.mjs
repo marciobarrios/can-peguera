@@ -16,3 +16,36 @@ for (const lang of ["ca", "es"]) {
       );
   await fs.writeFile(`dist/${lang}/index.html`, content);
 }
+
+const images = JSON.parse(
+  await fs.readFile("src/generated/images.json", "utf8"),
+).files;
+const rights = JSON.parse(
+  await fs.readFile("public/asset-rights.json", "utf8"),
+);
+const published = rights.flatMap((record) => {
+  const image = images[record.file.replace("assets/", "")];
+  const original = {
+    ...record,
+    sourceDerivative: record.file,
+    file: image.url.slice(1),
+  };
+  return image.preview
+    ? [
+        original,
+        {
+          ...original,
+          file: image.preview.url.slice(1),
+          bytes: image.preview.bytes,
+          transformations: `${record.transformations}; static 1280px gallery preview`,
+        },
+      ]
+    : [original];
+});
+await fs.writeFile(
+  "dist/asset-rights.json",
+  `${JSON.stringify(published, null, 2)}\n`,
+);
+for (const name of await fs.readdir("dist/assets")) {
+  if (name.endsWith(".webp")) await fs.unlink(`dist/assets/${name}`);
+}

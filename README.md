@@ -13,6 +13,7 @@ npm run typecheck
 npm run lint
 npm run check:content
 npm run build
+npm run check:images
 npm run preview -- --port 4173
 ```
 
@@ -38,6 +39,16 @@ Playwright usa un navegador aislado, con proyectos de escritorio y móvil. Los r
 - Memoria comunitaria, barrio actual, bibliografía seleccionada, método y criterios de corrección.
 
 Las traducciones editoriales están en `src/content.ts` y en los campos ca/es de los JSON seleccionados. Los títulos bibliográficos y los nombres propios permanecen en su idioma original. No se importa ni se sirve el corpus completo.
+
+## Imágenes y consumo de Vercel
+
+`npm run build` y `npm run dev` preparan los archivos estáticos con `scripts/prepare-images.mjs`; `typecheck` también prepara el manifiesto si es necesario. La galería y la portada eligen miniaturas o vistas previas de hasta 1280 px de ancho. Las ampliaciones de 2560 px del autor se solicitan únicamente al abrir su modal, sin precargar las siguientes. Las fotos pequeñas conservan su resolución real.
+
+El build publica las imágenes en `dist/media/` con un hash de contenido en cada nombre. `vercel.json` aplica `Cache-Control: public, max-age=31536000, immutable` solo a esas URLs. Cambiar una imagen cambia su URL; una nueva versión de la web puede reutilizar imágenes sin cambios desde el navegador. Las versiones generadas y su manifiesto se ignoran en Git; los derivados seleccionados de `public/assets/` siguen siendo las entradas auditadas. El manifiesto de derechos publicado se adapta a las URLs finales e incluye las vistas previas. `npm run check:images` valida hashes, tamaños, resolución, atribuciones y la política de caché después del build.
+
+No hay transformaciones de imágenes, funciones ni Blob por visita: Sharp se ejecuta durante la preparación del build. Sí cuentan la transferencia al visitante y las peticiones al CDN, incluso cuando Vercel sirve desde su caché. La caché del navegador evita parte de las visitas repetidas mientras conserve el archivo. Hobby incluye actualmente 100 GB de Fast Data Transfer y un millón de peticiones CDN al mes; hay que considerar el uso conjunto de los proyectos del equipo. Fuentes consultadas el 24/10/2026: [Hobby](https://vercel.com/docs/plans/hobby), [consumo CDN](https://vercel.com/docs/manage-cdn-usage) y [Cache-Control](https://vercel.com/docs/caching/cache-control-headers).
+
+En una prueba local con navegador nuevo, cargar la portada y recorrer todas las fotos de la galería pasó de 25.814.204 a 9.309.174 bytes de imágenes (63,94 % menos), tanto en escritorio Retina 2× como en móvil 3×. Las 56 peticiones de imagen del recorrido se mantienen, pero ninguna solicita las ampliaciones de Marcio hasta abrir el visor. La portada pasó de 972.130 a 408.628 bytes de imágenes (57,97 % menos). Son mediciones del recorrido, sin HTML, JS, CSS ni fuentes; no representan el consumo mensual real del equipo. La API de facturación no devolvió datos de consumo en esta revisión: el saldo disponible debe comprobarse en Usage del equipo.
 
 ## Derechos y lanzamiento público
 

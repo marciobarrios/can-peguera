@@ -29,6 +29,8 @@ const allowedRoots = new Set([
   "docs/licenses/DM-Sans-OFL.txt",
   "scripts/check-content.mjs",
   "scripts/static-routes.mjs",
+  "scripts/prepare-images.mjs",
+  "scripts/check-static-images.mjs",
   "scripts/verify-push.mjs",
   "tests/site.spec.ts",
   "src/main.ts",
