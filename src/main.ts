@@ -435,13 +435,14 @@ function fitLightboxImage() {
   const verticalPadding =
     parseFloat(bodyStyle.paddingTop) + parseFloat(bodyStyle.paddingBottom);
   const maxHeight = window.innerHeight * 0.96;
-  const maxWidth = document.documentElement.clientWidth - 24;
+  const maxWidth = Math.min(960, document.documentElement.clientWidth - 24);
   const sideBySide = matchMedia(
     "(min-width: 700px) and (max-height: 600px)",
   ).matches;
-  // Fit in CSS pixels, like the gallery: source resolution and screen density
-  // must not shrink the opened photo. Fix text width before measuring wrapping.
+  // Allow one CSS pixel per source pixel, independent of screen density.
+  // Keep small photos at native size and large photos in a moderate-width dialog.
   const initialScale = Math.min(
+    1,
     Math.max(1, maxWidth - horizontalPadding) / image.naturalWidth,
     Math.max(1, maxHeight - topHeight - verticalPadding - 120) /
       image.naturalHeight,
@@ -461,6 +462,7 @@ function fitLightboxImage() {
     .querySelector<HTMLElement>(".lightbox-caption")!
     .getBoundingClientRect().height;
   const scale = Math.min(
+    1,
     Math.max(
       1,
       dialog.querySelector<HTMLElement>(".lightbox-stage")!.clientWidth,

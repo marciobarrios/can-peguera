@@ -464,7 +464,8 @@ test("viewer shows the complete description and preserves attribution", async ({
   expect(layout.captionTop).toBeGreaterThanOrEqual(layout.bottom);
   expect(layout.imageWidth).toBeLessThan(layout.dialogWidth);
   if (info.project.name === "desktop")
-    expect(layout.imageWidth).toBeGreaterThan(1200);
+    expect(layout.imageWidth).toBeGreaterThan(800);
+  expect(layout.dialogWidth).toBeLessThanOrEqual(960);
   await page.screenshot({
     path: `test-results/${info.project.name}-viewer-landscape.png`,
   });
@@ -543,6 +544,9 @@ for (const density of [1, 2, 3]) {
             };
           });
         expect(size.width).toBeGreaterThan(0);
+        expect(size.width).toBeLessThanOrEqual(size.sourceWidth);
+        expect(size.height).toBeLessThanOrEqual(size.sourceHeight);
+        expect(size.width).toBeLessThanOrEqual(960);
         expect(size.width / size.height).toBeCloseTo(
           size.sourceWidth / size.sourceHeight,
           2,
@@ -565,13 +569,15 @@ for (const density of [1, 2, 3]) {
             size.width,
             `${id} should open larger than its card`,
           ).toBeGreaterThan(galleryWidth);
+          if (id === "school-building")
+            expect(size.width).toBe(size.sourceWidth);
         }
         if (
           info.project.name === "desktop" &&
           density === 2 &&
           id === "marcio-dji-0022"
         )
-          expect(size.width).toBeGreaterThan(1200);
+          expect(size.width).toBeGreaterThan(800);
       }
       await page.goto("http://127.0.0.1:4173/es/?photo=marcio-img-3714");
       await expect(page.locator("dialog")).toHaveAttribute(
