@@ -4,6 +4,7 @@ import { readFileSync } from "node:fs";
 // Fail closed. This control permits only the selected website, never the archive.
 const repository = "marciobarrios/can-peguera";
 const allowedRefs = new Set([
+  "refs/heads/codex/hero-photo-corner",
   "refs/heads/codex/can-peguera-own-photos",
   "refs/heads/codex/fix-mobile-history-overlap",
   "refs/heads/main",
