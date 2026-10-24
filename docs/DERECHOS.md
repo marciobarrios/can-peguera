@@ -1,14 +1,13 @@
 # Derechos por pieza y lanzamiento público
 
-El repositorio es público y Marcio autoriza los despliegues públicos de la web según `AGENTS.md`, sin requisito de preview privada. Esta autorización no acredita el permiso de los titulares ni cambia el estado de las dieciséis piezas pendientes. Los avisos están junto a cada aparición, también en el visor.
+El repositorio es público y Marcio autoriza los despliegues públicos de la web según `AGENTS.md`, sin requisito de preview privada. Esta autorización no acredita el permiso de los titulares ni cambia el estado de las catorce piezas pendientes. Los avisos están junto a cada aparición, también en el visor.
 
-## Cuatro imágenes municipales de la primera edición
+## Tres imágenes municipales de la primera edición conservadas
 
 | ID web    | Autor                 | Depositario y fondo                                         | Fuente                                                 |
 | --------- | --------------------- | ----------------------------------------------------------- | ------------------------------------------------------ |
 | masia     | Mut, J.               | AMDHG, Fons Jaume Caminal Serret                            | https://catalegarxiumunicipal.bcn.cat/detail/68453284  |
 | school    | Josep Domínguez Martí | Arxiu Fotogràfic de Barcelona, Fons Ajuntament de Barcelona | https://catalegarxiumunicipal.bcn.cat/detail/168373776 |
-| neighbors | Desconocido en ficha  | Arxiu Fotogràfic de Barcelona, Fons Diario de Barcelona     | https://catalegarxiumunicipal.bcn.cat/detail/172680683 |
 | panorama  | Desconocido en ficha  | AMDHG, Fons Jaume Caminal Serret                            | https://catalegarxiumunicipal.bcn.cat/detail/68453285  |
 
 Son JPEG de consulta del catálogo. Los derivados WebP cambian tamaño y compresión; no hay reconstrucción ni edición generativa. No declarar dominio público por antigüedad ni confundir depositario con titular de derechos. La fecha de la masía y la panorámica es aproximada; la escuela corresponde a marzo de 1932, no a la fecha de su inauguración.
@@ -30,16 +29,16 @@ Avís CA: «Autorització de reproducció pendent. Abans de publicar aquesta ima
 
 ## Seguimiento de derechos y revisión editorial
 
-Mantener el estado pendiente y los avisos individuales de las dieciséis piezas mientras no se documente el permiso de sus titulares. Registrar cualquier confirmación de derechos o retirada en `src/gallery.json` y `public/asset-rights.json`. La autorización de despliegue no concede una licencia sobre estas imágenes. Revisar citas, traducciones, atribuciones, alcance de fuentes y accesibilidad con personas reales. No presentar la actividad prevista del 25 de octubre de 2026 como celebrada.
+Mantener el estado pendiente y los avisos individuales de las catorce piezas mientras no se documente el permiso de sus titulares. Registrar cualquier confirmación de derechos o retirada en `src/gallery.json` y `public/asset-rights.json`. La autorización de despliegue no concede una licencia sobre estas imágenes. Revisar citas, traducciones, atribuciones, alcance de fuentes y accesibilidad con personas reales. No presentar la actividad prevista del 25 de octubre de 2026 como celebrada.
 
-## Doce piezas añadidas el 12 de octubre de 2026
+## Once piezas conservadas de la ampliación del 12 de octubre de 2026
 
 Todas quedan pendientes de permiso, con aviso individual ca/es en galería, fichas de lugares y visor. `src/gallery.json` y `public/asset-rights.json` conservan fuentes y créditos por pieza. Las fechas de publicación no se convierten en fechas de captura.
 
 | ID web | Procedencia o depositario citado |
 | --- | --- |
 | construction | Memòria dels barris; crédito de procedencia a Ricard Cidoncha / Fotos de Can Peguera, sin atribuirle la toma histórica |
-| housing-plan, school-building, street-life | Memòria dels barris; autoría individual sin identificar |
+| school-building, street-life | Memòria dels barris; autoría individual sin identificar |
 | casa-poble | Associació Veïnal de Can Peguera, según Memòria dels barris |
 | shelter-entrance, shelter-sealed | Arxiu Històric de Roquetes–Nou Barris, según Memòria dels barris |
 | shelter-vault, shelter-plan | Tot Barcelona; original y autoría por confirmar |
@@ -52,7 +51,7 @@ Los medios íntegros descargados, incluidas variantes y descartes, se conservan 
 
 34 fotografías aportadas por su autor y publicadas por petición expresa: 14 de la carpeta `Drone view` y 20 del resto. Crédito y depositario: Marcio Barrios Lesmes. Se muestran como archivo personal, con permiso del autor para esta web y todos los derechos reservados; no se les asigna una licencia Creative Commons ni un enlace de fuente ficticio. El filtro «Permiso del autor» las distingue de las licencias verificadas y de las piezas pendientes.
 
-Se retira «Carrers i cases» (`street`) de Pere López Brosa y sus dos derivados. La portada utiliza «Les cases i l’horitzó de turons», `Drone view/E2643A21A1F2CA43FEF04C5FC4ABB664.jpg` (2018), con el crédito de Marcio Barrios Lesmes. Las otras atribuciones y los dieciséis avisos pendientes se conservan.
+Se retira «Carrers i cases» (`street`) de Pere López Brosa y sus dos derivados. La portada utiliza «Les cases i l’horitzó de turons», `Drone view/E2643A21A1F2CA43FEF04C5FC4ABB664.jpg` (2018), con el crédito de Marcio Barrios Lesmes. Las otras atribuciones y los catorce avisos pendientes se conservan.
 
 Las 37 imágenes suministradas se convirtieron a WebP. El autor aprobó excluir de la galería `IMG_5032.jpg` e `IMG_5116.jpg` por similitud; sus derivados quedan solo en el archivo local ignorado. Se conservan las 14 de dron, incluidas las variaciones próximas y el encuadre cuadrado `IMG_0415.JPG`, que comparte fecha y hora con `E2643A21A1F2CA43FEF04C5FC4ABB664.jpg`. Los originales no se modifican ni se incorporan a Git.
 
@@ -63,3 +62,9 @@ La imagen de Sant Joan es `IMG_3714.HEIC`, fechada por EXIF el 24 de junio de 20
 ### Variantes estáticas de entrega
 
 El inventario versionado `public/asset-rights.json` describe los derivados de entrada. Durante el build se publica un manifiesto equivalente en `dist/asset-rights.json`, con las URLs finales que incluyen hash, el campo `sourceDerivative` para relacionar cada entrada con su derivado auditado y las vistas previas de 1280 px cuando corresponda. Las vistas previas heredan autor, titular, licencia, fuente, fecha y estado de permiso; se registra la transformación adicional. No se añaden nuevas fuentes fotográficas ni se cambia ninguna autorización.
+
+### Orden y retiradas de la galería (24 de octubre de 2026)
+
+La galería y la navegación del visor muestran primero las fotografías históricas, después las 34 fotografías de Marcio y finalmente las demás piezas. Las históricas con fecha se ordenan cronológicamente; «La vida davant de casa» cierra ese grupo y conserva su fecha sin confirmar. No se modifica la datación de ninguna imagen.
+
+Por indicación del autor del proyecto se retiran «El veïnat pren la paraula» (`neighbors`) y «El traçat de les cases barates» (`housing-plan`), sus cuatro derivados públicos y sus entradas del manifiesto de derechos. La sección de vida vecinal pasa a utilizar «La vida davant de casa». Quedan 51 piezas en la galería, 14 de ellas pendientes de permiso; sus créditos, fuentes y avisos ca/es se mantienen.

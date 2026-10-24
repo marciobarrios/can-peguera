@@ -100,26 +100,6 @@
     "bytes": 228738
   },
   {
-    "file": "assets/neighbors-small.webp",
-    "source": "https://catalegarxiumunicipal.bcn.cat/detail/172680683",
-    "author": "",
-    "holder": "Arxiu Fotogràfic de Barcelona · Fons Diario de Barcelona",
-    "license": "",
-    "pending": true,
-    "transformations": "EXIF orientation, resize, WebP compression; no generative editing",
-    "bytes": 77876
-  },
-  {
-    "file": "assets/neighbors-large.webp",
-    "source": "https://catalegarxiumunicipal.bcn.cat/detail/172680683",
-    "author": "",
-    "holder": "Arxiu Fotogràfic de Barcelona · Fons Diario de Barcelona",
-    "license": "",
-    "pending": true,
-    "transformations": "EXIF orientation, resize, WebP compression; no generative editing",
-    "bytes": 216428
-  },
-  {
     "file": "assets/panorama-small.webp",
     "source": "https://catalegarxiumunicipal.bcn.cat/detail/68453285",
     "author": "",
@@ -220,28 +200,6 @@
     "pending": true,
     "transformations": "EXIF orientation, resize, WebP compression; no generative editing",
     "bytes": 109434
-  },
-  {
-    "file": "assets/housing-plan-small.webp",
-    "source": "https://memoriadelsbarris.blogspot.com/2011/11/historia-del-barri-de-can-peguera.html",
-    "sourceImage": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEja2IVcofJIxqFlzbG7sIS4fw5DufL1zsplxBy2VlJucZdZn7TxU1DMR8dhG95xDHv5huGGzGkFw1So7jb2N3BJ4bqGcyBiaWRmUwOPWJW49P9ax88ArvC_5XM0JQJ4PKrbEr9WC4jcil0/s0/planol+cases+barates+horta.JPG",
-    "author": "",
-    "holder": "Memòria dels barris",
-    "license": "",
-    "pending": true,
-    "transformations": "EXIF orientation, resize, WebP compression; no generative editing",
-    "bytes": 77758
-  },
-  {
-    "file": "assets/housing-plan-large.webp",
-    "source": "https://memoriadelsbarris.blogspot.com/2011/11/historia-del-barri-de-can-peguera.html",
-    "sourceImage": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEja2IVcofJIxqFlzbG7sIS4fw5DufL1zsplxBy2VlJucZdZn7TxU1DMR8dhG95xDHv5huGGzGkFw1So7jb2N3BJ4bqGcyBiaWRmUwOPWJW49P9ax88ArvC_5XM0JQJ4PKrbEr9WC4jcil0/s0/planol+cases+barates+horta.JPG",
-    "author": "",
-    "holder": "Memòria dels barris",
-    "license": "",
-    "pending": true,
-    "transformations": "EXIF orientation, resize, WebP compression; no generative editing",
-    "bytes": 87790
   },
   {
     "file": "assets/school-building-small.webp",
