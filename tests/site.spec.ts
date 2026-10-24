@@ -682,7 +682,13 @@ test("gallery reserves full-resolution author images for the opened modal", asyn
       await image.evaluate((img: HTMLImageElement) => img.currentSrc),
     ).not.toMatch(/marcio-.*-large\./);
   }
-  expect(requested.filter((url) => /marcio-.*-large\./.test(url))).toEqual([]);
+  const modalRequests = () =>
+    requested.filter(
+      (url) =>
+        /marcio-.*-large\./.test(url) &&
+        new URL(url).pathname !== imageURL("marcio-drone-e2643a21-large.webp"),
+    );
+  expect(modalRequests()).toEqual([]);
   expect(
     requested.every((url) => new URL(url).pathname.startsWith("/media/")),
   ).toBe(true);
@@ -692,12 +698,82 @@ test("gallery reserves full-resolution author images for the opened modal", asyn
     "data-image-state",
     "ready",
   );
-  expect(requested.filter((url) => /marcio-.*-large\./.test(url))).toHaveLength(
-    1,
-  );
+  expect(modalRequests()).toHaveLength(1);
   expect(
     await page
       .locator("dialog img")
       .evaluate((img: HTMLImageElement) => img.naturalWidth),
   ).toBe(2560);
+});
+
+test("hero chooses enough pixels for its cover crop and screen density", async ({
+  browser,
+}) => {
+  const full = imageData.files["marcio-drone-e2643a21-large.webp"];
+  const small = imageData.files["marcio-drone-e2643a21-small.webp"];
+  const variants = [small, full.preview, full];
+  for (const [width, height, density] of [
+    [1440, 1000, 1],
+    [1440, 1000, 2],
+    [1920, 1080, 2],
+    [390, 844, 3],
+  ]) {
+    const page = await browser.newPage({
+      viewport: { width, height },
+      deviceScaleFactor: density,
+    });
+    const requests: string[] = [];
+    page.on("request", (request) => {
+      if (request.url().includes("/media/marcio-drone-e2643a21-"))
+        requests.push(request.url());
+    });
+    await page.goto("/ca/");
+    const image = page.locator(".hero-image img");
+    await image.evaluate((img: HTMLImageElement) => img.decode());
+    const assertResolution = async () => {
+      const measured = await image.evaluate((img: HTMLImageElement) => {
+        const box = img.getBoundingClientRect();
+        const ratio =
+          Number(img.getAttribute("width")) /
+          Number(img.getAttribute("height"));
+        return {
+          url: new URL(img.currentSrc).pathname,
+          requiredWidth: Math.ceil(
+            Math.max(box.width, box.height * ratio) * window.devicePixelRatio,
+          ),
+          coverWidth: Math.ceil(Math.max(box.width, box.height * ratio)),
+          sizes: img.sizes,
+        };
+      });
+      const chosen = variants.find((variant) => variant.url === measured.url)!;
+      expect(chosen.width).toBeGreaterThanOrEqual(
+        Math.min(measured.requiredWidth, full.width),
+      );
+      expect(measured.sizes).toBe(`${measured.coverWidth}px`);
+      return chosen;
+    };
+    const chosen = await assertResolution();
+    expect(chosen.url).toBe(density === 1 ? full.preview.url : full.url);
+    expect(requests).toHaveLength(1);
+    await page.setViewportSize({ width: 1920, height: 1080 });
+    await expect.poll(() => image.getAttribute("sizes")).not.toBeNull();
+    await expect(async () => {
+      await assertResolution();
+    }).toPass();
+    await page.locator('.header-tools [data-lang="es"]').click();
+    await page
+      .locator(".hero-image img")
+      .evaluate((img: HTMLImageElement) => img.decode());
+    await expect(page.locator(".hero-photo")).toContainText(
+      "Las casas y el horizonte de colinas",
+    );
+    await assertResolution();
+    await page.locator(".hero-image").click();
+    await expect(page.locator("dialog")).toHaveAttribute(
+      "data-image-state",
+      "ready",
+    );
+    await expect(page.locator("dialog img")).toHaveAttribute("src", full.url);
+    await page.close();
+  }
 });

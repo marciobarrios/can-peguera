@@ -87,18 +87,20 @@ const credit = (p: Photo) =>
     : `${esc(author(p))}. ${esc(p.holder)}. <a href="${esc(p.source)}">${t(copy.readSource)}</a>${p.license ? ` · <a href="${esc(p.licenseUrl)}">${esc(p.license)}</a>` : ""}`;
 const rights = (p: Photo, full = true) =>
   `<div class="photo-rights ${p.pending ? "pending" : ""}">${p.pending ? `<p class="rights-warning">${t(copy.pending)}</p>` : ""}<p>${credit(p)}${full ? `<br>${t(copy.resized)} ${p.license.includes("BY-SA") ? t(copy.shareAlike) : ""}` : ""}</p></div>`;
-const img = (p: Photo, eager = false) => {
+const img = (p: Photo, isHero = false) => {
   const small = media[`${p.id}-small.webp`];
   const full = media[`${p.id}-large.webp`];
   const preview = full.preview ?? full;
   const responsive =
     preview.width > small.width
-      ? `srcset="${small.url} ${small.width}w, ${preview.url} ${preview.width}w" sizes="${eager ? "(max-width: 650px) 92vw, 50vw" : "(max-width: 650px) 92vw, (max-width: 1000px) 45vw, 30vw"}"`
+      ? `srcset="${small.url} ${small.width}w, ${preview.url} ${preview.width}w" sizes="(max-width: 650px) 92vw, (max-width: 1000px) 45vw, 30vw"`
       : "";
-  return `<img src="${small.url}" ${responsive} width="${p.width}" height="${p.height}" alt="${esc(t(p.alt))}" loading="${eager ? "eager" : "lazy"}" ${eager ? 'fetchpriority="high"' : ""} decoding="async">`;
+  // Measure the hero's cover crop before assigning sources, avoiding a small first download.
+  const source = isHero ? "" : `src="${small.url}" ${responsive}`;
+  return `<img ${source} width="${p.width}" height="${p.height}" alt="${esc(t(p.alt))}" loading="${isHero ? "eager" : "lazy"}" ${isHero ? 'fetchpriority="high"' : ""} decoding="async">`;
 };
-const imageButton = (p: Photo, cls = "", eager = false) =>
-  `<button class="photo-button ${cls}" data-action="photo" data-photo="${p.id}" id="open-${cls || "gallery"}-${p.id}" aria-label="${t(copy.openImage)}: ${esc(t(p.title))}">${img(p, eager)}<span class="image-expand" aria-hidden="true">${icon("plus")}</span></button>`;
+const imageButton = (p: Photo, cls = "", isHero = false) =>
+  `<button class="photo-button ${cls}" data-action="photo" data-photo="${p.id}" id="open-${cls || "gallery"}-${p.id}" aria-label="${t(copy.openImage)}: ${esc(t(p.title))}">${img(p, isHero)}<span class="image-expand" aria-hidden="true">${icon("plus")}</span></button>`;
 const figure = (id: string, cls = "") => {
   const p = photoById(id);
   return `<figure class="editorial-figure ${cls}">${imageButton(p, cls)}<figcaption><span>${esc(t(p.title))}</span><span>${esc(t(p.date))}</span></figcaption>${rights(p)}</figure>`;
@@ -226,6 +228,34 @@ const methodsSection = () =>
     )}</div><details class="bibliography"><summary>${t(copy.bibliography)} <span>${sources.length}</span></summary><ol>${sources.map((s) => `<li id="source-${s.id}"><span>${s.id}</span><a href="${esc(s.url)}">${esc(s.title)}</a></li>`).join("")}</ol></details><div class="corrections"><h3>${t(copy.correctionsTitle)}</h3><p>${t(copy.corrections)}</p></div><p class="credits">${t(copy.credits)}</p></div></section>`;
 const footer = () =>
   `<footer class="footer section-wrap"><a class="footer-title" href="#inici">Can Peguera,<br>${t(copy.tagline).toLowerCase()}.</a><div><p>${t(copy.date)}</p><p>${t(copy.preview)}</p><a href="#inici">${t(copy.top)} ↑</a></div></footer>`;
+function sizeHeroImage(image: HTMLImageElement) {
+  const { width, height } = image.getBoundingClientRect();
+  const ratio =
+    Number(image.getAttribute("width")) / Number(image.getAttribute("height"));
+  // object-fit: cover can paint an image wider than its visible box.
+  image.sizes = `${Math.ceil(Math.max(width, height * ratio))}px`;
+}
+const heroImageObserver = new ResizeObserver((entries) => {
+  for (const { target } of entries) sizeHeroImage(target as HTMLImageElement);
+});
+function prepareHeroImage() {
+  heroImageObserver.disconnect();
+  const image = app.querySelector<HTMLImageElement>(".hero-image img")!;
+  const id = image.closest<HTMLElement>("[data-photo]")!.dataset.photo!;
+  const small = media[`${id}-small.webp`];
+  const full = media[`${id}-large.webp`];
+  const variants = [small, ...(full.preview ? [full.preview] : []), full];
+  sizeHeroImage(image);
+  image.srcset = variants
+    .filter(
+      (variant, index) =>
+        variants.findIndex((other) => other.width === variant.width) === index,
+    )
+    .map((variant) => `${variant.url} ${variant.width}w`)
+    .join(", ");
+  image.src = small.url;
+  heroImageObserver.observe(image);
+}
 function render() {
   document.documentElement.lang = lang;
   document.title = `Can Peguera, ${t(copy.tagline).toLowerCase()}`;
@@ -239,6 +269,7 @@ function render() {
     .querySelector('meta[property="og:description"]')!
     .setAttribute("content", t(copy.heroIntro));
   app.innerHTML = `${header()}<main id="main">${hero()}${historySection()}${timelineSection()}${mapSection()}${compareSection()}${archiveSection()}${neighborsSection()}${methodsSection()}</main>${footer()}<dialog id="lightbox" aria-labelledby="lightbox-title"></dialog>`;
+  prepareHeroImage();
   app.querySelector("dialog")!.addEventListener("cancel", (e) => {
     e.preventDefault();
     closePhoto();

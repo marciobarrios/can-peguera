@@ -1,5 +1,13 @@
 # Verificación de la ampliación
 
+## Nitidez de la portada Retina (24 de octubre de 2026)
+
+- Causa reproducida: la portada estaba limitada a 1280 × 720 y `sizes` solo estimaba el ancho de la caja. El recorte con `object-fit: cover` necesita 1851 px de ancho a 1440 × 1000/2× y 2313 px a 1920 × 1080/2×; la imagen se ampliaba y perdía detalle. El modal ya usaba los 2560 px.
+- La portada ofrece ahora 720, 1280 y 2560 px. Se mide el ancho pintado completo (máximo del ancho de caja y alto por proporción de imagen) antes de asignar `srcset`; `ResizeObserver` conserva esa medida al redimensionar o cambiar de idioma. El navegador aplica la densidad. No se generan imágenes mayores ni se amplía la resolución de las fuentes.
+- Comprobado: escritorio a 1440 y 1920 px/2×, y móvil 390 px/3× eligen 2560 × 1439; escritorio 1440 px/1× elige 1280 × 720. Una sola petición de portada en cada carga inicial; la galería conserva sus vistas previas. Comparación visual de la misma portada antes/después a 2×.
+- Validación: build con TypeScript, ESLint, comprobación de las 158 variantes y 32 pruebas Playwright aprobadas. La nueva prueba cubre píxeles suficientes tras el recorte, una sola petición inicial, redimensionado, cambio de idioma y apertura del visor.
+- Coste medido: la foto de portada pasa de 142.424 a 525.094 bytes en Retina (+382.670). Carga inicial de imágenes: 753.832 bytes; recorrido completo: 9.834.268 bytes y 57 peticiones (61,90 % menos que los 25.814.204 iniciales). La portada es la única ampliación del autor antes del modal. Caché y entrega estática no cambian.
+
 ## Selección final de portada (24 de octubre de 2026)
 
 - Se utiliza «Les cases i l’horitzó de turons» (`marcio-drone-e2643a21`, 2018), a petición del autor. Título, año, crédito y apertura del visor proceden de la misma ficha bilingüe.
