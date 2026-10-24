@@ -12,7 +12,7 @@ const [events, photos, sources, map, assets] = await Promise.all(
   ].map(read),
 );
 assert.equal(events.length, 31);
-assert.equal(photos.length, 53);
+assert.equal(photos.length, 51);
 assert.equal(new Set(photos.map((p) => p.id)).size, photos.length);
 assert.ok(!photos.some((p) => p.id === "street"));
 assert.equal(map.points.length, 10);
@@ -82,7 +82,7 @@ for (const p of photos) {
   for (const size of ["small", "large"])
     await fs.access(`public/assets/${p.id}-${size}.webp`);
 }
-assert.equal(photos.filter((p) => p.pending).length, 16);
+assert.equal(photos.filter((p) => p.pending).length, 14);
 assert.equal(photos.filter((p) => p.permission === "author").length, 34);
 assert.equal(photos.filter((p) => p.topic === "drone").length, 14);
 assert.ok(

@@ -78,7 +78,7 @@ test("combined gallery filters, translated empty states and repeated language ch
   page,
 }) => {
   await page.goto("/ca/#arxiu");
-  await expect(page.locator(".gallery-card")).toHaveCount(53);
+  await expect(page.locator(".gallery-card")).toHaveCount(51);
   await page.selectOption("#archive-topic", "life");
   await page.selectOption("#archive-period", "old");
   await page.selectOption("#archive-rights", "pending");
@@ -95,9 +95,9 @@ test("combined gallery filters, translated empty states and repeated language ch
   await expect(page.locator(".empty-state")).toContainText("No hay imágenes");
   await expect(page.locator("#archive-search")).toHaveValue("inexistent");
   await page.locator(".empty-state button").click();
-  await expect(page.locator(".gallery-card")).toHaveCount(53);
+  await expect(page.locator(".gallery-card")).toHaveCount(51);
   await page.selectOption("#archive-period", "undated");
-  await expect(page.locator(".gallery-card")).toHaveCount(9);
+  await expect(page.locator(".gallery-card")).toHaveCount(8);
   await page.fill("#archive-search", "refugio");
   await expect(page.locator(".gallery-card")).toHaveCount(6);
   await page.locator('[data-action="reset-filters"]').click();
@@ -128,7 +128,7 @@ test("lightbox repetition, language, keyboard focus, Escape and browser history"
   );
   await page.locator('dialog [data-action="next-photo"]').click();
   await expect(page.locator("#lightbox-title")).toHaveText(
-    "Un patio lleno de vida",
+    "La Casa del Pueblo",
   );
   await page.keyboard.press("ArrowLeft");
   await expect(page.locator("#lightbox-title")).toHaveText(
@@ -391,8 +391,8 @@ test("author collection, drone topic, real dates and Sant Joan in both languages
   await page.selectOption("#archive-rights", "licensed");
   await expect(page.locator(".gallery-card")).toHaveCount(3);
   await page.selectOption("#archive-rights", "pending");
-  await expect(page.locator(".gallery-card")).toHaveCount(16);
-  await expect(page.locator(".gallery-card .rights-warning")).toHaveCount(16);
+  await expect(page.locator(".gallery-card")).toHaveCount(14);
+  await expect(page.locator(".gallery-card .rights-warning")).toHaveCount(14);
 });
 
 test("all new full-size images and responsive portraits load without the removed photo", async ({
@@ -419,7 +419,11 @@ test("all new full-size images and responsive portraits load without the removed
     "srcset",
     /small\.[a-f0-9]+\.webp 720w, .*preview\.[a-f0-9]+\.webp 1280w/,
   );
-  await expect(page.locator('img[src*="/street-"]')).toHaveCount(0);
+  await expect(
+    page.locator(
+      'img[src*="/street-small."], img[src*="/street-large."], img[src*="/street-preview."]',
+    ),
+  ).toHaveCount(0);
   await expect(page.locator('a[href=""]')).toHaveCount(0);
   await page.goto("/es/?photo=marcio-img-7604");
   await expect(page.locator("dialog")).toBeVisible();
