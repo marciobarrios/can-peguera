@@ -326,7 +326,7 @@ h1 {
 .hero-image {
   flex: 1;
   min-height: 520px;
-  border-radius: 2px 2px 65px 2px;
+  border-radius: 0;
   overflow: hidden;
 }
 .hero-image img {
@@ -349,6 +349,9 @@ h1 {
   background: var(--paper);
   color: var(--ink);
   border-radius: 50%;
+}
+.hero-image .image-expand {
+  border-bottom-right-radius: 0;
 }
 .hero-photo figcaption {
   display: flex;
@@ -1546,7 +1549,6 @@ dialog[data-image-state="ready"] .lightbox-status {
     min-height: 0;
     flex: none;
     aspect-ratio: 1.2;
-    border-radius: 2px 2px 45px 2px;
   }
   .hero-photo figcaption {
     font-size: 10px;
