@@ -1,5 +1,12 @@
 # Verificación de la ampliación
 
+## Tamaño de fotografías pequeñas en el visor — 24 de octubre de 2026
+
+- El límite `resolución / devicePixelRatio` reducía la foto de la escuela a 223 px CSS en escritorio Retina, por debajo de su tarjeta. El visor utiliza ahora como máximo un píxel CSS por píxel de la fuente, sin dividirlo por la densidad de pantalla, y limita el ancho del modal a 960 px. Mantiene proporciones y espacio para descripción, créditos y aviso individual.
+- A 1440 × 1000 / 2×, la foto de la escuela mide 447 px CSS dentro de un modal de 480 px, frente a los 223 px originales. En 390 × 844 / 3× ocupa 342 px. Las imágenes pequeñas no se estiran por encima de sus dimensiones nativas; las grandes tampoco ocupan todo el ancho de escritorio.
+- Build con TypeScript, ESLint, contenido, imágenes estáticas y las 32 pruebas Playwright aprobados. Las pruebas cubren el límite de resolución, el ancho moderado del modal, la comparación con las tarjetas para tres fotografías a 1×/2×/3×, proporciones, redimensionado, idiomas, teclado, historial, carga lenta/fallida y accesibilidad. Capturas definitivas revisadas en escritorio y móvil. Safari/iOS real y Firefox no probados.
+- Se añade únicamente la rama de esta corrección a la lista permitida del pre-push; los controles del corpus siguen activos.
+
 ## Enlaces salientes (24 de octubre de 2026)
 
 Revisión de los **89 destinos HTTPS distintos** enlazados desde la web: 76 fichas bibliográficas, fuentes de fotografías y puntos del mapa, ortofotos y licencias. Incluye los destinos que aparecen al seleccionar los diez lugares del mapa. Los archivos originales de medios y los servicios WMS del manifiesto de derechos no son enlaces de navegación de la interfaz y no forman parte de este recuento.

@@ -35,7 +35,7 @@ Playwright usa un navegador aislado, con proyectos de escritorio y móvil. Los r
 - Relato original seleccionado en seis etapas; 31 hitos con fuentes y cautelas.
 - Mapa local con el límite municipal del barrio 47 y diez fichas de lugares. Cuatro tienen puntos representativos; seis ofrecen localización documental sin inventar coordenadas, incluido el refugio 647.
 - Seis coberturas ICGC comparables. Se conserva la diferencia entre rango de cobertura y fecha de vuelo del punto mostreado.
-- 53 fotografías y planos seleccionados, búsqueda y filtros, visor accesible y derechos por pieza. Las 34 fotografías de Marcio cuentan con WebP de hasta 2560 px de lado largo y miniaturas de 720 px; el visor limita ancho y alto a la ventana y a la resolución real, con descripción visible.
+- 51 fotografías y planos seleccionados, búsqueda y filtros, visor accesible y derechos por pieza. Las 34 fotografías de Marcio cuentan con WebP de hasta 2560 px de lado largo y miniaturas de 720 px; el visor tiene un ancho máximo de 960 px y muestra las fotos como máximo a su tamaño nativo en píxeles CSS, sin dividirlo por la densidad de pantalla. Conserva proporciones y descripción visibles y se adapta a ventanas pequeñas.
 - Memoria comunitaria, barrio actual, bibliografía seleccionada, método y criterios de corrección.
 
 Las traducciones editoriales están en `src/content.ts` y en los campos ca/es de los JSON seleccionados. Los títulos bibliográficos y los nombres propios permanecen en su idioma original. No se importa ni se sirve el corpus completo.

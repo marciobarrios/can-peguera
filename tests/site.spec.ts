@@ -468,7 +468,8 @@ test("viewer shows the complete description and preserves attribution", async ({
   expect(layout.captionTop).toBeGreaterThanOrEqual(layout.bottom);
   expect(layout.imageWidth).toBeLessThan(layout.dialogWidth);
   if (info.project.name === "desktop")
-    expect(layout.imageWidth).toBeGreaterThan(1200);
+    expect(layout.imageWidth).toBeGreaterThan(800);
+  expect(layout.dialogWidth).toBeLessThanOrEqual(960);
   await page.screenshot({
     path: `test-results/${info.project.name}-viewer-landscape.png`,
   });
@@ -492,11 +493,7 @@ test("viewer shows the complete description and preserves attribution", async ({
   await expect(page.locator("dialog .rights-warning")).toBeVisible();
   await expect(page.locator("dialog .photo-rights a")).toBeVisible();
   await expect(page.locator(".lightbox-description > p")).toBeVisible();
-  expect(
-    await page
-      .locator("dialog")
-      .evaluate((el) => el.getBoundingClientRect().width),
-  ).toBeLessThanOrEqual(322);
+  await expect(page.locator("dialog img")).toBeInViewport();
   const a11y = await new AxeBuilder({ page })
     .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
     .analyze();
@@ -507,7 +504,7 @@ test("viewer shows the complete description and preserves attribution", async ({
 });
 
 for (const density of [1, 2, 3]) {
-  test(`viewer never enlarges source pixels at density ${density}, including resize`, async ({
+  test(`viewer fits the viewport at density ${density}, including resize`, async ({
     browser,
   }, info) => {
     const context = await browser.newContext({
@@ -551,10 +548,9 @@ for (const density of [1, 2, 3]) {
             };
           });
         expect(size.width).toBeGreaterThan(0);
-        expect(size.width * density).toBeLessThanOrEqual(size.sourceWidth + 1);
-        expect(size.height * density).toBeLessThanOrEqual(
-          size.sourceHeight + 1,
-        );
+        expect(size.width).toBeLessThanOrEqual(size.sourceWidth);
+        expect(size.height).toBeLessThanOrEqual(size.sourceHeight);
+        expect(size.width).toBeLessThanOrEqual(960);
         expect(size.width / size.height).toBeCloseTo(
           size.sourceWidth / size.sourceHeight,
           2,
@@ -564,10 +560,28 @@ for (const density of [1, 2, 3]) {
         expect(size.overflow, id).toBeLessThanOrEqual(1);
         if (
           info.project.name === "desktop" &&
+          ["school-building", "shelter-sealed", "edge"].includes(id)
+        ) {
+          // Compare the painted photo, excluding the gallery's contain letterbox.
+          const galleryWidth = await page
+            .locator(`#open-gallery-${id} img`)
+            .evaluate((img, ratio) => {
+              const box = img.getBoundingClientRect();
+              return Math.min(box.width, box.height * ratio);
+            }, size.sourceWidth / size.sourceHeight);
+          expect(
+            size.width,
+            `${id} should open larger than its card`,
+          ).toBeGreaterThan(galleryWidth);
+          if (id === "school-building")
+            expect(size.width).toBe(size.sourceWidth);
+        }
+        if (
+          info.project.name === "desktop" &&
           density === 2 &&
           id === "marcio-dji-0022"
         )
-          expect(size.width).toBeGreaterThan(1200);
+          expect(size.width).toBeGreaterThan(800);
       }
       await page.goto("http://127.0.0.1:4173/es/?photo=marcio-img-3714");
       await expect(page.locator("dialog")).toHaveAttribute(

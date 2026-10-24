@@ -434,27 +434,23 @@ function fitLightboxImage() {
     dialog.querySelector<HTMLElement>(".lightbox-top")!.offsetHeight;
   const verticalPadding =
     parseFloat(bodyStyle.paddingTop) + parseFloat(bodyStyle.paddingBottom);
-  const density = Math.max(1, window.devicePixelRatio);
   const maxHeight = window.innerHeight * 0.96;
-  const maxWidth = document.documentElement.clientWidth - 24;
+  const maxWidth = Math.min(960, document.documentElement.clientWidth - 24);
   const sideBySide = matchMedia(
     "(min-width: 700px) and (max-height: 600px)",
   ).matches;
-  // Choose a stable text width first, so wrapping cannot chase the image size.
+  // Allow one CSS pixel per source pixel, independent of screen density.
+  // Keep small photos at native size and large photos in a moderate-width dialog.
   const initialScale = Math.min(
-    1 / density,
+    1,
     Math.max(1, maxWidth - horizontalPadding) / image.naturalWidth,
     Math.max(1, maxHeight - topHeight - verticalPadding - 120) /
       image.naturalHeight,
   );
-  const readingWidth = Math.min(
-    480,
-    image.naturalWidth / density + horizontalPadding,
-  );
   const dialogWidth = sideBySide
-    ? Math.max(640, image.naturalWidth / density + 440 + horizontalPadding)
+    ? maxWidth
     : Math.max(
-        readingWidth,
+        480,
         Math.floor(image.naturalWidth * initialScale) + horizontalPadding,
       );
   dialog.style.setProperty(
@@ -466,7 +462,7 @@ function fitLightboxImage() {
     .querySelector<HTMLElement>(".lightbox-caption")!
     .getBoundingClientRect().height;
   const scale = Math.min(
-    1 / density,
+    1,
     Math.max(
       1,
       dialog.querySelector<HTMLElement>(".lightbox-stage")!.clientWidth,
@@ -488,18 +484,6 @@ function fitLightboxImage() {
 }
 window.addEventListener("resize", fitLightboxImage);
 void document.fonts.ready.then(fitLightboxImage);
-function watchPixelDensity() {
-  const density = matchMedia(`(resolution: ${window.devicePixelRatio}dppx)`);
-  density.addEventListener(
-    "change",
-    () => {
-      fitLightboxImage();
-      watchPixelDensity();
-    },
-    { once: true },
-  );
-}
-watchPixelDensity();
 
 function nextPhoto(step: number) {
   const id = new URL(location.href).searchParams.get("photo");
