@@ -70,13 +70,15 @@ const esc = (value: string | number) =>
 const icon = (type: "arrow" | "close" | "plus" | "minus" | "menu") =>
   `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">${{ arrow: '<path d="M4 12h15m-6-6 6 6-6 6"/>', close: '<path d="m6 6 12 12M6 18 18 6"/>', plus: '<path d="M5 12h14M12 5v14"/>', minus: '<path d="M5 12h14"/>', menu: '<path d="M3 7h18M3 12h18M3 17h18"/>' }[type]}</svg>`;
 const source = (id: string) => sources.find((s) => s.id === id);
+const sourceLink = (s: (typeof sources)[number], label = s.title) => {
+  const note = s.accessNote ? ` (${t(s.accessNote)})` : "";
+  return `<a href="${esc(s.url)}" title="${esc(s.title + note)}">${esc(label)}${note ? ` <small>${esc(note.trim())}</small>` : ""}</a>`;
+};
 const refs = (list: string[]) =>
   `<p class="references">${t(copy.sources)}: ${list
     .map((id) => {
       const s = source(id);
-      return s
-        ? `<a href="${esc(s.url)}" title="${esc(s.title)}">${esc(id)}</a>`
-        : "";
+      return s ? sourceLink(s, id) : "";
     })
     .join(" / ")}</p>`;
 const photoById = (id: string) => gallery.find((p) => p.id === id)!;
@@ -225,7 +227,7 @@ const methodsSection = () =>
     )
     .join(
       "",
-    )}</div><details class="bibliography"><summary>${t(copy.bibliography)} <span>${sources.length}</span></summary><ol>${sources.map((s) => `<li id="source-${s.id}"><span>${s.id}</span><a href="${esc(s.url)}">${esc(s.title)}</a></li>`).join("")}</ol></details><div class="corrections"><h3>${t(copy.correctionsTitle)}</h3><p>${t(copy.corrections)}</p></div><p class="credits">${t(copy.credits)}</p></div></section>`;
+    )}</div><details class="bibliography"><summary>${t(copy.bibliography)} <span>${sources.length}</span></summary><ol>${sources.map((s) => `<li id="source-${s.id}"><span>${s.id}</span>${sourceLink(s)}</li>`).join("")}</ol></details><div class="corrections"><h3>${t(copy.correctionsTitle)}</h3><p>${t(copy.corrections)}</p></div><p class="credits">${t(copy.credits)}</p></div></section>`;
 const footer = () =>
   `<footer class="footer section-wrap"><a class="footer-title" href="#inici">Can Peguera,<br>${t(copy.tagline).toLowerCase()}.</a><div><p>${t(copy.date)}</p><p>${t(copy.preview)}</p><a href="#inici">${t(copy.top)} ↑</a></div></footer>`;
 function sizeHeroImage(image: HTMLImageElement) {
