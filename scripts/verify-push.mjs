@@ -5,6 +5,7 @@ import { readFileSync } from "node:fs";
 const repository = "marciobarrios/can-peguera";
 const allowedRefs = new Set([
   "refs/heads/codex/fix-lightbox-photo-size",
+  "refs/heads/codex/fix-outbound-links",
   "refs/heads/codex/remove-roba-finestra",
   "refs/heads/codex/hero-photo-corner",
   "refs/heads/codex/can-peguera-own-photos",

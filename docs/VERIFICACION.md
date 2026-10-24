@@ -6,6 +6,48 @@
 - Comparación local a 1440 × 1000 / 2×: foto de la escuela de 223 a 1327 px de ancho. En 390 × 844 / 3× ocupa 342 px. Las fuentes pequeñas pueden ampliarse visualmente; los archivos y su detalle original no cambian.
 - Build con TypeScript, ESLint, contenido e imágenes estáticas correctos. Las 32 pruebas Playwright pasan en Chromium de escritorio y móvil: regresión contra el tamaño pintado en la galería para tres fotos pequeñas a 1×/2×/3×, proporciones, límites de ventana, redimensionado, idiomas, teclado, historial, carga lenta/fallida y accesibilidad. Capturas antes/después revisadas en escritorio y móvil. Safari/iOS real y Firefox no probados.
 - Se añade únicamente la rama de esta corrección a la lista permitida del pre-push; los controles del corpus siguen activos.
+- Tras integrar la corrección de enlaces de `main`, se repiten build, ESLint, contenido, imágenes y las 14 pruebas del visor, teclado y accesibilidad; todas pasan.
+
+## Enlaces salientes (24 de octubre de 2026)
+
+Revisión de los **89 destinos HTTPS distintos** enlazados desde la web: 76 fichas bibliográficas, fuentes de fotografías y puntos del mapa, ortofotos y licencias. Incluye los destinos que aparecen al seleccionar los diez lugares del mapa. Los archivos originales de medios y los servicios WMS del manifiesto de derechos no son enlaces de navegación de la interfaz y no forman parte de este recuento.
+
+Se realizaron peticiones GET con seguimiento de redirecciones, revisión del tipo de contenido y del título de las páginas HTML, buscando también errores servidos con estado 200. La primera pasada obtuvo 75 respuestas 200, cinco 404, tres conexiones rechazadas y seis accesos con restricciones técnicas (cuatro 403 y dos errores de validación TLS del cliente de comprobación). Los HTML y los registros completos se guardan únicamente en `research/link-audit-2026-10-24/`, fuera de Git.
+
+### Correcciones
+
+| Referencias | Problema comprobado | Destino aplicado |
+| --- | --- | --- |
+| S04 | PDF municipal con 404 | Página oficial de la misma nota de prensa del 28/01/2015; contiene también el enlace actual al PDF. |
+| S10 y COM-001 | El servidor HTTPS de canpeguera.com rechaza la conexión; su portada HTTP muestra un dominio registrado | Copia de La Peguera 20 en Internet Archive, captura del 19/06/2025. |
+| S29 | Mismo dominio fuera de servicio | Copia de La Peguera 9, captura del 17/05/2024. |
+| COM-003 | Mismo dominio fuera de servicio | Copia de La Peguera 8, captura del 02/06/2024. |
+| S37 | PDF y ficha del repositorio de Justicia con 404; error confirmado también en navegador | Presentación oficial de la misma edición en Llibres gencat. Se avisa en CA/ES de que se trata de la presentación y de que el PDF original no está disponible. No se ha recuperado el texto íntegro. |
+| S47 | Ruta antigua de DSpace UB con 404 | Identificador persistente `https://hdl.handle.net/2445/42615`, que abre la ficha de la tesis con sus cinco archivos, incluido `02.FRR_2de5.pdf`. |
+| COM-055 | PDF del Pla de Barris 2025–2028 con 404 | Archivo del mismo nombre en `2025-12`, enlazado desde la página municipal actual del plan. |
+| POI01 | Ficha de La Cosa Nostra en Ciutat de la Literatura con 404 | Ficha vigente de Guia Barcelona, con el mismo identificador de equipamiento `99400143979`. |
+
+Son **ocho destinos corregidos en nueve fichas**. Las tres copias de revistas responden con 200; se ha comprobado además que su recurso archivado contiene un PDF real (`application/pdf` y cabecera `%PDF`). Las notas de acceso a Internet Archive se muestran tanto en las citas como en la bibliografía, traducidas a CA/ES. Los documentos completos no se incorporan al repositorio ni a la web.
+
+### Limitaciones de acceso
+
+Se conservan seis enlaces sin declararlos rotos ni darlos por plenamente validados:
+
+| Referencia | Resultado y contraste |
+| --- | --- |
+| S18 y S43, BCNROC | El cliente Python no valida la cadena TLS. En navegador, las rutas antiguas resuelven mediante DSpace a dos recursos de `api-bcnroc.ajuntament.barcelona.cat`; no se ha verificado la descarga íntegra de los PDFs. |
+| S25, CORE | 403 con protección Cloudflare. El índice de búsqueda identifica el PDF y la ficha de Sant Francesc Xavier, pero no confirma su acceso directo actual. |
+| S27, MDPI | 403 a la petición directa; el buscador identifica el artículo correcto. |
+| S31, Iberley | 403 con protección Cloudflare; el lector web recupera la sentencia correcta. |
+| S52, Arxiu Diocesà | 403 con protección Cloudflare; el lector web recupera la página de archivos parroquiales. |
+
+Las cuatro fichas fotográficas del Arxiu Municipal se comprobaron en navegador hasta cargar el título y los datos del documento, para descartar que el 200 correspondiera solo a una página vacía.
+
+### Resultado y validación local
+
+La segunda pasada comprueba **88 destinos distintos** (POI01 ahora comparte URL con COM-040): 82 respuestas 200 y las seis limitaciones anteriores; ningún 404 entre las respuestas obtenidas. Se recorrieron los diez lugares del mapa en CA y ES y se extrajeron los enlaces del DOM: ambos idiomas contienen exactamente los mismos 88 destinos. Comprobadas las cinco notas de acceso traducidas.
+
+ESLint, comprobación de contenido y build con TypeScript correctos. Cuatro pruebas Playwright existentes aprobadas: navegación bilingüe y teclado/accesibilidad/anclas locales, en escritorio y móvil. Los identificadores bibliográficos, el contenido histórico y los créditos y avisos de permisos de las imágenes se conservan. Esta validación corresponde al entorno local; el despliegue de estas correcciones debe comprobarse por separado.
 
 ## Nitidez de la portada Retina (24 de octubre de 2026)
 
